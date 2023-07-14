@@ -1,4 +1,4 @@
-# test projects
+# my test projects
 
 ## -> list of projects  
 
@@ -6,10 +6,54 @@
 
 ---
 
-<img src="Netology-test-3-hero/design/desktop-preview.jpg" alt="screen-shot" width="250" >
+<img src="MARF-vvm-ipso\img\Screenshot.png" alt="screen-shot" width="250" >
 
 - Solution URL: [github](https://github.com/MIU-cz/My_Test_Job/tree/master/MARF-vvm-ipso)
 - Live Site URL: [preview](https://miu-cz.github.io/My_Test_Job/MARF-vvm-ipso/)
+
+===========================
+
+### Poski-uloha
+
+---
+
+<img src="Poski-uloha\images\Screenshot.png" alt="screen-shot" width="250" >
+
+- Solution URL: [github](https://github.com/MIU-cz/My_Test_Job/tree/master/Poski-uloha)
+- Live Site URL: [preview](https://miu-cz.github.io/My_Test_Job/Poski-uloha/)
+
+===========================
+
+### Upgates EVici webdesign
+
+---
+
+<img src="upgates\images\Screenshot.png" alt="screen-shot" width="250" >
+
+- Solution URL: [github](https://github.com/MIU-cz/My_Test_Job/tree/master/upgates)
+- Live Site URL: [preview](https://miu-cz.github.io/My_Test_Job/upgates/)
+
+===========================
+
+### Webdevel
+
+---
+
+<img src="webdevel\images\Screenshot.png" alt="screen-shot" width="250" >
+
+- Solution URL: [github](https://github.com/MIU-cz/My_Test_Job/tree/master/webdevel)
+- Live Site URL: [preview](http://miu.jecool.net/new_sites/webdevel/index.php)
+
+===========================
+
+### Pied-Piper
+
+---
+
+<img src="pied-piper\img\Screenshot.png" alt="screen-shot" width="250" >
+
+- Solution URL: [github](https://github.com/MIU-cz/My_Test_Job/tree/master/pied-piper)
+- Live Site URL: [preview](https://miu-cz.github.io/My_Test_Job/pied-piper/)
 
 ===========================
 
@@ -17,9 +61,9 @@
 
 ---
 
-<img src="Netology-test-3-hero/design/desktop-preview.jpg" alt="screen-shot" width="250" >
+<!-- <img src="-" alt=" - screen-shot" width="250" > -->
 
-- Solution URL: [github](https://github.com/MIU-cz/FrontEnd-Mentor-projects/tree/main/Netology-test-3-hero)
-- Live Site URL: [preview](https://miu-cz.github.io/FrontEnd-Mentor-projects/Netology-test-3-hero/)
+- Solution URL: [github](https://github.com/MIU-cz/My_Test_Job/tree/master/Netology-test-3-hero)
+<!-- - Live Site URL: [preview](https://miu-cz.github.io/My_Test_Job/Netology-test-3-hero/) -->
 
 ===========================
