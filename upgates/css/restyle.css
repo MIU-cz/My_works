@@ -1,0 +1,153 @@
+:root {
+	/* --bs-font-sans-serif: "Rubik"; */
+	--bs-body-font-family: "Rubik";
+	/* --bs-offcanvas-height: 0; */
+
+	--Soft-Blue: hsl(231, 69%, 60%);
+	--Soft-Red: hsl(0, 94%, 66%);
+	--Grayish-Blue: hsl(229, 8%, 60%);
+	--Very-Dark-Blue: hsl(229, 31%, 21%);
+}
+
+/* body {
+	font-family: "Rubik", sans-serif;
+} */
+
+a {
+	text-decoration: none;
+	color: var(--Very-Dark-Blue);
+}
+
+/* ----- header ----- */
+/* --> dorabotat desighn offcanvas !!! */
+.navbar-top {
+	margin: 50px 0;
+}
+
+a.navbar-brand {
+	padding-left: 50px;
+}
+
+ul.navbar-nav {
+	/* padding-right: 50px; */
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar-nav a {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 13px;
+	letter-spacing: 1.3px;
+	margin: auto 20px;
+}
+
+.navbar-nav a:hover {
+	color: var(--Soft-Red);
+}
+
+.btn-login {
+	background-color: var(--Soft-Red);
+	padding-left: 30px;
+	padding-right: 30px;
+	color: white;
+}
+
+.btn-login:hover {
+	border: 2px solid var(--Soft-Red);
+	color: var(--Soft-Red);
+	background-color: white;
+}
+
+/* ----- section main -----	 */
+.btn-primary {
+	background-color: var(--Soft-Blue);
+	border: 2px solid var(--Soft-Blue);
+}
+.btn-secondary {
+	background-color: var(--Grayish-Blue);
+	border: 2px solid var(--Grayish-Blue);
+}
+
+.btn-primary:hover {
+	border: 2px solid var(--Soft-Blue);
+	color: var(--Soft-Blue);
+	background-color: white;
+}
+.btn-secondary:hover {
+	border: 2px solid var(--Grayish-Blue);
+	color: var(--Grayish-Blue);
+	background-color: white;
+}
+.main-img-bgr {
+	background-color: var(--Soft-Blue);
+	border-bottom-left-radius: 150px;
+	/* transform: translateY(40px);
+	transform: translateX(42px); */
+}
+
+/* ----- section features -----	 */
+/* .container-carousel {
+	
+} */
+.carousel a {
+	font-size: 17px;
+	letter-spacing: 0.3px;
+	border-radius: 0;
+	border-bottom: 4px solid var(--Grayish-Blue);
+}
+.carousel a:active,
+.carousel a:focus {
+	border-bottom: 4px solid var(--Soft-Red);
+	color: var(--Soft-Red);
+}
+.carousel a:hover {
+	cursor: pointer;
+	color: var(--Soft-Red);
+	border-bottom: 4px solid var(--Soft-Red);
+	opacity: 1;
+}
+.main-img-bgr-carousel {
+	background-color: var(--Soft-Blue);
+	border-bottom-right-radius: 150px;
+}
+
+/* ----- section dounload -----	 */
+
+/* ----- section faq -----	 */
+.accordion-item {
+	border-left: 0;
+	border-right: 0;
+}
+button.accordion-button:hover,
+button.accordion-button:not(.collapsed) {
+	color: var(--Soft-Red);
+	background-color: white;
+}
+
+/* ----- section contact -----	 */
+.container-contact {
+	background-color: var(--Soft-Blue);
+	color: white;
+	letter-spacing: 0.1em;
+}
+.btn-success {
+	background-color: var(--Soft-Red);
+	padding-left: 30px;
+	padding-right: 30px;
+	color: white;
+}
+.btn-success:hover {
+	border: 2px solid var(--Soft-Red);
+	color: var(--Soft-Red);
+	background-color: white;
+}
+
+/* ----- footer -----	 */
+.container-footer {
+	background-color: var(--Very-Dark-Blue);
+	color: white;
+}
+.container-footer a {
+	color: white;
+}

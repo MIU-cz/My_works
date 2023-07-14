@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../upgates-test"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "upgates-bs",
+		"editor.minimap.maxColumn": 70
+	}
+}
