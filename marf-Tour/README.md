@@ -4,8 +4,8 @@
 
 ## Links
 
-- Popis práce na projektu:
-- GitHub:
+- Popis práce na projektu: <https://miu-cz.github.io/My_Test_Job/marf-Tour/>
+- GitHub: <https://github.com/MIU-cz/My_Test_Job/tree/master/marf-Tour>
 - Deploy: <http://miu.jecool.net/new_sites/marf-Tour/>
 
 > ## při prvním spuštění na novém serveru
