@@ -10,8 +10,8 @@
 
 ## Links
 
-- Popis práce na projektu: <https://miu-cz.github.io/My_Test_Job/marf-Tour/>
-- GitHub: <https://github.com/MIU-cz/My_Test_Job/tree/master/marf-Tour>
+- Popis práce na projektu: <https://miu-cz.github.io/My_works/marf-Tour/>
+- GitHub: <https://github.com/MIU-cz/My_works/tree/master/marf-Tour>
 - Deploy: <http://miu.jecool.net/new_sites/marf-Tour/>
 
 ===========================
@@ -22,8 +22,8 @@
 
 <img src="MARF-vvm-ipso\img\Screenshot.png" alt="screen-shot" width="250" >
 
-- Solution URL: [github](https://github.com/MIU-cz/My_Test_Job/tree/master/MARF-vvm-ipso)
-- Live Site URL: [preview](https://miu-cz.github.io/My_Test_Job/MARF-vvm-ipso/)
+- Solution URL: [github](https://github.com/MIU-cz/My_works/tree/master/MARF-vvm-ipso)
+- Live Site URL: [preview](https://miu-cz.github.io/My_works/MARF-vvm-ipso/)
 
 ===========================
 
@@ -33,8 +33,8 @@
 
 <img src="Poski-uloha\images\Screenshot.png" alt="screen-shot" width="250" >
 
-- Solution URL: [github](https://github.com/MIU-cz/My_Test_Job/tree/master/Poski-uloha)
-- Live Site URL: [preview](https://miu-cz.github.io/My_Test_Job/Poski-uloha/)
+- Solution URL: [github](https://github.com/MIU-cz/My_works/tree/master/Poski-uloha)
+- Live Site URL: [preview](https://miu-cz.github.io/My_works/Poski-uloha/)
 
 ===========================
 
@@ -44,8 +44,8 @@
 
 <img src="upgates\images\Screenshot.png" alt="screen-shot" width="250" >
 
-- Solution URL: [github](https://github.com/MIU-cz/My_Test_Job/tree/master/upgates)
-- Live Site URL: [preview](https://miu-cz.github.io/My_Test_Job/upgates/)
+- Solution URL: [github](https://github.com/MIU-cz/My_works/tree/master/upgates)
+- Live Site URL: [preview](https://miu-cz.github.io/My_works/upgates/)
 
 ===========================
 
@@ -55,7 +55,7 @@
 
 <img src="webdevel\images\Screenshot.png" alt="screen-shot" width="250" >
 
-- Solution URL: [github](https://github.com/MIU-cz/My_Test_Job/tree/master/webdevel)
+- Solution URL: [github](https://github.com/MIU-cz/My_works/tree/master/webdevel)
 - Live Site URL: [preview](http://miu.jecool.net/new_sites/webdevel/index.php)
 
 ===========================
@@ -66,8 +66,8 @@
 
 <img src="pied-piper\img\Screenshot.png" alt="screen-shot" width="250" >
 
-- Solution URL: [github](https://github.com/MIU-cz/My_Test_Job/tree/master/pied-piper)
-- Live Site URL: [preview](https://miu-cz.github.io/My_Test_Job/pied-piper/)
+- Solution URL: [github](https://github.com/MIU-cz/My_works/tree/master/pied-piper)
+- Live Site URL: [preview](https://miu-cz.github.io/My_works/pied-piper/)
 
 ===========================
 
@@ -77,7 +77,7 @@
 
 <!-- <img src="-" alt=" - screen-shot" width="250" > -->
 
-- Solution URL: [github](https://github.com/MIU-cz/My_Test_Job/tree/master/Netology-test-3-hero)
-<!-- - Live Site URL: [preview](https://miu-cz.github.io/My_Test_Job/Netology-test-3-hero/) -->
+- Solution URL: [github](https://github.com/MIU-cz/My_works/tree/master/Netology-test-3-hero)
+<!-- - Live Site URL: [preview](https://miu-cz.github.io/My_works/Netology-test-3-hero/) -->
 
 ===========================
