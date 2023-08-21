@@ -1,0 +1,19 @@
+@font-face {
+	font-family: "BiggyJohn";
+	src: local("BiggyJohn"), url(../fonts/BiggyJohn.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "CoffeeTerrace";
+	src: local("CoffeeTerrace"),
+		url(../fonts/CoffeeTerrace.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "JungleRanger";
+	src: local("JungleRanger"), url(../fonts/JungleRanger.ttf) format("truetype");
+}
+
+$ff-bigTitle: "BiggyJohn";
+$ff-title: "CoffeeTerrace";
+$ff-mainText: "JungleRanger";

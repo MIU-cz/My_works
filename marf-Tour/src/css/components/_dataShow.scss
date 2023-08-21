@@ -1,0 +1,8 @@
+.table_head {
+	background-color: transparentize($color: $cc-mainBg, $amount: 0.65);
+}
+
+th,
+td {
+	padding: 5px 10px;
+}

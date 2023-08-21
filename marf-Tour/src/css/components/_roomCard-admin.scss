@@ -1,0 +1,120 @@
+// @import "_theme", "_mixin", "_fonts";
+
+.content__grid {
+	margin-top: 30px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.card_wraper {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 5fr 1fr;
+}
+
+.room__card {
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+}
+
+.card_foto {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	.main_foto {
+		width: 250px;
+		height: 250px;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.next_foto {
+		.foto_grid_links {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+
+			li {
+				width: 60px;
+				height: 60px;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+}
+
+.card_cpecfication {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	// gap: 20px;
+
+	.card_title {
+		@include FontStyle($ff-title, 1.5em, $cc-greenDarkest);
+	}
+
+	.card_description {
+		margin-top: 20px;
+		@include FontStyle($ff-mainText, 1em, $cc-blue);
+		letter-spacing: 1px;
+	}
+}
+
+// ### buttons
+.card_btn {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.btn {
+	width: 75%;
+	padding: 10px;
+	border: solid $cc-blueDarkest 1px;
+	border-radius: 10px;
+	@include FontStyle($ff-bigTitle, 1em, $cc-greenDarkest);
+	letter-spacing: 1.5px;
+	background-color: $cc-blue;
+	color: $cc-blueDarkest;
+
+	&:hover {
+		text-transform: uppercase;
+		background-color: $cc-yelow;
+	}
+
+	&:active {
+		border: 0;
+		background-color: $cc-green;
+	}
+}
+
+.btn_booking_copy {
+	background-color: $cc-greenDarkest;
+}
+.btn_booking_dell {
+	background-color: $cc-orange;
+}
+.btn_booking {
+	background-color: $cc-blue;
+}
+.btn_txt {
+	width: 100%;
+	border: 0;
+	border-radius: 0;
+	background-color: inherit;
+	pointer-events: none;
+	text-align: center;
+}

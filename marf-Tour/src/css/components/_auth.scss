@@ -1,0 +1,59 @@
+.authorizacion__wraper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 100;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: transparentize($color: $cc-mainBg, $amount: 0.35);
+}
+
+.form__wraper {
+	// width: 65vw;
+	// height: 65vh;
+	background-color: $cc-blueDarkest;
+	border-radius: 10px;
+	padding: 40px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.form_conteiner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+
+	color: $cc-wite;
+
+	h3 {
+		color: $cc-yelowBg;
+	}
+}
+
+.form_item {
+	width: auto;
+	padding: 10px 15px;
+	border-radius: 5px;
+	color: $cc-blueDarkest;
+}
+
+.btn_submit {
+	width: 65%;
+	padding: 5px;
+	border-radius: 5px;
+	color: $cc-blueDarkest;
+	background-color: $cc-wite;
+
+	&:hover {
+		background-color: $cc-yelowBg;
+	}
+}

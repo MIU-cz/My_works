@@ -1,0 +1,658 @@
+@font-face {
+  font-family: "BiggyJohn";
+  src: local("BiggyJohn"), url(../fonts/BiggyJohn.ttf) format("truetype");
+}
+@font-face {
+  font-family: "CoffeeTerrace";
+  src: local("CoffeeTerrace"), url(../fonts/CoffeeTerrace.ttf) format("truetype");
+}
+@font-face {
+  font-family: "JungleRanger";
+  src: local("JungleRanger"), url(../fonts/JungleRanger.ttf) format("truetype");
+}
+body {
+  background-color: hsl(330, 3%, 88%);
+  font-family: "JungleRanger";
+  color: hsl(193, 99%, 29%);
+}
+
+a {
+  font-family: "CoffeeTerrace";
+  color: hsl(330, 3%, 88%);
+}
+a:hover {
+  color: hsl(30, 99%, 43%);
+  text-decoration: underline;
+}
+
+.container__wraper {
+  width: 100%;
+  margin: 0 auto;
+}
+@media (min-width: 1440px) {
+  .container__wraper {
+    width: 90vw;
+  }
+}
+
+.bg_lock {
+  overflow: hidden;
+}
+
+.eng_moduls {
+  display: none;
+}
+.eng_moduls-active {
+  display: block;
+}
+
+.header__navbar_wraper {
+  width: 100%;
+  padding: 30px 20px;
+  background-color: hsl(193, 99%, 29%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_brand {
+  z-index: 101;
+}
+.navbar_brand a {
+  font-size: 4rem;
+  color: hsl(30, 99%, 43%);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.navbar_brand img {
+  width: 4rem;
+  height: 4rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.navbar_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.nav_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s;
+}
+@media (max-width: 992px) {
+  .nav_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: -100vh;
+    right: 0;
+    z-index: 101;
+    background-color: hsl(193, 99%, 29%);
+    padding: 20px;
+    text-align: center;
+  }
+}
+.nav_links-active {
+  top: 100px;
+  box-shadow: 0 10px 10px 5px rgba(1, 115, 147, 0.65);
+}
+
+.links_item {
+  width: auto;
+  padding: 5px;
+}
+.links_item a {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.nav_user {
+  width: 32px;
+  height: 32px;
+  z-index: 102;
+}
+.nav_user a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.nav_user svg {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  pointer-events: none;
+}
+
+.header__content_wraper {
+  width: 100%;
+  padding: 0 20px 60px;
+  background: hsl(186, 42%, 44%);
+}
+.header__content_wraper .header__content_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 0 50px 50px;
+}
+.header__content_wraper .header__content_container::before {
+  content: " ";
+  display: block;
+  width: 25vw;
+  height: 25vw;
+  background: url(../img/8917214.jpg) bottom left/contain no-repeat;
+  transform: scaleY(-1);
+}
+.header__content_wraper .header__content_container::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 25vw;
+  background: url(../img/8908580.jpg) bottom left/contain no-repeat;
+  transform: scaleX(-1);
+}
+@media (min-width: 1024px) {
+  .header__content_wraper .header__content_container {
+    padding: 50px;
+  }
+  .header__content_wraper .header__content_container::before, .header__content_wraper .header__content_container::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 0;
+  }
+  .header__content_wraper .header__content_container::before {
+    left: 0;
+  }
+}
+
+.user_info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.user_info input {
+  display: inline-block;
+  background: none;
+  cursor: pointer;
+  color: hsl(193, 99%, 29%);
+  font-size: inherit;
+}
+
+.header__content {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.content_title {
+  font-family: "CoffeeTerrace";
+  font-size: 5em;
+  text-transform: uppercase;
+  color: hsl(43, 58%, 70%);
+}
+
+.content_description {
+  font-size: 4em;
+}
+
+.btn_burger {
+  margin: 0 0 0 auto;
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: relative;
+  z-index: 102;
+  background-color: hsl(193, 99%, 29%);
+}
+.btn_burger::before, .btn_burger::after, .btn_burger span {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s;
+}
+.btn_burger::before {
+  top: 0;
+}
+.btn_burger::after {
+  bottom: 0;
+}
+.btn_burger span {
+  top: 14px;
+}
+.btn_burger-active::before {
+  transform: rotate(45deg);
+  top: 14px;
+}
+.btn_burger-active::after {
+  transform: rotate(135deg);
+  bottom: 14px;
+}
+.btn_burger-active span {
+  display: none;
+}
+.btn_burger-active {
+  border: solid 2px hsl(330, 3%, 88%);
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: hsl(30, 99%, 43%);
+}
+@media (min-width: 992px) {
+  .btn_burger {
+    display: none;
+  }
+}
+
+.authorizacion__wraper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(65, 150, 159, 0.65);
+}
+
+.form__wraper {
+  background-color: hsl(193, 99%, 29%);
+  border-radius: 10px;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  color: hsl(330, 3%, 88%);
+}
+.form_conteiner h3 {
+  color: hsl(43, 58%, 70%);
+}
+
+.form_item {
+  width: auto;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: hsl(193, 99%, 29%);
+}
+
+.btn_submit {
+  width: 65%;
+  padding: 5px;
+  border-radius: 5px;
+  color: hsl(193, 99%, 29%);
+  background-color: hsl(330, 3%, 88%);
+}
+.btn_submit:hover {
+  background-color: hsl(43, 58%, 70%);
+}
+
+.main__content_container {
+  padding: 40px 20px;
+  background-color: hsl(186, 42%, 44%);
+}
+.main__content_container h1 {
+  font-family: "BiggyJohn";
+  text-transform: uppercase;
+  font-size: 5rem;
+  text-align: center;
+  color: hsl(43, 58%, 70%);
+}
+.main__content_container h1::before {
+  content: "";
+  display: block;
+  width: 30vw;
+  height: 7px;
+  margin: 0 auto 30px;
+  background-color: hsl(43, 100%, 41%);
+  border-radius: 7px;
+}
+
+.content__grid {
+  width: 100%;
+  margin-top: 60px;
+  display: grid;
+  gap: 20px;
+}
+@media (min-width: 992px) {
+  .content__grid {
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+  }
+}
+
+.room__card {
+  width: auto;
+  height: 100%;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: hsl(330, 3%, 88%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: normal;
+  gap: 20px;
+}
+
+.main_foto {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px 25px 15px 45px;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .main_foto {
+    height: 170px;
+  }
+}
+@media (min-width: 1140px) {
+  .main_foto {
+    height: 230px;
+  }
+}
+@media (min-width: 1440px) {
+  .main_foto {
+    height: 320px;
+  }
+}
+.main_foto img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.next_foto {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: hsl(190, 88%, 35%);
+  border-radius: 10px;
+}
+.next_foto .foto_grid_links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.next_foto .foto_grid_links li {
+  width: 72px;
+  height: 72px;
+  border-radius: 5px 15px 10px 25px;
+  overflow: hidden;
+}
+.next_foto .foto_grid_links img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card_wraper {
+  width: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.card_title {
+  margin-top: 20px;
+  font-family: "CoffeeTerrace";
+  font-size: 2em;
+  color: hsl(168, 65%, 27%);
+}
+
+.card_description {
+  height: 100%;
+  margin-top: 20px;
+  font-family: "JungleRanger";
+  font-size: 1.5em;
+  color: hsl(190, 88%, 35%);
+  letter-spacing: 1px;
+}
+
+.card_booking {
+  padding: 30px 0 10px;
+  text-align: center;
+}
+
+.btn_booking {
+  width: 100%;
+  padding: 15px 20px;
+  border: solid hsl(43, 100%, 41%) 3px;
+  border-radius: 20px;
+  font-family: "BiggyJohn";
+  font-size: 1em;
+  color: hsl(168, 65%, 27%);
+  letter-spacing: 1.5px;
+  background-color: hsl(43, 100%, 41%);
+}
+.btn_booking:hover {
+  text-transform: uppercase;
+  background-color: hsl(190, 88%, 35%);
+  color: hsl(30, 99%, 43%);
+}
+.btn_booking:active {
+  border: 0;
+  background-color: hsl(173, 47%, 40%);
+  color: hsl(193, 99%, 29%);
+}
+
+.nextRooms {
+  width: 100%;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 5px;
+  background-color: hsl(330, 3%, 88%);
+  font-size: 1.5em;
+}
+
+.room__filter {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: hsl(43, 58%, 70%);
+}
+
+.formHeader {
+  cursor: pointer;
+}
+.formHeader:hover {
+  color: hsl(30, 99%, 43%);
+}
+
+.form_wraper {
+  width: 100%;
+  border-top: solid hsl(193, 99%, 29%) 2px;
+  padding: 20px;
+}
+.form_wraper form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.form_date {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+@media (max-width: 992px) {
+  .form_date {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.form_date label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form_input {
+  width: auto;
+  height: 30px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.item_roomcol {
+  width: auto;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-family: "JungleRanger";
+}
+
+.errorForm {
+  color: red;
+}
+
+.btn_submit {
+  width: auto;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-family: "JungleRanger";
+  color: hsl(168, 65%, 27%);
+  background-color: hsl(190, 88%, 35%);
+}
+.btn_submit:hover {
+  background-color: hsl(43, 100%, 41%);
+}
+.btn_submit:disabled {
+  background-color: rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+}
+
+.boking__wraper {
+  margin: 30px auto;
+}
+
+.msgOk {
+  width: 100%;
+  padding: 50px 30px;
+  border-radius: 10px 10px 0 0;
+  background: url("../img/8917193.jpg") right/contain no-repeat hsl(186, 42%, 44%);
+  color: hsl(43, 58%, 70%);
+  letter-spacing: 1.3px;
+}
+
+.msgErr {
+  width: 100%;
+  padding: 50px 30px;
+  border-radius: 10px 10px 0 0;
+  background-color: rgba(255, 0, 0, 0.3);
+  letter-spacing: 1.3px;
+}
+
+.footer__content_conteiner {
+  width: 100%;
+  padding: 20px;
+  background-color: hsl(193, 99%, 29%);
+}
+
+.content_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content_col {
+  color: hsl(330, 3%, 88%);
+}
+.content_col:last-child {
+  text-align: right;
+  font-size: 2rem;
+}
+
+.footer_brand a {
+  font-family: "CoffeeTerrace";
+  font-size: 2.5rem;
+  color: hsl(330, 3%, 88%);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer_brand img {
+  width: 2.5rem;
+  height: 2.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.socialbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+.socialbtn svg {
+  width: 1.5em;
+  height: 1.5em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.socialbtn + p > a {
+  color: hsl(43, 100%, 41%);
+}
+.socialbtn + p > a:hover {
+  color: hsl(30, 99%, 43%);
+}
+
+.nocontent {
+  background: url(../img/8908580.jpg) bottom left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.nocontent p {
+  font-family: "JungleRanger";
+  font-size: 2em;
+  color: hsl(43, 100%, 41%);
+  width: 60%;
+  margin: 0 auto;
+}
+.nocontent p:nth-child(2) {
+  color: hsl(330, 3%, 88%);
+}
+.nocontent p:last-child {
+  color: hsl(168, 65%, 27%);
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,158 @@
+.main__content_container {
+	padding: 40px 20px;
+	background-color: $cc-mainBg;
+	// @include FlexSetup(inherit, space-around, center, 20px);
+	// flex-wrap: wrap;
+
+	h1 {
+		font-family: $ff-bigTitle;
+		text-transform: uppercase;
+		font-size: 5rem;
+		text-align: center;
+		color: $cc-yelowBg;
+
+		&::before {
+			content: "";
+			display: block;
+			width: 30vw;
+			height: 7px;
+			margin: 0 auto 30px;
+			background-color: $cc-yelow;
+			border-radius: 7px;
+		}
+	}
+}
+
+.content__grid {
+	width: 100%;
+	margin-top: 60px;
+	display: grid;
+
+	gap: 20px;
+
+	@media (min-width: 992px) {
+		grid-template-columns: repeat(4, minmax(150px, 1fr));
+	}
+	// @media (min-width: 1440px) {
+	// 	grid-template-columns: repeat(4, 1fr);
+	// }
+}
+
+.room__card {
+	width: auto;
+	height: 100%;
+	border-radius: 10px;
+	padding: 15px;
+	background-color: $cc-wite;
+
+	@include FlexSetup(column, flex-start, normal, 20px);
+}
+
+// .card_foto {
+// }
+
+.main_foto {
+	max-width: 100%;
+	height: auto;
+	border-radius: 15px 25px 15px 45px;
+	overflow: hidden;
+
+	@media (min-width: 992px) {
+		height: 170px;
+	}
+
+	@media (min-width: 1140px) {
+		height: 230px;
+	}
+
+	@media (min-width: 1440px) {
+		height: 320px;
+	}
+
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+
+.next_foto {
+	margin-top: 20px;
+	padding: 10px;
+	background-color: $cc-blue;
+	border-radius: 10px;
+
+	.foto_grid_links {
+		width: 100%;
+		@include FlexSetup(row, center, center, 5px);
+
+		li {
+			width: 72px;
+			height: 72px;
+			border-radius: 5px 15px 10px 25px;
+			overflow: hidden;
+		}
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+
+.card_wraper {
+	width: auto;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.card_title {
+	margin-top: 20px;
+	@include FontStyle($ff-title, 2em, $cc-greenDarkest);
+}
+
+.card_description {
+	height: 100%;
+	margin-top: 20px;
+	@include FontStyle($ff-mainText, 1.5em, $cc-blue);
+	letter-spacing: 1px;
+}
+.card_booking {
+	padding: 30px 0 10px;
+	text-align: center;
+}
+
+.btn_booking {
+	width: 100%;
+	padding: 15px 20px;
+	border: solid $cc-yelow 3px;
+	border-radius: 20px;
+	@include FontStyle($ff-bigTitle, 1em, $cc-greenDarkest);
+	letter-spacing: 1.5px;
+	background-color: $cc-yelow;
+
+	&:hover {
+		text-transform: uppercase;
+		background-color: $cc-blue;
+		color: $cc-orange;
+	}
+
+	&:active {
+		border: 0;
+		background-color: $cc-green;
+		color: $cc-blueDarkest;
+	}
+}
+
+.nextRooms {
+	width: 100%;
+	padding: 20px;
+	margin-top: 30px;
+	border-radius: 5px;
+	background-color: $cc-wite;
+	font-size: 1.5em;
+}

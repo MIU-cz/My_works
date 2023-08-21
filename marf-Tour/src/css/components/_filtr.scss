@@ -1,0 +1,89 @@
+.room__filter {
+	width: 100%;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: $cc-yelowBg;
+}
+
+.formHeader {
+	cursor: pointer;
+
+	&:hover {
+		color: $cc-orange;
+	}
+}
+
+@mixin formFlex($fd: column, $gap: 20px) {
+	display: flex;
+	flex-direction: $fd;
+	gap: $gap;
+}
+
+.form_wraper {
+	width: 100%;
+	border-top: solid $cc-blueDarkest 2px;
+	padding: 20px;
+
+	form {
+		@include formFlex(column);
+	}
+}
+
+.hide {
+	display: none;
+}
+
+.form_date {
+	width: 100%;
+	@include formFlex(row);
+
+	@media (max-width: 992px) {
+		@include formFlex(column);
+	}
+
+	label {
+		@include formFlex($gap: 10px);
+	}
+}
+
+.form_input {
+	width: auto;
+	height: 30px;
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+
+// .form_spec {
+// }
+
+.item_roomcol {
+	width: auto;
+	border-radius: 5px;
+	padding: 10px 15px;
+	font-family: $ff-mainText;
+}
+
+.errorForm {
+	color: red;
+}
+
+// .form_btn {
+// }
+
+.btn_submit {
+	width: auto;
+	border-radius: 5px;
+	padding: 10px 15px;
+	font-family: $ff-mainText;
+	color: $cc-greenDarkest;
+	background-color: $cc-blue;
+
+	&:hover {
+		background-color: $cc-yelow;
+	}
+
+	&:disabled {
+		background-color: transparentize($color: black, $amount: 0.7);
+		pointer-events: none;
+	}
+}

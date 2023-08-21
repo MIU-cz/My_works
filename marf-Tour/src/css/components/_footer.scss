@@ -1,0 +1,58 @@
+// @import "theme", "mixin", "fonts";
+
+// FOOTER
+// ==============================
+.footer__content_conteiner {
+	width: 100%;
+	padding: 20px;
+	background-color: $cc-blueDarkest;
+}
+
+.content_row {
+	@include FlexBasic();
+}
+
+.content_col {
+	color: $cc-wite;
+
+	&:last-child {
+		text-align: right;
+		font-size: 2rem;
+	}
+}
+
+.footer_brand {
+	a {
+		@include FontStyle($ff-title, 2.5rem, $cc-wite);
+		text-transform: uppercase;
+		text-decoration: none;
+	}
+
+	img {
+		width: 2.5rem;
+		height: 2.5rem;
+		object-fit: contain;
+	}
+}
+
+.socialbtn {
+	@include FlexSetup(row, flex-end, center, 10px);
+
+	// & li {
+	// 	width: 2rem;
+	// }
+
+	& svg {
+		width: 1.5em;
+		height: 1.5em;
+		object-fit: cover;
+	}
+
+	& + p > a {
+		color: $cc-yelow;
+
+		&:hover {
+			color: $cc-orange;
+		}
+	}
+}

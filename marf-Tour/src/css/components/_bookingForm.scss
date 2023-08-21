@@ -1,0 +1,20 @@
+.boking__wraper {
+	margin: 30px auto;
+}
+
+.msgOk {
+	width: 100%;
+	padding: 50px 30px;
+	border-radius: 10px 10px 0 0;
+	background: url("../img/8917193.jpg") right / contain no-repeat $cc-mainBg;
+	color: $cc-yelowBg;
+	letter-spacing: 1.3px;
+}
+
+.msgErr {
+	width: 100%;
+	padding: 50px 30px;
+	border-radius: 10px 10px 0 0;
+	background-color: transparentize($color: red, $amount: 0.7);
+	letter-spacing: 1.3px;
+}

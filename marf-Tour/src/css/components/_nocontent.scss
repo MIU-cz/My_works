@@ -1,0 +1,21 @@
+.nocontent {
+	background: url(../img/8908580.jpg) bottom left;
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	text-align: center;
+
+	p {
+		@include FontStyle($ff-mainText, 2em, $cc-yelow);
+		width: 60%;
+		margin: 0 auto;
+
+		&:nth-child(2) {
+			color: $cc-wite;
+		}
+
+		&:last-child {
+			color: $cc-greenDarkest;
+		}
+	}
+}

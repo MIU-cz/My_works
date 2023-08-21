@@ -1,0 +1,20 @@
+@mixin FlexBasic() {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin FlexSetup($dir, $jstf, $aln, $gap) {
+	display: flex;
+	flex-direction: $dir;
+	justify-content: $jstf;
+	align-items: $aln;
+	gap: $gap;
+}
+
+@mixin FontStyle($ff, $fs, $fc) {
+	font-family: $ff;
+	font-size: $fs;
+	color: $fc;
+}

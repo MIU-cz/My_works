@@ -1,0 +1,486 @@
+@font-face {
+  font-family: "BiggyJohn";
+  src: local("BiggyJohn"), url(../fonts/BiggyJohn.ttf) format("truetype");
+}
+@font-face {
+  font-family: "CoffeeTerrace";
+  src: local("CoffeeTerrace"), url(../fonts/CoffeeTerrace.ttf) format("truetype");
+}
+@font-face {
+  font-family: "JungleRanger";
+  src: local("JungleRanger"), url(../fonts/JungleRanger.ttf) format("truetype");
+}
+.header__navbar_wraper {
+  width: 100%;
+  padding: 30px 20px;
+  background-color: hsl(193, 99%, 29%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_brand {
+  z-index: 101;
+}
+.navbar_brand a {
+  font-size: 4rem;
+  color: hsl(30, 99%, 43%);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.navbar_brand img {
+  width: 4rem;
+  height: 4rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.navbar_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.nav_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  transition: all 0.3s;
+}
+@media (max-width: 992px) {
+  .nav_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    top: -100vh;
+    right: 0;
+    z-index: 101;
+    background-color: hsl(193, 99%, 29%);
+    padding: 20px;
+    text-align: center;
+  }
+}
+.nav_links-active {
+  top: 100px;
+  box-shadow: 0 10px 10px 5px rgba(1, 115, 147, 0.65);
+}
+
+.links_item {
+  width: auto;
+  padding: 5px;
+}
+.links_item a {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.nav_user {
+  width: 32px;
+  height: 32px;
+  z-index: 102;
+}
+.nav_user a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.nav_user svg {
+  width: 32px;
+  height: 32px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  pointer-events: none;
+}
+
+.header__content_wraper {
+  width: 100%;
+  padding: 0 20px 60px;
+  background: hsl(186, 42%, 44%);
+}
+.header__content_wraper .header__content_container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 0 50px 50px;
+}
+.header__content_wraper .header__content_container::before {
+  content: " ";
+  display: block;
+  width: 25vw;
+  height: 25vw;
+  background: url(../img/8917214.jpg) bottom left/contain no-repeat;
+  transform: scaleY(-1);
+}
+.header__content_wraper .header__content_container::after {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: 25vw;
+  background: url(../img/8908580.jpg) bottom left/contain no-repeat;
+  transform: scaleX(-1);
+}
+@media (min-width: 1024px) {
+  .header__content_wraper .header__content_container {
+    padding: 50px;
+  }
+  .header__content_wraper .header__content_container::before, .header__content_wraper .header__content_container::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 0;
+  }
+  .header__content_wraper .header__content_container::before {
+    left: 0;
+  }
+}
+
+.user_info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.user_info input {
+  display: inline-block;
+  background: none;
+  cursor: pointer;
+  color: hsl(193, 99%, 29%);
+  font-size: inherit;
+}
+
+.header__content {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.content_title {
+  font-family: "CoffeeTerrace";
+  font-size: 5em;
+  text-transform: uppercase;
+  color: hsl(43, 58%, 70%);
+}
+
+.content_description {
+  font-size: 4em;
+}
+
+.footer__content_conteiner {
+  width: 100%;
+  padding: 20px;
+  background-color: hsl(193, 99%, 29%);
+}
+
+.content_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content_col {
+  color: hsl(330, 3%, 88%);
+}
+.content_col:last-child {
+  text-align: right;
+  font-size: 2rem;
+}
+
+.footer_brand a {
+  font-family: "CoffeeTerrace";
+  font-size: 2.5rem;
+  color: hsl(330, 3%, 88%);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer_brand img {
+  width: 2.5rem;
+  height: 2.5rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.socialbtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+.socialbtn svg {
+  width: 1.5em;
+  height: 1.5em;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.socialbtn + p > a {
+  color: hsl(43, 100%, 41%);
+}
+.socialbtn + p > a:hover {
+  color: hsl(30, 99%, 43%);
+}
+
+body {
+  font-family: "JungleRanger";
+  color: hsl(193, 99%, 29%);
+  background-color: hsl(330, 3%, 88%);
+}
+
+a {
+  font-family: "CoffeeTerrace";
+  color: hsl(330, 3%, 88%);
+}
+a:hover {
+  color: hsl(30, 99%, 43%);
+  text-decoration: underline;
+}
+
+.container__wraper {
+  width: 100%;
+}
+
+.navbar_brand a {
+  font-size: 2rem;
+}
+.navbar_brand img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.links_item a {
+  font-size: 1em;
+}
+
+.main__content_container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.admin__aside {
+  width: 100%;
+  padding-top: 20px;
+  background-color: hsl(186, 42%, 44%);
+}
+
+.admin_links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 15px;
+}
+
+.links_item {
+  width: 100%;
+  padding: 10px;
+  background-color: hsl(190, 88%, 35%);
+}
+.links_item:hover {
+  background-color: hsl(43, 58%, 70%);
+}
+.links_item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.admin__content {
+  padding: 10px;
+}
+
+.content__grid {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card_wraper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+.room__card {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.card_foto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.card_foto .main_foto {
+  width: 250px;
+  height: 250px;
+}
+.card_foto .main_foto img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card_foto .next_foto .foto_grid_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.card_foto .next_foto .foto_grid_links li {
+  width: 60px;
+  height: 60px;
+}
+.card_foto .next_foto .foto_grid_links li img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card_cpecfication {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card_cpecfication .card_title {
+  font-family: "CoffeeTerrace";
+  font-size: 1.5em;
+  color: hsl(168, 65%, 27%);
+}
+.card_cpecfication .card_description {
+  margin-top: 20px;
+  font-family: "JungleRanger";
+  font-size: 1em;
+  color: hsl(190, 88%, 35%);
+  letter-spacing: 1px;
+}
+
+.card_btn {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  width: 75%;
+  padding: 10px;
+  border: solid hsl(193, 99%, 29%) 1px;
+  border-radius: 10px;
+  font-family: "BiggyJohn";
+  font-size: 1em;
+  color: hsl(168, 65%, 27%);
+  letter-spacing: 1.5px;
+  background-color: hsl(190, 88%, 35%);
+  color: hsl(193, 99%, 29%);
+}
+.btn:hover {
+  text-transform: uppercase;
+  background-color: hsl(43, 100%, 41%);
+}
+.btn:active {
+  border: 0;
+  background-color: hsl(173, 47%, 40%);
+}
+
+.btn_booking_copy {
+  background-color: hsl(168, 65%, 27%);
+}
+
+.btn_booking_dell {
+  background-color: hsl(30, 99%, 43%);
+}
+
+.btn_booking {
+  background-color: hsl(190, 88%, 35%);
+}
+
+.btn_txt {
+  width: 100%;
+  border: 0;
+  border-radius: 0;
+  background-color: inherit;
+  pointer-events: none;
+  text-align: center;
+}
+
+.form__container {
+  width: 100%;
+  padding: 20px;
+}
+.form__container h2 {
+  margin-bottom: 30px;
+}
+
+.form_wraper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.content_wraper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item_btn, .item_foto::file-selector-button, .item_foto, .item_description, .item_roomcol, .item_title {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 1.5rem;
+}
+
+.item_roomcol {
+  color: hsl(193, 99%, 29%);
+  font-family: "JungleRanger";
+}
+
+.item_description {
+  height: 100%;
+}
+
+.item_foto::file-selector-button {
+  background-color: hsl(190, 88%, 35%);
+  width: auto;
+}
+.item_foto::file-selector-button:hover {
+  background-color: hsl(43, 58%, 70%);
+}
+
+.item_btn {
+  display: block;
+  width: 30%;
+  margin: 20px auto 0;
+  background-color: hsl(173, 47%, 40%);
+}
+.item_btn:hover {
+  background-color: hsl(43, 58%, 70%);
+}
+
+.table_head {
+  background-color: rgba(65, 150, 159, 0.35);
+}
+
+th,
+td {
+  padding: 5px 10px;
+}/*# sourceMappingURL=adminka.css.map */

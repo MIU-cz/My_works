@@ -1,0 +1,54 @@
+.btn_burger {
+	margin: 0 0 0 auto;
+	width: 32px;
+	height: 32px;
+	display: block;
+	position: relative;
+	z-index: 102;
+
+	background-color: $cc-blueDarkest;
+
+	&::before,
+	&::after,
+	& span {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 3px;
+		background-color: white;
+		transition: all 0.3s;
+	}
+	&::before {
+		top: 0;
+	}
+	&::after {
+		bottom: 0;
+	}
+	& span {
+		top: 14px;
+	}
+
+	&-active::before {
+		transform: rotate(45deg);
+		top: 14px;
+	}
+	&-active::after {
+		transform: rotate(135deg);
+		bottom: 14px;
+	}
+	&-active span {
+		// transform: scale(0);
+		display: none;
+	}
+	&-active {
+		border: solid 2px $cc-wite;
+		border-radius: 50%;
+		overflow: hidden;
+		background-color: $cc-orange;
+	}
+
+	@media (min-width: 992px) {
+		display: none;
+	}
+}

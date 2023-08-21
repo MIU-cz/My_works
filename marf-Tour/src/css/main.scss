@@ -1,0 +1,55 @@
+@import "_theme", "_mixin", "_fonts";
+
+// MAIN
+// ==============================
+// * {
+// 	// transition: all 0.3s;
+// }
+
+body {
+	background-color: $cc-wite;
+
+	font-family: $ff-mainText;
+	color: $cc-blueDarkest;
+}
+
+a {
+	font-family: $ff-title;
+	color: $cc-wite;
+
+	&:hover {
+		color: $cc-orange;
+		// text-transform: uppercase;
+		text-decoration: underline;
+	}
+}
+
+.container__wraper {
+	width: 100%;
+	margin: 0 auto;
+	// background-color: $cc-mainBg;
+
+	@media (min-width: 1440px) {
+		width: 90vw;
+	}
+}
+
+.bg_lock {
+	overflow: hidden;
+}
+.eng_moduls {
+	display: none;
+
+	&-active {
+		display: block;
+	}
+}
+
+@import "./components/_header.scss";
+@import "./components/_mobMenu.scss";
+@import "./components/_auth.scss";
+@import "./components/_main.scss";
+@import "./components/_filtr.scss";
+@import "./components/_bookingForm.scss";
+@import "./components/_footer.scss";
+@import "./components/_nocontent.scss";

@@ -1,0 +1,83 @@
+@import "_theme", "_mixin", "_fonts";
+@import "./components/_header.scss";
+@import "./components/_footer.scss";
+
+body {
+	font-family: $ff-mainText;
+	color: $cc-blueDarkest;
+	background-color: $cc-wite;
+}
+
+a {
+	font-family: $ff-title;
+	color: $cc-wite;
+
+	&:hover {
+		color: $cc-orange;
+		// text-transform: uppercase;
+		text-decoration: underline;
+	}
+}
+
+.container__wraper {
+	width: 100%;
+}
+
+.navbar_brand {
+	a {
+		font-size: 2rem;
+	}
+	img {
+		width: 2rem;
+		height: 2rem;
+	}
+}
+
+.links_item {
+	a {
+		font-size: 1em;
+	}
+}
+
+.main__content_container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+}
+
+.admin__aside {
+	width: 100%;
+	padding-top: 20px;
+	background-color: $cc-mainBg;
+}
+
+.admin_links {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	gap: 15px;
+}
+
+.links_item {
+	width: 100%;
+	padding: 10px;
+	background-color: $cc-blue;
+
+	&:hover {
+		background-color: $cc-yelowBg;
+	}
+
+	a {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.admin__content {
+	padding: 10px;
+}
+
+@import "./components/roomCard-admin";
+@import "./components/addRoomForm";
+@import "./components/dataShow";
