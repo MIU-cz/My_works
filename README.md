@@ -1,6 +1,6 @@
 # my test projects
 
-## -> list of projects  
+> -> list of projects  
 
 ### MARF-vvm-ipso
 
