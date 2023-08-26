@@ -1,36 +1,12 @@
 # my work projects
 
-> -> list of projects  
-
-<table>
-<tr>
-<td>
-
-## MARF-TRAVEL (php + mySQL)
-
-<img src="marf-Tour\docs\main.png" alt="screen-shot" width="250" height="150" >
-
-### Links
-
----
-
-- Popis práce na projektu: <https://miu-cz.github.io/My_works/marf-Tour/>
-- GitHub: <https://github.com/MIU-cz/My_works/tree/master/marf-Tour>
-- Deploy: <http://miu.jecool.net/new_sites/marf-Tour/>
-
-===========================
-
-</td>
-
-<td>
+> => [ list of projects ]
 
 ## VVM-ipso - v2 (php + js + scss)
 
 <img src="marf-vvm-v2\docs\main.png" alt="screen-shot" width="250" height="150">
 
-### Links
-
----
+> ### Links
 
 - Popis práce na projektu: <https://miu-cz.github.io/My_works/marf-vvm-v2/>
 - GitHub: <https://github.com/MIU-cz/My_works/tree/master/marf-vvm-v2>
@@ -38,9 +14,17 @@
 
 ===========================
 
-</td>
-</tr>
-</table>
+## MARF-TRAVEL (php + mySQL)
+
+<img src="marf-Tour\docs\main.png" alt="screen-shot" width="250" height="150" >
+
+> ### Links
+
+- Popis práce na projektu: <https://miu-cz.github.io/My_works/marf-Tour/>
+- GitHub: <https://github.com/MIU-cz/My_works/tree/master/marf-Tour>
+- Deploy: <http://miu.jecool.net/new_sites/marf-Tour/>
+
+===========================
 
 ### MARF-vvm-ipso
 
