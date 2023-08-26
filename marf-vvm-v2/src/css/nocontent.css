@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "TitilliumWeb-Bold";
+  src: local("TitilliumWeb-Bold"), url(../fonts/TitilliumWeb-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "TitilliumWeb-Regular";
+  src: local("TitilliumWeb-Regular"), url(../fonts/TitilliumWeb-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+.nocontent {
+  padding: 78px 56px;
+  background-color: hsl(200, 100%, 41%);
+}/*# sourceMappingURL=nocontent.css.map */

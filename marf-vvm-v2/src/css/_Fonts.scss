@@ -1,0 +1,30 @@
+@font-face {
+	font-family: "TitilliumWeb-Bold";
+	src: local("TitilliumWeb-Bold"),
+		url(../fonts/TitilliumWeb-Bold.ttf) format("truetype");
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: "TitilliumWeb-Regular";
+	src: local("TitilliumWeb-Regular"),
+		url(../fonts/TitilliumWeb-Regular.ttf) format("truetype");
+	font-weight: normal;
+}
+
+$ff-bold: "TitilliumWeb-Bold";
+$ff-regular: "TitilliumWeb-Regular";
+
+@mixin fontStyle(
+	$ff: $ff-regular,
+	$fs: inherit,
+	$ls: normal,
+	$lh: normal,
+	$color: $c-white
+) {
+	font-family: $ff;
+	font-size: $fs;
+	letter-spacing: $ls;
+	line-height: $lh;
+	color: $color;
+}

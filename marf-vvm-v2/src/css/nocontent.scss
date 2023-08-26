@@ -1,0 +1,6 @@
+@import "_Fonts", "_Theme", "_Mixin";
+
+.nocontent {
+	padding: $gapContainerY * 3 $gapContainerX * 2;
+	background-color: $c-blue;
+}

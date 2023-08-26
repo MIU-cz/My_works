@@ -1,0 +1,19 @@
+@import "_Fonts", "_Theme", "_Mixin";
+@import "_Header", "_Footer";
+
+body {
+	@include fontStyle();
+	background: url(../ico/pattern.png) repeat;
+}
+
+.container_wraper {
+	width: 100%;
+}
+
+.container_content {
+	max-width: $w-Container;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 $gapContainerX;
+	position: relative;
+}

@@ -1,0 +1,20 @@
+$media-l: 1024px;
+$media-md: 992px;
+$media-m: 768px;
+$media-s: 576px;
+
+$w-Desctop: 1340px;
+$w-Container: 1216px;
+$w-Content: 1160px;
+
+$gapContainerX: 28px;
+$gapContainerY: 26px;
+$gapContent: 15px;
+
+@mixin Flexible($fd: row, $jc: center, $aln: center, $gap: 0) {
+	display: flex;
+	flex-direction: $fd;
+	justify-content: $jc;
+	align-items: $aln;
+	gap: $gap;
+}

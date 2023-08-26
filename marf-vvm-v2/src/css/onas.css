@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "TitilliumWeb-Bold";
+  src: local("TitilliumWeb-Bold"), url(../fonts/TitilliumWeb-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "TitilliumWeb-Regular";
+  src: local("TitilliumWeb-Regular"), url(../fonts/TitilliumWeb-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+.item_text, .grid_item, .main_grid {
+  width: 100%;
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  align-items: start;
+}
+
+.main_grid {
+  padding: 26px 0;
+  background-color: hsl(0, 0%, 100%);
+}
+@media (min-width: 1024px) {
+  .main_grid {
+    grid-template-columns: 5fr 5fr;
+  }
+}
+
+.grid_item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.item_text {
+  padding: 52px 28px;
+  font-family: "TitilliumWeb-Regular";
+  font-size: 1.2rem;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(0, 0%, 0%);
+  text-align: justify;
+}
+.item_text .text_title {
+  font-family: "TitilliumWeb-Bold";
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: hsl(200, 100%, 41%);
+}
+.item_text .text_content p {
+  margin-bottom: 26px;
+}
+.item_text.bg-blue {
+  background-color: hsl(200, 100%, 41%);
+  color: hsl(0, 0%, 100%);
+}
+.item_text.bg-blue .text_title {
+  color: hsl(0, 0%, 100%);
+}/*# sourceMappingURL=onas.css.map */

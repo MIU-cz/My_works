@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@font-face {
+  font-family: "TitilliumWeb-Bold";
+  src: local("TitilliumWeb-Bold"), url(../fonts/TitilliumWeb-Bold.ttf) format("truetype");
+  font-weight: bold;
+}
+@font-face {
+  font-family: "TitilliumWeb-Regular";
+  src: local("TitilliumWeb-Regular"), url(../fonts/TitilliumWeb-Regular.ttf) format("truetype");
+  font-weight: normal;
+}
+.header_container.deco_line {
+  min-height: 50px;
+  padding: 5px 0;
+  background-color: hsl(31, 100%, 47%);
+}
+.header_container.deco_baner {
+  border-top: 3px solid hsl(0, 0%, 100%);
+  border-bottom: 3px solid hsl(0, 0%, 100%);
+  background-color: hsl(200, 100%, 41%);
+}
+
+.nav_lang {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 5px;
+}
+@media (min-width: 576px) {
+  .nav_lang {
+    position: absolute;
+    top: 28px;
+    right: 26px;
+  }
+}
+.nav_lang .lang_item {
+  width: 36px;
+  height: 36px;
+  border: solid 2px hsl(0, 0%, 100%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.nav_lang .lang_item-active {
+  background-color: hsl(31, 100%, 47%);
+}
+.nav_lang .lang_item a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-family: "TitilliumWeb-Bold";
+  font-size: 1.2em;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  background-color: hsl(200, 100%, 41%);
+}
+.nav_lang .lang_item a:hover {
+  background-color: hsl(31, 100%, 47%);
+}
+
+.header_brand {
+  max-width: 250px;
+}
+@media (min-width: 1024px) {
+  .header_brand {
+    position: absolute;
+    top: -100px;
+    left: 26px;
+  }
+}
+.header_brand a:hover svg .ico_bg {
+  fill: hsl(31, 100%, 47%);
+}
+.header_brand a:hover svg .ico_bg_logo {
+  fill: hsl(200, 100%, 41%);
+}
+
+.header_container_bg {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background: linear-gradient(90deg, hsl(200, 100%, 41%) 1%, rgba(0, 139, 209, 0) 10%, rgba(0, 139, 209, 0) 90%, hsl(200, 100%, 41%) 99%), url(../img/header/header-bg.jpg) center/cover no-repeat hsl(200, 100%, 41%);
+}
+@media (min-width: 1024px) {
+  .header_container_bg {
+    padding-top: 60px;
+  }
+}
+
+.header_content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+@media (min-width: 1024px) {
+  .header_content {
+    flex-direction: row-reverse;
+    align-items: stretch;
+  }
+  .header_content .header_title {
+    flex: 1 1 40%;
+  }
+  .header_content .header_figure {
+    flex: 1 1 60%;
+  }
+}
+
+.header_title {
+  width: 100%;
+  padding: 26px 0;
+  font-family: "TitilliumWeb-Bold";
+  font-size: 3vw;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(0, 0%, 100%);
+  text-align: right;
+}
+.header_title h1 {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .header_title {
+    background: url(../img/header/deco-bg.png) left bottom/contain no-repeat;
+  }
+}
+
+.header_figure {
+  width: 100%;
+  position: relative;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-bottom: none;
+  padding: 0;
+}
+.header_figure video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+.header_figure_tmp {
+  max-width: 100%;
+  position: absolute;
+  right: 26px;
+  bottom: 28px;
+  opacity: 0.6;
+}
+.header_figure_tmp img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.header_figure_tmp p {
+  font-family: "TitilliumWeb-Bold";
+  font-size: 1.5rem;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+/* ---footer--- */
+.autor {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  background-color: rgba(1, 46, 64, 0.3);
+  font-family: "Permanent Marker", cursive;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: currentColor;
+}
+.autor_description {
+  width: 100%;
+}
+.autor_socials {
+  width: 100%;
+  margin-top: 1rem;
+}
+.autor a {
+  color: #025159;
+}
+.autor a:hover {
+  color: #f28705;
+}
+.autor li {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: solid 1px #025159;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.autor li:hover {
+  border-color: #f28705;
+}
+.autor li svg,
+.autor li img {
+  width: 100%;
+  height: 100%;
+}
+
+.footer_container.deco_line {
+  min-height: 50px;
+  padding: 5px 0;
+  background-color: hsl(31, 100%, 47%);
+}
+.footer_container.footer_content {
+  border-top: 3px solid hsl(0, 0%, 100%);
+  background-color: hsl(200, 100%, 41%);
+  padding: 52px 0;
+}
+.footer_container_atribution {
+  width: 100%;
+  height: 70px;
+  padding-top: 26px;
+  background-color: hsl(0, 0%, 100%);
+  font-family: "TitilliumWeb-Regular";
+  font-size: inherit;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(0, 0%, 0%);
+  text-align: center;
+}
+.footer_container_atribution a:hover {
+  color: hsl(31, 100%, 47%);
+}
+
+.footer_addres {
+  max-width: 685px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 39px;
+}
+.footer_addres a {
+  text-decoration: none;
+  font-family: "TitilliumWeb-Regular";
+  font-size: inherit;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(0, 0%, 100%);
+}
+.footer_addres a:hover {
+  color: hsl(31, 100%, 47%);
+}
+.footer_addres .footer_addres {
+  width: 100%;
+  margin: 0;
+  gap: 26px;
+}
+.footer_addres .footer_addres .footer_addres {
+  gap: 0;
+}
+
+.addres_title {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.addres_title .addres_ico {
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  flex-shrink: 0;
+}
+.addres_title .addres_ico a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  background-color: hsl(31, 100%, 47%);
+}
+.addres_title .addres_ico a:hover {
+  background-color: hsl(200, 100%, 41%);
+}
+@media (min-width: 768px) {
+  .addres_title .addres_ico {
+    position: absolute;
+    top: -20px;
+    left: -60px;
+  }
+}
+.addres_title strong {
+  text-transform: uppercase;
+}
+
+.addres_desc {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 56px;
+}
+.addres_desc .addres_desc {
+  gap: 28px;
+}
+@media (min-width: 576px) {
+  .addres_desc {
+    flex-direction: row;
+  }
+}
+
+body {
+  font-family: "TitilliumWeb-Regular";
+  font-size: inherit;
+  letter-spacing: normal;
+  line-height: normal;
+  color: hsl(0, 0%, 100%);
+  background: url(../ico/pattern.png) repeat;
+}
+
+.container_wraper {
+  width: 100%;
+}
+
+.container_content {
+  max-width: 1216px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 28px;
+  position: relative;
+}/*# sourceMappingURL=main.css.map */

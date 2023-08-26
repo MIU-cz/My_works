@@ -1,0 +1,161 @@
+.header_container {
+	&.deco_line {
+		min-height: 50px;
+		padding: 5px 0;
+		background-color: $c-orange;
+	}
+
+	&.deco_baner {
+		border-top: 3px solid $c-white;
+		border-bottom: 3px solid $c-white;
+		background-color: $c-blue;
+	}
+}
+
+.nav_lang {
+	@include Flexible($jc: flex-end, $gap: 5px);
+
+	@media (min-width: $media-s) {
+		position: absolute;
+		top: $gapContainerX;
+		right: $gapContainerY;
+	}
+
+	.lang_item {
+		width: 36px;
+		height: 36px;
+		// @include Flexible();
+
+		border: solid 2px $c-white;
+		border-radius: 50%;
+		overflow: hidden;
+
+		&-active {
+			background-color: $c-orange;
+		}
+
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			@include fontStyle($ff-bold, 1.2em);
+			text-align: center;
+			background-color: $c-blue;
+
+			&:hover {
+				background-color: $c-orange;
+			}
+		}
+	}
+}
+
+.header_brand {
+	max-width: 250px;
+
+	@media (min-width: $media-l) {
+		position: absolute;
+		top: -100px;
+		left: $gapContainerY;
+	}
+
+	a:hover {
+		svg .ico_bg {
+			fill: $c-orange;
+			&_logo {
+				fill: $c-blue;
+			}
+		}
+	}
+}
+
+.header_container_bg {
+	max-width: $w-Desctop;
+	margin: 0 auto;
+	padding-top: 20px;
+
+	background: linear-gradient(
+			90deg,
+			$c-blue 1%,
+			transparentize($color: $c-blue, $amount: 1) 10%,
+			transparentize($color: $c-blue, $amount: 1) 90%,
+			$c-blue 99%
+		),
+		url(../img/header/header-bg.jpg) center / cover no-repeat $c-blue;
+
+	@media (min-width: $media-l) {
+		padding-top: 60px;
+	}
+}
+
+.header_content {
+	width: 100%;
+
+	@include Flexible($aln: center);
+	flex-wrap: wrap;
+
+	@media (min-width: $media-l) {
+		flex-direction: row-reverse;
+		align-items: stretch;
+
+		& .header_title {
+			flex: 1 1 40%;
+		}
+
+		& .header_figure {
+			flex: 1 1 60%;
+		}
+	}
+}
+
+.header_title {
+	width: 100%;
+	padding: $gapContainerY 0;
+
+	@include fontStyle($ff: $ff-bold, $fs: 3vw);
+	text-align: right;
+
+	h1 {
+		width: 100%;
+	}
+
+	@media (min-width: $media-l) {
+		background: url(../img/header/deco-bg.png) left bottom / contain no-repeat;
+	}
+}
+
+.header_figure {
+	width: 100%;
+	position: relative;
+
+	border: 2px solid $c-white;
+	border-bottom: none;
+	padding: 0;
+
+	video {
+		width: 100%;
+		height: 100%;
+		display: block;
+		object-fit: cover;
+
+		margin: 0;
+		padding: 0;
+	}
+
+	&_tmp {
+		max-width: 100%;
+		position: absolute;
+		right: $gapContainerY;
+		bottom: $gapContainerX;
+		opacity: 0.6;
+
+		img {
+			max-width: 100%;
+			object-fit: cover;
+		}
+
+		p {
+			@include fontStyle($ff: $ff-bold, $fs: 1.5rem);
+			text-align: center;
+		}
+	}
+}

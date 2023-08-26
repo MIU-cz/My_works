@@ -1,0 +1,115 @@
+@import "../../components/autor-resourse/autor-footer-style.scss";
+
+.footer_container {
+	&.deco_line {
+		min-height: 50px;
+		padding: 5px 0;
+		background-color: $c-orange;
+	}
+
+	&.footer_content {
+		border-top: 3px solid $c-white;
+		background-color: $c-blue;
+		padding: $gapContainerY * 2 0;
+	}
+
+	// # MARF
+	&_atribution {
+		width: 100%;
+		height: 70px;
+		padding-top: $gapContainerY;
+		background-color: $c-white;
+
+		@include fontStyle($color: $c-black);
+		text-align: center;
+
+		a:hover {
+			color: $c-orange;
+		}
+	}
+}
+
+.footer_addres {
+	// width: fit-content;
+	max-width: 685px;
+	height: 100%;
+	margin: 0 auto;
+	@include Flexible($fd: column, $aln: flex-start, $gap: $gapContainerY * 1.5);
+
+	a {
+		text-decoration: none;
+		@include fontStyle;
+
+		&:hover {
+			color: $c-orange;
+		}
+	}
+
+	& & {
+		width: 100%;
+		margin: 0;
+		gap: $gapContainerY;
+
+		& .footer_addres {
+			gap: 0;
+		}
+	}
+}
+
+.addres_title {
+	position: relative;
+	@include Flexible;
+
+	.addres_ico {
+		width: 40px;
+		height: 40px;
+		margin: 10px;
+
+		border: 2px solid $c-white;
+		border-radius: 50%;
+		overflow: hidden;
+
+		@include Flexible;
+		flex-shrink: 0;
+
+		a {
+			display: block;
+			width: 100%;
+			height: 100%;
+			padding: 5px;
+			background-color: $c-orange;
+
+			&:hover {
+				background-color: $c-blue;
+			}
+		}
+
+		@media (min-width: $media-m) {
+			position: absolute;
+			top: -20px;
+			left: -60px;
+		}
+	}
+
+	strong {
+		text-transform: uppercase;
+	}
+}
+
+.addres_desc {
+	width: 100%;
+	@include Flexible(
+		$fd: column,
+		$jc: space-between,
+		$aln: flex-start,
+		$gap: $gapContainerX * 2
+	);
+
+	& & {
+		gap: $gapContainerX;
+	}
+
+	@media (min-width: $media-s) {
+		flex-direction: row;
+	}
+}

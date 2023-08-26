@@ -1,0 +1,39 @@
+@import "_Fonts", "_Theme", "_Mixin";
+
+.main_content_grid {
+	width: 100%;
+	padding: $gapContainerY 0;
+
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	justify-items: center;
+	column-gap: 15px;
+	row-gap: 25px;
+}
+
+.grid_item {
+	width: 180px;
+	height: 180px;
+	padding: $gapContainerX;
+	background-color: $c-orange;
+
+	&:nth-child(n + 7) {
+		background-color: $c-blue;
+	}
+
+	a {
+		// display: block;
+		width: 100%;
+		height: 100%;
+
+		text-decoration: none;
+		text-align: center;
+
+		@include fontStyle($ff: $ff-bold, $fs: 1.8em);
+		@include Flexible;
+	}
+
+	&:hover {
+		background: url(../img/main/item-bg.jpg) center / cover no-repeat;
+	}
+}

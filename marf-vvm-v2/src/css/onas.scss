@@ -1,0 +1,60 @@
+@import "_Fonts", "_Theme", "_Mixin";
+
+%Gridible {
+	width: 100%;
+	display: grid;
+	grid-auto-flow: row;
+	row-gap: 40px;
+	column-gap: 40px;
+	align-items: start;
+}
+
+.main_grid {
+	padding: $gapContainerY 0;
+	background-color: $c-white;
+
+	@extend %Gridible;
+
+	@media (min-width: $media-l) {
+		grid-template-columns: 5fr 5fr;
+	}
+}
+
+.grid_item {
+	@extend %Gridible;
+
+	img {
+		width: 100%;
+		object-fit: cover;
+	}
+}
+
+.item_text {
+	@extend %Gridible;
+	padding: $gapContainerY * 2 $gapContainerX;
+
+	@include fontStyle($fs: 1.2rem, $color: $c-black);
+	text-align: justify;
+
+	.text_title {
+		font-family: $ff-bold;
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		color: $c-blue;
+	}
+
+	.text_content {
+		p {
+			margin-bottom: $gapContainerY;
+		}
+	}
+
+	&.bg-blue {
+		background-color: $c-blue;
+		color: $c-white;
+
+		.text_title {
+			color: $c-white;
+		}
+	}
+}
