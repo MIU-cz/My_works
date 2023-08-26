@@ -4,7 +4,7 @@
 
 ## VVM-ipso - v2 (php + js + scss)
 
-<img src="marf-vvm-v2\docs\main.png" alt="screen-shot" width="250" height="150">
+<img src="marf-vvm-v2\docs\main.png" alt="screen-shot" width="250">
 
 > ### Links
 
@@ -16,7 +16,7 @@
 
 ## MARF-TRAVEL (php + mySQL)
 
-<img src="marf-Tour\docs\main.png" alt="screen-shot" width="250" height="150" >
+<img src="marf-Tour\docs\main.png" alt="screen-shot" width="250">
 
 > ### Links
 
