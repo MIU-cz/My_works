@@ -6,7 +6,7 @@
 <tr>
 <td>
 
-## MARF-TRAVEL
+## MARF-TRAVEL (php + mySQL)
 
 <img src="marf-Tour\docs\main.png" alt="screen-shot" width="250" height="150" >
 
