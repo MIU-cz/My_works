@@ -53,8 +53,7 @@
 - [Portrét kupujícího](./portret.md)
 - [Prodejní kanál](./kanal.md)
 - [Konkurence](https://docs.google.com/document/d/1-mHObZIH_EII31nMyvAe8bqFMPDzhSNIJbAfLK9VaPM/edit?usp=sharing)
-- příklad šablony nápadu na příběh
-  - [idea](https://docs.google.com/document/d/1oF4A_Sfx8Kc43L42bYJaAlsPPNdqEBq5NLIQ_rn59mU/edit?usp=sharing)
+- příklad šablony nápadu na příběh - [idea](https://docs.google.com/document/d/1oF4A_Sfx8Kc43L42bYJaAlsPPNdqEBq5NLIQ_rn59mU/edit?usp=sharing)
 
 ******
 ******
