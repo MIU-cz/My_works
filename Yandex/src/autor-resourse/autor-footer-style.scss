@@ -1,0 +1,75 @@
+/* ---footer--- */
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+// # color pallet
+$color-light: #03a696;
+$color-link: #025159;
+$color-hover: #f28705;
+$color-bg: #012e40;
+$color-text: #fff;
+
+// # main footer style
+:root {
+	font-family: "Permanent Marker", cursive;
+	font-size: 12px;
+}
+
+// body {
+// 	padding: 0;
+// 	margin: 0;
+// }
+
+.autor {
+	width: 100%;
+	box-sizing: border-box;
+	padding: 20px;
+	background-color: transparentize($color: $color-bg, $amount: 0.7);
+
+	text-align: center;
+	letter-spacing: 0.1em;
+	color: currentColor;
+
+	&_description {
+		width: 100%;
+	}
+
+	&_socials {
+		width: 100%;
+		margin-top: 1rem;
+	}
+
+	a {
+		color: $color-link;
+
+		&:hover {
+			color: $color-hover;
+		}
+	}
+
+	& li {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+
+		border: solid 1px $color-link;
+		border-radius: 50%;
+		overflow: hidden;
+
+		&:hover {
+			border-color: $color-hover;
+		}
+
+		svg,
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+// @media (min-width: 768px) {
+// 	.attribution {
+// 		position: fixed;
+// 		bottom: 0;
+// 	}
+// }
