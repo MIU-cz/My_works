@@ -2,13 +2,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 :root {
   font-family: "Permanent Marker", cursive;
-  font-size: 12px;
+  --description-size: 12px;
 }
 
 .autor {
   width: 100%;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 5px;
   background-color: rgba(1, 46, 64, 0.3);
   text-align: center;
   letter-spacing: 0.1em;
@@ -16,10 +16,11 @@
 }
 .autor_description {
   width: 100%;
+  font-size: var(--description-size);
 }
 .autor_socials {
   width: 100%;
-  margin-top: 0.5rem;
+  margin-top: 0.1rem;
 }
 .autor a {
   color: #025159;
@@ -29,8 +30,8 @@
 }
 .autor li {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border: solid 1px #025159;
   border-radius: 50%;
   overflow: hidden;
@@ -40,6 +41,7 @@
 }
 .autor li svg,
 .autor li img {
+  display: flex;
   width: 100%;
   height: 100%;
 }/*# sourceMappingURL=autor-footer-style.css.map */
