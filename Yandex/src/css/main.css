@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "GolosText";
+  src: url(../fonts/Golos-Text/GolosText-Black.ttf) format("truetype");
+  src: url(../fonts/Golos-Text/GolosText-Bold.ttf) format("truetype");
+  src: url(../fonts/Golos-Text/GolosText-ExtraBold.ttf) format("truetype");
+  src: url(../fonts/Golos-Text/GolosText-Medium.ttf) format("truetype");
+  src: url(../fonts/Golos-Text/GolosText-Regular.ttf) format("truetype");
+  src: url(../fonts/Golos-Text/GolosText-SemiBold.ttf) format("truetype");
+  src: url(../fonts/Golos-Text/GolosText-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url(../fonts/Merriweather/Merriweather-Black.ttf) format("truetype");
+  src: url(../fonts/Merriweather/Merriweather-BlackItalic.ttf) format("truetype");
+  src: url(../fonts/Merriweather/Merriweather-Bold.ttf) format("truetype");
+  src: url(../fonts/Merriweather/Merriweather-BoldItalic.ttf) format("truetype");
+  src: url(../fonts/Merriweather/Merriweather-Italic.ttf) format("truetype");
+  src: url(../fonts/Merriweather/Merriweather-Light.ttf) format("truetype");
+  src: url(../fonts/Merriweather/Merriweather-LightItalic.ttf) format("truetype");
+  src: url(../fonts/Merriweather/Merriweather-Regular.ttf) format("truetype");
+}/*# sourceMappingURL=main.css.map */
