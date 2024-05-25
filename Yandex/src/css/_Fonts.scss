@@ -25,13 +25,13 @@ $ff-GT: "GolosText";
 $ff-MW: "Merriweather";
 
 @mixin fontStyle(
-    $ff: $ff-GT,
+    $ff: $ff-MW,
     $fsz: inherit,
     $fw: 400,
     $fst: normal,
     $ls: normal,
     $lh: normal,
-    $color: black
+    $color: $c-main-black
 ) {
     font-family: $ff;
     font-size: $fsz;
