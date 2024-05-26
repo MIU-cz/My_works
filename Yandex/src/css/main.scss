@@ -4,5 +4,39 @@
     width: 100%;
     margin: 0 auto;
     padding: 0;
+
+    &_header {
+        height: 640px;
+        background: url(../img/header/bg-color-burn.png) center $c-bg-header;
+        background-blend-mode: color-burn;
+    }
 }
 
+.wraper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: url(../img/header/bg-img-city.png) center bottom no-repeat;
+}
+
+.run-text {
+    width: 100%;
+    height: 60px;
+    
+    background-color: $c-text-em;
+    align-content: center;
+    
+    .txt_marquee {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 40px;
+        
+        &_item {
+            list-style: disc;  
+
+            &:first-child {
+                list-style: none;
+            }
+        }
+    }
+}
