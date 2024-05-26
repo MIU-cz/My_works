@@ -1,39 +1,94 @@
 // ##### RUN - TEXT
 @keyframes run-txt {
-    0% {
-        transform: translateX(100%);
-    }
+	0% {
+		transform: translateX(100%);
+	}
 
-    100% {
-        transform: translateX(-100%);
-    }
+	100% {
+		transform: translateX(-100%);
+	}
 }
 
 .txt_marquee {
-    white-space: nowrap;
-    animation: run-txt 30s linear infinite;
+	white-space: nowrap;
+	animation: run-txt 30s linear infinite;
 
-    &:hover {
-        animation-play-state: paused;
-        cursor: wait;
-    }
+	&:hover {
+		animation-play-state: paused;
+		cursor: wait;
+	}
 
-    // @for $i from 0 through 2 {
-    //     &_item:nth-child(n + #{$i}) {
-    //         animation-delay: $i * 5s;
-    //     }
-    // }
+	// @for $i from 0 through 2 {
+	//     &_item:nth-child(n + #{$i}) {
+	//         animation-delay: $i * 5s;
+	//     }
+	// }
 }
 
 @keyframes rotate-txt {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
 .eclipse_text_overlay {
-    animation: rotate-txt 90s linear infinite;
+	animation: rotate-txt 90s linear infinite;
+}
+
+@keyframes go-king {
+	0% {
+		transform: translateY(50%) scale(0%) rotate(0deg);
+	}
+	75% {
+		transform: translateY(10%) scale(115%) rotate(-4deg);
+	}
+	100% {
+		transform: translateY(0%) scale(100%) rotate(-6deg);
+	}
+}
+
+#king {
+	animation: go-king 2.5s ease-in-out;
+}
+
+@keyframes go-queen {
+	0% {
+		transform: translateY(50%) scale(0%) rotate(0deg);
+	}
+	75% {
+		transform: translateY(10%) scale(115%) rotate(6deg);
+	}
+	100% {
+		transform: translateY(0%) scale(100%) rotate(8deg);
+	}
+}
+
+#queen {
+	animation: go-queen 3s ease-in-out;
+}
+
+@keyframes go-horse {
+	0% {
+		transform: translateY(5%) translateX(110%) scale(0%) rotate(0deg);
+		opacity: 0;
+	}
+	0.5% {
+		transform: translateY(5%) translateX(110%) scale(0%) rotate(0deg);
+		opacity: 1;
+	}
+	70% {
+		transform: translateY(-100%) translateX(0%) scale(115%) rotate(-3deg);
+	}
+	100% {
+		transform: translateY(0%) translateX(0%) scale(100%) rotate(-10.5deg);
+		opacity: 1;
+	}
+}
+
+#horse {
+	opacity: 0;
+	animation: go-horse 3s 1s ease-in-out forwards;
 }

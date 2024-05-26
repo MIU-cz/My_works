@@ -9,99 +9,99 @@ $c-eclipse: #fbce51;
 $c-bg-header: #e9ded4;
 
 .txt_logo {
-    @include fontStyle($ff: $ff-GT, $fsz: 16.65px, $fw: 700, $lh: 108%);
-    text-transform: uppercase;
+	@include fontStyle($ff: $ff-GT, $fsz: 16.65px, $fw: 700, $lh: 108%);
+	text-transform: uppercase;
 }
 
 .txt_header_h {
-    @include fontStyle($fsz: 60px, $lh: 110%);
-    text-transform: uppercase;
+	@include fontStyle($fsz: 60px, $lh: 110%);
+	text-transform: uppercase;
 }
 
 .txt_header_dsc {
-    @include fontStyle($ff: $ff-GT, $fsz: 18px, $lh: 130%);
-    text-align: center;
+	@include fontStyle($ff: $ff-GT, $fsz: 18px, $lh: 130%);
+	text-align: center;
 }
 
 .txt-header_btn {
-    @include fontStyle($ff: $ff-GT, $fsz: 16px, $fw: 500, $lh: 130%);
-    text-align: center;
+	@include fontStyle($ff: $ff-GT, $fsz: 16px, $fw: 500, $lh: 130%);
+	text-align: center;
 }
 
 .txt_marquee {
-    @include fontStyle($fsz: 22px, $lh: 110%, $color: $c-main-white);
-    text-transform: uppercase;
+	@include fontStyle($fsz: 22px, $lh: 110%, $color: $c-main-white);
+	text-transform: uppercase;
 }
 
 .txt_main_section {
-    @include fontStyle($fsz: 36px, $lh: 135%);
+	@include fontStyle($fsz: 36px, $lh: 135%);
 
-    &-em {
-        font-weight: 700;
-        color: $c-text-em;
-    }
+	&-em {
+		font-weight: 700;
+		color: $c-text-em;
+	}
 }
 
 .txt_tbl {
-    @include fontStyle($ff: $ff-GT, $fsz: 20px, $lh: 120%);
+	@include fontStyle($ff: $ff-GT, $fsz: 20px, $lh: 120%);
 
-    &_section {
-        opacity: 0.7;
-    }
+	&_section {
+		opacity: 0.7;
+	}
 
-    &_description {
-        font-weight: 600;
-    }
+	&_description {
+		font-weight: 600;
+	}
 
-    &_note {
-        color: $c-text-dsc;
-    }
+	&_note {
+		color: $c-text-dsc;
+	}
 }
 
 .txt_main_h {
-    @include fontStyle($fsz: 54px, $lh: 120%);
+	@include fontStyle($fsz: 54px, $lh: 120%);
 }
 
 .txt_main_dsc {
-    @include fontStyle($ff: $ff-GT, $fsz: 20px, $lh: 120%, $color: $c-text-dsc);
+	@include fontStyle($ff: $ff-GT, $fsz: 20px, $lh: 120%, $color: $c-text-dsc);
 }
 
 .txt_main_grid {
-    @include fontStyle($ff: $ff-GT, $fsz: 20px, $fw: 500, $lh: 120%);
+	@include fontStyle($ff: $ff-GT, $fsz: 20px, $fw: 500, $lh: 120%);
 
-    &-number {
-        font-weight: 600;
-    }
+	&-number {
+		font-weight: 600;
+	}
 }
 
 .txt_player {
-    @include fontStyle($ff: $ff-GT, $lh: 120%);
+	@include fontStyle($ff: $ff-GT, $lh: 120%);
 
-    &_pag {
-        font-size: 16px;
+	&_pag {
+		font-size: 16px;
 
-        &-from {
-            opacity: 0.6;
-        }
-    }
+		&-from {
+			opacity: 0.6;
+		}
+	}
 
-    &_name {
-        font-size: 24px;
-        font-weight: 600;
-    }
+	&_name {
+		font-size: 24px;
+		font-weight: 600;
+	}
 
-    &_description {
-        font-size: 20px;
-    }
+	&_description {
+		font-size: 20px;
+	}
 
-    &_btn {
-        font-size: 16px;
-        font-weight: 500;
-        color: $c-text-dsc;
-    }
+	&_btn {
+		font-size: 16px;
+		font-weight: 500;
+		color: $c-text-dsc;
+	}
 }
 
 .txt_footer {
-    @include fontStyle($ff: $ff-GT, $fsz: 16, $lh: 120%);
-    opacity: 0.6;
+	@include fontStyle($ff: $ff-GT, $fsz: 16, $lh: 120%);
+	opacity: 0.6;
 }
