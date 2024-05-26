@@ -1,12 +1,13 @@
-@import "_Fonts", "_Theme";
+@import "_Fonts", "_Theme", "_Animation";
 
+// ##### HEADER #####
 .container {
     width: 100%;
     margin: 0 auto;
     padding: 0;
 
     &_header {
-        height: 640px;
+        height: 700px;
         background: url(../img/header/bg-color-burn.png) center $c-bg-header;
         background-blend-mode: color-burn;
     }
@@ -15,19 +16,70 @@
 .wraper {
     width: 100%;
     height: 100%;
-    position: relative;
     background: url(../img/header/bg-img-city.png) center bottom no-repeat;
 }
 
+.content {
+    width: 1222px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+
+    &_header_item {
+        width: 100%;   
+
+        &:first-child{
+            padding-top: 26px;
+        }    
+    }
+}
+
+.header_brand {
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+
+    // &_brand_logo {
+    // }
+
+    // &_brand_name {
+    // }
+    
+}
+
+.header_title {
+    margin-top: 62px;
+
+    .txt_header_h:last-child {
+        text-align: center;
+    }
+}
+
+.header_description {
+    margin-top: 24px;
+    padding: 0 20px 0;
+}
+
+.header_btns {
+}
+
+
+// ##### Run-text #####
 .run-text {
     width: 100%;
     height: 60px;
+    display: block;
     
     background-color: $c-text-em;
     align-content: center;
     
     .txt_marquee {
         display: flex;
+        flex-direction: row;
         flex-wrap: nowrap;
         gap: 40px;
         
@@ -40,3 +92,5 @@
         }
     }
 }
+
+// ##### MAIN #####

@@ -16,6 +16,7 @@ $c-bg-header: #E9DED4;
         $fw:700, 
         $lh:108%
     );
+    text-transform: uppercase;
 }
 
 .txt_header_h {
@@ -23,6 +24,7 @@ $c-bg-header: #E9DED4;
         $fsz:60px,
         $lh:110%
     );
+    text-transform: uppercase;
 }
 
 .txt_header_dsc {
@@ -31,6 +33,7 @@ $c-bg-header: #E9DED4;
         $fsz:18px, 
         $lh:130%
     );
+    text-align: center;
 }
 
 .txt-header_btn {

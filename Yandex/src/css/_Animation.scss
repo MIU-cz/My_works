@@ -1,0 +1,28 @@
+// ##### RUN - TEXT
+@keyframes run-txt {
+    0% {
+        transform: translateX(100%);
+      }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.txt_marquee {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: run-txt 30s linear infinite;
+    
+    &:hover {
+        animation-play-state: paused;
+        cursor: wait;
+    }
+
+    // @for $i from 0 through 2 {
+    //     &_item:nth-child(n + #{$i}) {
+    //         animation-delay: $i * 5s;
+    //     }
+    // }
+    
+}
