@@ -60,6 +60,7 @@
   letter-spacing: normal;
   line-height: 130%;
   color: #313131;
+  text-align: center;
 }
 
 .txt_marquee {
@@ -69,7 +70,7 @@
   font-style: normal;
   letter-spacing: normal;
   line-height: 110%;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -84,7 +85,7 @@
 }
 .txt_main_section-em {
   font-weight: 700;
-  color: #F54932;
+  color: #f54932;
 }
 
 .txt_tbl {
@@ -103,7 +104,7 @@
   font-weight: 600;
 }
 .txt_tbl_note {
-  color: #3057A2;
+  color: #3057a2;
 }
 
 .txt_main_h {
@@ -123,7 +124,7 @@
   font-style: normal;
   letter-spacing: normal;
   line-height: 120%;
-  color: #3057A2;
+  color: #3057a2;
 }
 
 .txt_main_grid {
@@ -164,7 +165,7 @@
 .txt_player_btn {
   font-size: 16px;
   font-weight: 500;
-  color: #3057A2;
+  color: #3057a2;
 }
 
 .txt_footer {
@@ -187,7 +188,6 @@
   }
 }
 .txt_marquee {
-  overflow: hidden;
   white-space: nowrap;
   animation: run-txt 30s linear infinite;
 }
@@ -196,21 +196,46 @@
   cursor: wait;
 }
 
+@keyframes rotate-txt {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.eclipse_text_overlay {
+  animation: rotate-txt 90s linear infinite;
+}
+
 .container {
   width: 100%;
   margin: 0 auto;
   padding: 0;
+  overflow: hidden;
 }
 .container_header {
   height: 700px;
-  background: url(../img/header/bg-color-burn.png) center #E9DED4;
-  background-blend-mode: color-burn;
+  position: relative;
+  background-color: #e9ded4;
 }
 
 .wraper {
+  position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
   background: url(../img/header/bg-img-city.png) center bottom no-repeat;
+  pointer-events: none;
+}
+.wraper::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: url(../img/header/bg-color-burn.png) center;
+  mix-blend-mode: color-burn;
 }
 
 .content {
@@ -227,6 +252,11 @@
 }
 .content_header_item:first-child {
   padding-top: 26px;
+  position: relative;
+  z-index: 1;
+}
+.content_header_item:last-child {
+  position: relative;
 }
 
 .header_brand {
@@ -247,18 +277,115 @@
   padding: 0 20px 0;
 }
 
+.header_btns {
+  margin-top: 40px;
+  max-width: 542px;
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+.header_btns .btn_item {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  border: 2px solid #1f1f1f;
+  border-radius: 66px;
+  transition: 0.3s;
+}
+.header_btns .btn_item:first-child {
+  background-color: #1f1f1f;
+}
+.header_btns .btn_item:first-child .txt-header_btn {
+  color: #ffffff;
+}
+.header_btns .btn_item:first-child:hover {
+  border-color: #fbce51;
+  background-color: #fbce51;
+}
+.header_btns .btn_item:first-child:hover .txt-header_btn {
+  color: #1f1f1f;
+}
+.header_btns .btn_item:last-child:hover {
+  background-color: #1f1f1f;
+}
+.header_btns .btn_item:last-child:hover .txt-header_btn {
+  color: #ffffff;
+}
+
+.fig_eclipse {
+  display: flex;
+  width: 660px;
+  position: relative;
+  aspect-ratio: 1;
+  top: -44px;
+  right: 0;
+  border-radius: 50%;
+  background-color: #fbce51;
+  justify-content: center;
+  align-items: center;
+}
+.fig_eclipse .eclipse_text_overlay {
+  -o-object-fit: contain;
+     object-fit: contain;
+  mix-blend-mode: overlay;
+}
+
+.fig_chess {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.chess_behind img {
+  position: relative;
+}
+.chess_behind img:first-child {
+  top: 280px;
+  left: 80px;
+  transform: rotate(-6deg);
+}
+.chess_behind img:last-child {
+  top: 165px;
+  left: 325px;
+  transform: rotate(8deg);
+}
+
+.chess_front {
+  overflow: hidden;
+}
+.chess_front img {
+  position: absolute;
+  z-index: 1;
+}
+.chess_front img:first-child {
+  top: 510px;
+  left: 186px;
+  transform: rotate(-10.5deg);
+}
+.chess_front img:last-child {
+  top: 560px;
+  right: 0;
+}
+
 .run-text {
   width: 100%;
   height: 60px;
   display: block;
-  background-color: #F54932;
+  background-color: #f54932;
   align-content: center;
+  overflow: hidden;
 }
 .run-text .txt_marquee {
   display: flex;
+  width: 100%;
   flex-direction: row;
   flex-wrap: nowrap;
-  gap: 40px;
+  gap: 36px;
 }
 .run-text .txt_marquee_item {
   list-style: disc;

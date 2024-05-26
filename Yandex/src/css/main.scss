@@ -2,95 +2,230 @@
 
 // ##### HEADER #####
 .container {
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
 
-    &_header {
-        height: 700px;
-        background: url(../img/header/bg-color-burn.png) center $c-bg-header;
-        background-blend-mode: color-burn;
-    }
+	&_header {
+		height: 700px;
+		position: relative;
+		// background: url(../img/header/bg-color-burn.png) center $c-bg-header;
+		// background-blend-mode: color-burn;
+		background-color: $c-bg-header;
+	}
 }
 
 .wraper {
-    width: 100%;
-    height: 100%;
-    background: url(../img/header/bg-img-city.png) center bottom no-repeat;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: url(../img/header/bg-img-city.png) center bottom no-repeat;
+	pointer-events: none;
+
+	&::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+		background: url(../img/header/bg-color-burn.png) center;
+		mix-blend-mode: color-burn;
+	}
 }
 
 .content {
-    width: 1222px;
-    height: 100%;
-    margin: 0 auto;
+	width: 1222px;
+	height: 100%;
+	margin: 0 auto;
 
-    display: grid;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0;
+	display: grid;
+	grid-auto-flow: row;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0;
 
-    &_header_item {
-        width: 100%;   
+	// &_header {
+	// 	// position: relative;
+	// 	// z-index: 2;
+	// }
 
-        &:first-child{
-            padding-top: 26px;
-        }    
-    }
+	&_header_item {
+		width: 100%;
+
+		&:first-child {
+			padding-top: 26px;
+			position: relative;
+			z-index: 1;
+		}
+
+		&:last-child {
+			position: relative;
+			// z-index: 0;
+		}
+	}
 }
 
+// ### content_header_item :: first-child
 .header_brand {
-    display: flex;
-    flex-direction: row;
-    gap: 6px;
+	display: flex;
+	flex-direction: row;
+	gap: 6px;
 
-    // &_brand_logo {
-    // }
+	// &_brand_logo {
+	// }
 
-    // &_brand_name {
-    // }
-    
+	// &_brand_name {
+	// }
 }
 
 .header_title {
-    margin-top: 62px;
+	margin-top: 62px;
 
-    .txt_header_h:last-child {
-        text-align: center;
-    }
+	.txt_header_h:last-child {
+		text-align: center;
+	}
 }
 
 .header_description {
-    margin-top: 24px;
-    padding: 0 20px 0;
+	margin-top: 24px;
+	padding: 0 20px 0;
 }
 
 .header_btns {
+	margin-top: 40px;
+	max-width: 542px;
+	display: flex;
+	flex-direction: row;
+	gap: 16px;
+
+	.btn_item {
+		display: flex;
+		flex: 1;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 15px;
+
+		border: 2px solid $c-btn;
+		border-radius: 66px;
+
+		transition: 0.3s;
+
+		&:first-child {
+			background-color: $c-btn;
+			.txt-header_btn {
+				color: $c-main-white;
+			}
+
+			&:hover {
+				border-color: $c-eclipse;
+				background-color: $c-eclipse;
+				.txt-header_btn {
+					color: $c-btn;
+				}
+			}
+		}
+
+		&:last-child:hover {
+			background-color: $c-btn;
+			.txt-header_btn {
+				color: $c-main-white;
+			}
+		}
+	}
 }
 
+// ### content_header_item :: last-child
+.fig_eclipse {
+	display: flex;
+	width: 660px;
+	position: relative;
+	aspect-ratio: 1;
+	top: -44px;
+	right: 0;
+	border-radius: 50%;
+	background-color: $c-eclipse;
+	justify-content: center;
+	align-items: center;
+
+	.eclipse_text_overlay {
+		object-fit: contain;
+		mix-blend-mode: overlay;
+	}
+}
+
+.fig_chess {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.chess_behind {
+	img {
+		position: relative;
+
+		&:first-child {
+			top: 280px;
+			left: 80px;
+			transform: rotate(-6deg);
+		}
+
+		&:last-child {
+			top: 165px;
+			left: 325px;
+			transform: rotate(8deg);
+		}
+	}
+}
+
+.chess_front {
+	overflow: hidden;
+
+	img {
+		position: absolute;
+		z-index: 1;
+
+		&:first-child {
+			top: 510px;
+			left: 186px;
+			transform: rotate(-10.5deg);
+		}
+
+		&:last-child {
+			top: 560px;
+			right: 0;
+		}
+	}
+}
 
 // ##### Run-text #####
 .run-text {
-    width: 100%;
-    height: 60px;
-    display: block;
-    
-    background-color: $c-text-em;
-    align-content: center;
-    
-    .txt_marquee {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        gap: 40px;
-        
-        &_item {
-            list-style: disc;  
+	width: 100%;
+	height: 60px;
+	display: block;
 
-            &:first-child {
-                list-style: none;
-            }
-        }
-    }
+	background-color: $c-text-em;
+	align-content: center;
+	overflow: hidden;
+
+	.txt_marquee {
+		display: flex;
+		width: 100%;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 36px;
+
+		&_item {
+			list-style: disc;
+
+			&:first-child {
+				list-style: none;
+			}
+		}
+	}
 }
 
 // ##### MAIN #####

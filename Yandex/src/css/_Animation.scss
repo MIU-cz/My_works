@@ -2,7 +2,7 @@
 @keyframes run-txt {
     0% {
         transform: translateX(100%);
-      }
+    }
 
     100% {
         transform: translateX(-100%);
@@ -10,10 +10,9 @@
 }
 
 .txt_marquee {
-    overflow: hidden;
     white-space: nowrap;
     animation: run-txt 30s linear infinite;
-    
+
     &:hover {
         animation-play-state: paused;
         cursor: wait;
@@ -24,5 +23,17 @@
     //         animation-delay: $i * 5s;
     //     }
     // }
-    
+}
+
+@keyframes rotate-txt {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.eclipse_text_overlay {
+    animation: rotate-txt 90s linear infinite;
 }
