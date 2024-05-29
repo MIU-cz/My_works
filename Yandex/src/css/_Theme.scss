@@ -14,13 +14,21 @@ $c-bg-header: #e9ded4;
 }
 
 .txt_header_h {
-	@include fontStyle($fsz: 60px, $lh: 110%);
+	@include fontStyle($fsz: 36px, $lh: 110%);
 	text-transform: uppercase;
+
+	@media (min-width: 1366px){
+		font-size: 60px;
+	}
 }
 
 .txt_header_dsc {
 	@include fontStyle($ff: $ff-GT, $fsz: 18px, $lh: 130%);
-	text-align: center;
+	text-align: left;
+
+	@media (min-width: 1366px){
+		text-align: center;
+	}
 }
 
 .txt-header_btn {
@@ -29,8 +37,12 @@ $c-bg-header: #e9ded4;
 }
 
 .txt_marquee {
-	@include fontStyle($fsz: 22px, $lh: 110%, $color: $c-main-white);
+	@include fontStyle($fsz: 16px, $lh: 110%, $color: $c-main-white);
 	text-transform: uppercase;
+
+	@media (min-width: 1366px){
+		font-size: 22px;
+	}
 }
 
 .txt_main_section {
