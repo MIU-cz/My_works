@@ -46,7 +46,11 @@ $c-bg-header: #e9ded4;
 }
 
 .txt_main_section {
-	@include fontStyle($fsz: 36px, $lh: 135%);
+	@include fontStyle($fsz: 28px, $lh: 135%);
+
+	@media (min-width: 1366px){
+		font-size: 36px;
+	}
 
 	&-em {
 		font-weight: 700;
@@ -67,19 +71,36 @@ $c-bg-header: #e9ded4;
 
 	&_note {
 		color: $c-text-dsc;
+		font-size: 18px;
+
+		@media (min-width: 1366px){
+			font-size: 20px;
+		}
 	}
 }
 
 .txt_main_h {
-	@include fontStyle($fsz: 54px, $lh: 120%);
+	@include fontStyle($fsz: 36px, $lh: 120%);
+
+	@media (min-width: 1366px){
+		font-size: 54px;
+	}
 }
 
 .txt_main_dsc {
-	@include fontStyle($ff: $ff-GT, $fsz: 20px, $lh: 120%, $color: $c-text-dsc);
+	@include fontStyle($ff: $ff-GT, $fsz: 18px, $lh: 120%, $color: $c-text-dsc);
+
+	@media (min-width: 1366px){
+		font-size: 20px;
+	}
 }
 
 .txt_main_grid {
-	@include fontStyle($ff: $ff-GT, $fsz: 20px, $fw: 500, $lh: 120%);
+	@include fontStyle($ff: $ff-GT, $fsz: 18px, $fw: 500, $lh: 120%);
+
+	@media (min-width: 1366px){
+		font-size: 20px;
+	}
 
 	&-number {
 		font-weight: 600;

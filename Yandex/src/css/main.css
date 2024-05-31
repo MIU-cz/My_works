@@ -91,12 +91,17 @@
 
 .txt_main_section {
   font-family: "Merriweather";
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
   line-height: 135%;
   color: #313131;
+}
+@media (min-width: 1366px) {
+  .txt_main_section {
+    font-size: 36px;
+  }
 }
 .txt_main_section-em {
   font-weight: 700;
@@ -120,36 +125,57 @@
 }
 .txt_tbl_note {
   color: #3057a2;
+  font-size: 18px;
+}
+@media (min-width: 1366px) {
+  .txt_tbl_note {
+    font-size: 20px;
+  }
 }
 
 .txt_main_h {
   font-family: "Merriweather";
-  font-size: 54px;
+  font-size: 36px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
   line-height: 120%;
   color: #313131;
 }
+@media (min-width: 1366px) {
+  .txt_main_h {
+    font-size: 54px;
+  }
+}
 
 .txt_main_dsc {
   font-family: "GolosText";
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
   font-style: normal;
   letter-spacing: normal;
   line-height: 120%;
   color: #3057a2;
 }
+@media (min-width: 1366px) {
+  .txt_main_dsc {
+    font-size: 20px;
+  }
+}
 
 .txt_main_grid {
   font-family: "GolosText";
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
   font-style: normal;
   letter-spacing: normal;
   line-height: 120%;
   color: #313131;
+}
+@media (min-width: 1366px) {
+  .txt_main_grid {
+    font-size: 20px;
+  }
 }
 .txt_main_grid-number {
   font-weight: 600;
