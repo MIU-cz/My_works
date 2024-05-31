@@ -17,7 +17,7 @@ $c-bg-header: #e9ded4;
 	@include fontStyle($fsz: 36px, $lh: 110%);
 	text-transform: uppercase;
 
-	@media (min-width: 1366px){
+	@media (min-width: 1366px) {
 		font-size: 60px;
 	}
 }
@@ -26,7 +26,7 @@ $c-bg-header: #e9ded4;
 	@include fontStyle($ff: $ff-GT, $fsz: 18px, $lh: 130%);
 	text-align: left;
 
-	@media (min-width: 1366px){
+	@media (min-width: 1366px) {
 		text-align: center;
 	}
 }
@@ -40,7 +40,7 @@ $c-bg-header: #e9ded4;
 	@include fontStyle($fsz: 16px, $lh: 110%, $color: $c-main-white);
 	text-transform: uppercase;
 
-	@media (min-width: 1366px){
+	@media (min-width: 1366px) {
 		font-size: 22px;
 	}
 }
@@ -49,8 +49,7 @@ $c-bg-header: #e9ded4;
 	@include fontStyle($fsz: 28px, $lh: 135%);
 	text-transform: uppercase;
 
-
-	@media (min-width: 1366px){
+	@media (min-width: 1366px) {
 		font-size: 36px;
 	}
 
@@ -58,26 +57,31 @@ $c-bg-header: #e9ded4;
 		font-weight: 700;
 		color: $c-text-em;
 		background-color: inherit;
-		font-weight: inherit;
+		// font-weight: inherit;
 	}
 }
 
 .txt_tbl {
 	@include fontStyle($ff: $ff-GT, $fsz: 20px, $lh: 120%);
 
-	&_section {
+	& .section {
 		opacity: 0.7;
 	}
 
-	&_description {
+	& .description {
 		font-weight: 600;
 	}
 
-	&_note {
+	& del {
+		text-decoration-color: $c-text-em;
+		text-decoration-style: solid;
+	}
+
+	& .note {
 		color: $c-text-dsc;
 		font-size: 18px;
 
-		@media (min-width: 1366px){
+		@media (min-width: 1366px) {
 			font-size: 20px;
 		}
 	}
@@ -86,7 +90,7 @@ $c-bg-header: #e9ded4;
 .txt_main_h {
 	@include fontStyle($fsz: 36px, $lh: 120%);
 
-	@media (min-width: 1366px){
+	@media (min-width: 1366px) {
 		font-size: 54px;
 	}
 }
@@ -94,7 +98,7 @@ $c-bg-header: #e9ded4;
 .txt_main_dsc {
 	@include fontStyle($ff: $ff-GT, $fsz: 18px, $lh: 120%, $color: $c-text-dsc);
 
-	@media (min-width: 1366px){
+	@media (min-width: 1366px) {
 		font-size: 20px;
 	}
 }
@@ -102,7 +106,7 @@ $c-bg-header: #e9ded4;
 .txt_main_grid {
 	@include fontStyle($ff: $ff-GT, $fsz: 18px, $fw: 500, $lh: 120%);
 
-	@media (min-width: 1366px){
+	@media (min-width: 1366px) {
 		font-size: 20px;
 	}
 

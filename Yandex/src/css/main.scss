@@ -344,6 +344,37 @@
 		width: 100%;
 		object-fit: contain;
 	}
+
+	.txt_tbl {
+	
+		& .section {
+			padding: 16px 0 6px;
+		}
+	
+		& .description {
+			padding: 6px 0 16px			
+		}
+	
+		// .section, .description {
+		// 	padding: 6px 0;
+		// }
+	
+		& .note {
+			margin-top: 24px;
+		}
+	
+		tr {
+			display: flex;
+			flex-direction: column;
+			border-bottom: 2px solid $c-tbl-brdr;
+	
+			&:last-child, 
+			&:nth-last-child(2) {
+				border: 0;
+			}
+		}
+	}
+
 }
 
 // ### FOOTER
