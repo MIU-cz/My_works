@@ -97,15 +97,18 @@
   letter-spacing: normal;
   line-height: 135%;
   color: #313131;
+  text-transform: uppercase;
 }
 @media (min-width: 1366px) {
   .txt_main_section {
     font-size: 36px;
   }
 }
-.txt_main_section-em {
+.txt_main_section mark {
   font-weight: 700;
   color: #f54932;
+  background-color: inherit;
+  font-weight: inherit;
 }
 
 .txt_tbl {
@@ -317,6 +320,9 @@
     height: 700px;
   }
 }
+.container_main {
+  padding-top: 48px;
+}
 
 .content {
   width: 100%;
@@ -454,7 +460,6 @@
   background-color: #fbce51;
   justify-content: center;
   align-items: center;
-  padding: 0.5em;
 }
 @media (min-width: 1366px) {
   .fig_eclipse {
@@ -465,8 +470,8 @@
 }
 .fig_eclipse .eclipse_text_overlay {
   display: flex;
-  width: 100%;
-  height: 100%;
+  width: 98%;
+  height: 98%;
   -o-object-fit: contain;
      object-fit: contain;
   mix-blend-mode: overlay;
@@ -589,4 +594,23 @@
   .run-text {
     height: 60px;
   }
+}
+
+.content_main {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 24px;
+}
+.content_main img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.footer_content {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #e9ded4;
 }/*# sourceMappingURL=main.css.map */

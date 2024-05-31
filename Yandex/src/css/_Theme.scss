@@ -47,14 +47,18 @@ $c-bg-header: #e9ded4;
 
 .txt_main_section {
 	@include fontStyle($fsz: 28px, $lh: 135%);
+	text-transform: uppercase;
+
 
 	@media (min-width: 1366px){
 		font-size: 36px;
 	}
 
-	&-em {
+	mark {
 		font-weight: 700;
 		color: $c-text-em;
+		background-color: inherit;
+		font-weight: inherit;
 	}
 }
 
