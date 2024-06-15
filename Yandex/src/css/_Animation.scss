@@ -5,13 +5,18 @@
 	}
 
 	100% {
-		transform: translateX(-100%);
+		transform: translateX(-452%);
+
+		@media (min-width: 1366px) {
+			transform: translateX(-200%);
+		}
 	}
 }
 
 .txt_marquee {
 	white-space: nowrap;
 	animation: run-txt 30s linear infinite;
+	// transform: translateX(-425%);
 
 	&:hover {
 		animation-play-state: paused;
