@@ -1,0 +1,4262 @@
+<!DOCTYPE html>
+<html lang="cs">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			content="origin"
+			name="referrer"
+		/>
+		<meta
+			content="/images/branding/googleg/1x/googleg_standard_color_128dp.png"
+			itemprop="image"
+		/>
+		<title>test search - Hledat Googlem</title>
+		<script nonce="2sugm9vHSmZx8zv4XuNJfA">
+			(function () {
+				document.documentElement.addEventListener(
+					"submit",
+					function (b) {
+						var a;
+						if ((a = b.target)) {
+							var c = a.getAttribute("data-submitfalse");
+							a = c === "1" || (c === "q" && !a.elements.q.value) ? !0 : !1;
+						} else a = !1;
+						a && (b.preventDefault(), b.stopPropagation());
+					},
+					!0,
+				);
+				document.documentElement.addEventListener(
+					"click",
+					function (b) {
+						var a;
+						a: {
+							for (a = b.target; a && a !== document.documentElement; a = a.parentElement)
+								if (a.tagName === "A") {
+									a = a.getAttribute("data-nohref") === "1";
+									break a;
+								}
+							a = !1;
+						}
+						a && b.preventDefault();
+					},
+					!0,
+				);
+			}).call(this);
+			(function () {
+				window.google = window.google || {};
+				var a =
+						window.performance &&
+						window.performance.timing &&
+						"navigationStart" in window.performance.timing,
+					b = google.stvsc && google.stvsc.ns,
+					c = a ? b || window.performance.timing.navigationStart : void 0,
+					d = google.stvsc && google.stvsc.rs,
+					f = a ? d || window.performance.timing.responseStart : void 0;
+				window.start = Date.now();
+				var h = window,
+					k = window.performance;
+				k &&
+					(c && f && f > c && f <= window.start
+						? ((window.start = f), (h.wsrt = f - c))
+						: k.now &&
+						  (h.wsrt = Math.floor(window.performance.now() - ((google.stvsc && google.stvsc.pno) || 0))));
+				var l = function (g) {
+					g && g.target.setAttribute("data-iml", String(Date.now()));
+				};
+				document.documentElement.addEventListener("load", l, !0);
+				google.rglh = function () {
+					document.documentElement.removeEventListener("load", l, !0);
+				};
+			}).call(this);
+			(function () {
+				window.google.erd = { jsr: 1, bv: 2025, sd: true, de: true };
+			})();
+			(function () {
+				var sdo = false;
+				var mei = 10;
+				var h = this || self;
+				var k,
+					l = (k = h.mei) != null ? k : 1,
+					n,
+					p = (n = h.sdo) != null ? n : !0,
+					q = 0,
+					r,
+					t = google.erd,
+					v = t.jsr;
+				google.ml = function (a, b, d, m, e) {
+					e = e === void 0 ? 2 : e;
+					b && (r = a && a.message);
+					d === void 0 && (d = {});
+					d.cad = "ple_" + google.ple + ".aple_" + google.aple;
+					if (google.dl) return google.dl(a, e, d, !0), null;
+					b = d;
+					if (v < 0) {
+						window.console && console.error(a, b);
+						if (v === -2) throw a;
+						b = !1;
+					} else b = !a || !a.message || a.message === "Error loading script" || (q >= l && !m) ? !1 : !0;
+					if (!b) return null;
+					q++;
+					d = d || {};
+					b = encodeURIComponent;
+					var c = "/gen_204?atyp=i&ei=" + b(google.kEI);
+					google.kEXPI && (c += "&jexpid=" + b(google.kEXPI));
+					c += "&srcpg=" + b(google.sn) + "&jsr=" + b(t.jsr) + "&bver=" + b(t.bv);
+					var f = a.lineNumber;
+					f !== void 0 && (c += "&line=" + f);
+					var g = a.fileName;
+					g &&
+						(g.indexOf("-extension:/") > 0 && (e = 3),
+						(c += "&script=" + b(g)),
+						f &&
+							g === window.location.href &&
+							((f = document.documentElement.outerHTML.split("\n")[f]),
+							(c += "&cad=" + b(f ? f.substring(0, 300) : "No script found."))));
+					google.ple && google.ple === 1 && (e = 2);
+					c += "&jsel=" + e;
+					for (var u in d) (c += "&"), (c += b(u)), (c += "="), (c += b(d[u]));
+					c = c + "&emsg=" + b(a.name + ": " + a.message);
+					c = c + "&jsst=" + b(a.stack || "N/A");
+					c.length >= 12288 && (c = c.substr(0, 12288));
+					a = c;
+					m || google.log(0, "", a);
+					return a;
+				};
+				window.onerror = function (a, b, d, m, e) {
+					r !== a &&
+						((a = e instanceof Error ? e : Error(a)),
+						d === void 0 || "lineNumber" in a || (a.lineNumber = d),
+						b === void 0 || "fileName" in a || (a.fileName = b),
+						google.ml(
+							a,
+							!1,
+							void 0,
+							!1,
+							a.name === "SyntaxError" ||
+								a.message.substring(0, 11) === "SyntaxError" ||
+								a.message.indexOf("Script error") !== -1
+								? 3
+								: 0,
+						));
+					r = null;
+					p && q >= l && (window.onerror = null);
+				};
+			})();
+			(function () {
+				var c = [],
+					e = 0;
+				window.ping = function (b) {
+					b.indexOf("&zx") == -1 && (b += "&zx=" + Date.now());
+					var a = new Image(),
+						d = e++;
+					c[d] = a;
+					a.onerror =
+						a.onload =
+						a.onabort =
+							function () {
+								delete c[d];
+							};
+					a.src = b;
+				};
+			}).call(this);
+		</script>
+		<style>
+			a {
+				color: #1a0dab;
+				text-decoration: none;
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+			}
+			a:visited {
+				color: #4b11a8;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			img {
+				border: 0;
+			}
+			html {
+				font-family: arial, sans-serif;
+				font-size: 14px;
+				line-height: 20px;
+				-webkit-text-size-adjust: 100%;
+				color: #3c4043;
+				word-wrap: break-word;
+				background-color: #fff;
+			}
+			.bz1lBb {
+				background-color: #fff;
+				height: 93px;
+			}
+			.KP7LCb {
+				background-color: #fff;
+				padding-left: 4px;
+			}
+			.BsXmcf {
+				position: absolute;
+				height: 1px;
+				left: 0;
+				right: 0;
+				background-color: #dadce0;
+			}
+			.cOl4Id {
+				background-color: #fff;
+			}
+			.bRsWnc {
+				overflow: hidden;
+			}
+			.N6RWV {
+				height: 51px;
+			}
+			.Uv67qb {
+				font-size: 14px;
+				line-height: 20px;
+				font-weight: bold;
+				display: flex;
+			}
+			.Uv67qb a,
+			.Uv67qb span {
+				color: #5e5e5e;
+				height: 20px;
+				margin: 4px 12px 1px;
+				display: block;
+				flex: none;
+				text-align: center;
+			}
+			.OXXup {
+				border-bottom: 2px solid #1f1f1f;
+			}
+			.Uv67qb .OXXup {
+				font-weight: bold;
+				color: #1f1f1f;
+			}
+			a.eZt8xd:visited {
+				color: #5e5e5e;
+			}
+			.FElbsf {
+				border-left: 1px solid #dadce0;
+			}
+			header article {
+				overflow: visible;
+			}
+			.Pg70bf {
+				height: 39px;
+				display: -webkit-box;
+				display: flex;
+				display: flex;
+				width: 100%;
+			}
+			.H0PQec {
+				position: relative;
+				flex: 1;
+			}
+			.Pg70bf {
+				height: 26px;
+			}
+			.hlm7Y {
+				height: 46px;
+				margin-top: 26px;
+				border-radius: 25px;
+				width: auto;
+				background: #fff;
+				box-shadow: 0px 2px 6px rgba(60, 64, 67, 0.16);
+			}
+			.sbc {
+				display: flex;
+			}
+			.Pg70bf input {
+			}
+			.x {
+				width: 26px;
+				color: #70757a;
+				line-height: 40px;
+				margin-top: 3px;
+				font: 27px/38px arial, sans-serif;
+			}
+			#qdClwb {
+				flex: 0 0 auto;
+				padding: 0;
+				height: 33px;
+				margin-top: 5px;
+				border-top-right-radius: 25px;
+				border-bottom-right-radius: 25px;
+				width: 48px;
+				background: #fff;
+				border: 0;
+				border-left: 1px solid #dadce0;
+				background-image: url('data:image/svg+xml,\00003csvg height="37px" width="37px" xmlns="http://www.w3.org/2000/svg">\00003cg fill="none" stroke="%234285F4">\00003cellipse cx="16.5" cy="16" rx="5.4" ry="5.4" stroke-width="2px">\00003c/ellipse>\00003cpath d="M22 21.3l4.3 4.3" stroke-linecap="round" stroke-width="2px">\00003c/path>\00003c/g>\00003c/svg>');
+			}
+			.sc {
+				font-size: 16px;
+				position: absolute;
+				top: 48px;
+				left: 0;
+				right: 0;
+				box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+				z-index: 2;
+				background-color: #fff;
+			}
+			.sc > div {
+				padding: 10px 20px;
+			}
+			.scs {
+				background-color: #fafafa;
+			}
+			.noHIxc {
+				display: block;
+				font-size: 16px;
+				padding: 0 0 0 8px;
+				flex: 1;
+				height: 35px;
+				outline: none;
+				border: none;
+				width: 100%;
+				-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+				overflow: hidden;
+				padding: 4px 0 0 20px;
+			}
+			.sbc input[type="text"] {
+				background: none;
+			}
+			html {
+				background-color: #fff;
+			}
+			body {
+				padding: 0;
+			}
+			body {
+				margin: 0 auto 0 156px;
+				max-width: 652px;
+				min-width: 652px;
+				padding: 0 8px;
+			}
+			.cOl4Id {
+				text-align: center;
+				padding: 32px 28px 0 24px;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			footer {
+				text-align: center;
+				margin-top: 18px;
+			}
+			footer a,
+			footer a:visited,
+			.smiUbb {
+				color: #70757a;
+			}
+			.xeDNfc {
+				margin: 0 13px;
+				display: inline-block;
+			}
+			#EOlPnc {
+				margin-top: 36px;
+			}
+			#EOlPnc > div {
+				margin: 20px;
+			}
+			.Srfpq {
+				color: #70757a;
+			}
+		</style>
+	</head>
+	<body jsmodel="hspDDf ">
+		<header id="hdr">
+			<script nonce="2sugm9vHSmZx8zv4XuNJfA">
+				(function () {
+					var k = this || self,
+						l = function (a) {
+							var b = typeof a;
+							return (b == "object" && a != null) || b == "function";
+						},
+						m = function (a, b) {
+							function c() {}
+							c.prototype = b.prototype;
+							a.l = b.prototype;
+							a.prototype = new c();
+							a.prototype.constructor = a;
+							a.s = function (d, e, f) {
+								for (var g = Array(arguments.length - 2), h = 2; h < arguments.length; h++)
+									g[h - 2] = arguments[h];
+								return b.prototype[e].apply(d, g);
+							};
+						};
+					var n = Array.prototype.indexOf
+						? function (a, b) {
+								return Array.prototype.indexOf.call(a, b, void 0);
+						  }
+						: function (a, b) {
+								if (typeof a === "string")
+									return typeof b !== "string" || b.length != 1 ? -1 : a.indexOf(b, 0);
+								for (var c = 0; c < a.length; c++) if (c in a && a[c] === b) return c;
+								return -1;
+						  };
+					var p = function (a) {
+							return typeof a.className == "string"
+								? a.className
+								: (a.getAttribute && a.getAttribute("class")) || "";
+						},
+						q = function (a, b) {
+							typeof a.className == "string"
+								? (a.className = b)
+								: a.setAttribute && a.setAttribute("class", b);
+						},
+						r = function (a, b) {
+							a.classList
+								? (b = a.classList.contains(b))
+								: ((a = a.classList ? a.classList : p(a).match(/\S+/g) || []), (b = n(a, b) >= 0));
+							return b;
+						},
+						v = function () {
+							var a = t,
+								b = u;
+							a.classList
+								? a.classList.remove(b)
+								: r(a, b) &&
+								  q(
+										a,
+										Array.prototype.filter
+											.call(a.classList ? a.classList : p(a).match(/\S+/g) || [], function (c) {
+												return c != b;
+											})
+											.join(" "),
+								  );
+						};
+					function w() {
+						var a = k.navigator;
+						return a && (a = a.userAgent) ? a : "";
+					}
+					var x = function (a) {
+						x[" "](a);
+						return a;
+					};
+					x[" "] = function () {};
+					var y =
+						w().indexOf("Gecko") != -1 &&
+						!(w().toLowerCase().indexOf("webkit") != -1 && w().indexOf("Edge") == -1) &&
+						!(w().indexOf("Trident") != -1 || w().indexOf("MSIE") != -1) &&
+						w().indexOf("Edge") == -1;
+					var z = function (a, b) {
+						this.type = a;
+						this.target = b;
+					};
+					z.prototype.g = function () {};
+					var A = (function () {
+						if (!k.addEventListener || !Object.defineProperty) return !1;
+						var a = !1,
+							b = Object.defineProperty({}, "passive", {
+								get: function () {
+									a = !0;
+								},
+							});
+						try {
+							var c = function () {};
+							k.addEventListener("test", c, b);
+							k.removeEventListener("test", c, b);
+						} catch (d) {}
+						return a;
+					})();
+					var C = function (a) {
+						z.call(this, a ? a.type : "");
+						this.relatedTarget = this.target = null;
+						this.button = this.screenY = this.screenX = this.clientY = this.clientX = 0;
+						this.key = "";
+						this.keyCode = 0;
+						this.metaKey = this.shiftKey = this.altKey = this.ctrlKey = !1;
+						this.state = null;
+						this.pointerId = 0;
+						this.pointerType = "";
+						this.i = null;
+						if (a) {
+							var b = (this.type = a.type),
+								c = a.changedTouches && a.changedTouches.length ? a.changedTouches[0] : null;
+							this.target = a.target || a.srcElement;
+							var d = a.relatedTarget;
+							if (d) {
+								if (y) {
+									a: {
+										try {
+											x(d.nodeName);
+											var e = !0;
+											break a;
+										} catch (f) {}
+										e = !1;
+									}
+									e || (d = null);
+								}
+							} else b == "mouseover" ? (d = a.fromElement) : b == "mouseout" && (d = a.toElement);
+							this.relatedTarget = d;
+							c
+								? ((this.clientX = c.clientX !== void 0 ? c.clientX : c.pageX),
+								  (this.clientY = c.clientY !== void 0 ? c.clientY : c.pageY),
+								  (this.screenX = c.screenX || 0),
+								  (this.screenY = c.screenY || 0))
+								: ((this.clientX = a.clientX !== void 0 ? a.clientX : a.pageX),
+								  (this.clientY = a.clientY !== void 0 ? a.clientY : a.pageY),
+								  (this.screenX = a.screenX || 0),
+								  (this.screenY = a.screenY || 0));
+							this.button = a.button;
+							this.keyCode = a.keyCode || 0;
+							this.key = a.key || "";
+							this.ctrlKey = a.ctrlKey;
+							this.altKey = a.altKey;
+							this.shiftKey = a.shiftKey;
+							this.metaKey = a.metaKey;
+							this.pointerId = a.pointerId || 0;
+							this.pointerType =
+								typeof a.pointerType === "string" ? a.pointerType : B[a.pointerType] || "";
+							this.state = a.state;
+							this.i = a;
+							a.defaultPrevented && C.l.g.call(this);
+						}
+					};
+					m(C, z);
+					var B = { 2: "touch", 3: "pen", 4: "mouse" };
+					C.prototype.g = function () {
+						C.l.g.call(this);
+						var a = this.i;
+						a.preventDefault ? a.preventDefault() : (a.returnValue = !1);
+					};
+					var D = "closure_listenable_" + ((Math.random() * 1e6) | 0);
+					var E = 0;
+					var F = function (a, b, c, d, e) {
+							this.listener = a;
+							this.proxy = null;
+							this.src = b;
+							this.type = c;
+							this.capture = !!d;
+							this.i = e;
+							this.key = ++E;
+							this.g = this.j = !1;
+						},
+						G = function (a) {
+							a.g = !0;
+							a.listener = null;
+							a.proxy = null;
+							a.src = null;
+							a.i = null;
+						};
+					var H = function (a) {
+						this.src = a;
+						this.g = {};
+						this.i = 0;
+					};
+					H.prototype.add = function (a, b, c, d, e) {
+						var f = a.toString();
+						a = this.g[f];
+						a || ((a = this.g[f] = []), this.i++);
+						var g;
+						a: {
+							for (g = 0; g < a.length; ++g) {
+								var h = a[g];
+								if (!h.g && h.listener == b && h.capture == !!d && h.i == e) break a;
+							}
+							g = -1;
+						}
+						g > -1
+							? ((b = a[g]), c || (b.j = !1))
+							: ((b = new F(b, this.src, f, !!d, e)), (b.j = c), a.push(b));
+						return b;
+					};
+					var I = "closure_lm_" + ((Math.random() * 1e6) | 0),
+						J = {},
+						K = 0,
+						M = function (a, b, c, d, e) {
+							if (d && d.once) return L(a, b, c, d, e);
+							if (Array.isArray(b)) {
+								for (var f = 0; f < b.length; f++) M(a, b[f], c, d, e);
+								return null;
+							}
+							c = N(c);
+							return a && a[D] ? a.g(b, c, l(d) ? !!d.capture : !!d, e) : O(a, b, c, !1, d, e);
+						},
+						O = function (a, b, c, d, e, f) {
+							if (!b) throw Error("a");
+							var g = l(e) ? !!e.capture : !!e,
+								h = P(a);
+							h || (a[I] = h = new H(a));
+							c = h.add(b, c, d, g, f);
+							if (c.proxy) return c;
+							d = Q();
+							c.proxy = d;
+							d.src = a;
+							d.listener = c;
+							if (a.addEventListener)
+								A || (e = g), e === void 0 && (e = !1), a.addEventListener(b.toString(), d, e);
+							else if (a.attachEvent) a.attachEvent(R(b.toString()), d);
+							else if (a.addListener && a.removeListener) a.addListener(d);
+							else throw Error("b");
+							K++;
+							return c;
+						},
+						Q = function () {
+							var a = S,
+								b = function (c) {
+									return a.call(b.src, b.listener, c);
+								};
+							return b;
+						},
+						L = function (a, b, c, d, e) {
+							if (Array.isArray(b)) {
+								for (var f = 0; f < b.length; f++) L(a, b[f], c, d, e);
+								return null;
+							}
+							c = N(c);
+							return a && a[D] ? a.i(b, c, l(d) ? !!d.capture : !!d, e) : O(a, b, c, !0, d, e);
+						},
+						T = function (a) {
+							if (typeof a !== "number" && a && !a.g) {
+								var b = a.src;
+								if (b && b[D]) b.v(a);
+								else {
+									var c = a.type,
+										d = a.proxy;
+									b.removeEventListener
+										? b.removeEventListener(c, d, a.capture)
+										: b.detachEvent
+										? b.detachEvent(R(c), d)
+										: b.addListener && b.removeListener && b.removeListener(d);
+									K--;
+									if ((c = P(b))) {
+										d = a.type;
+										if (d in c.g) {
+											var e = c.g[d],
+												f = n(e, a),
+												g;
+											(g = f >= 0) && Array.prototype.splice.call(e, f, 1);
+											g && (G(a), c.g[d].length == 0 && (delete c.g[d], c.i--));
+										}
+										c.i == 0 && ((c.src = null), (b[I] = null));
+									} else G(a);
+								}
+							}
+						},
+						R = function (a) {
+							return a in J ? J[a] : (J[a] = "on" + a);
+						},
+						S = function (a, b) {
+							if (a.g) a = !0;
+							else {
+								b = new C(b, this);
+								var c = a.listener,
+									d = a.i || a.src;
+								a.j && T(a);
+								a = c.call(d, b);
+							}
+							return a;
+						},
+						P = function (a) {
+							a = a[I];
+							return a instanceof H ? a : null;
+						},
+						U = "__closure_events_fn_" + ((Math.random() * 1e9) >>> 0),
+						N = function (a) {
+							if (typeof a === "function") return a;
+							a[U] ||
+								(a[U] = function (b) {
+									return a.handleEvent(b);
+								});
+							return a[U];
+						};
+					var u,
+						t = document.documentElement,
+						V;
+					function W() {
+						T(V);
+						V = L(
+							t,
+							"mousedown",
+							function () {
+								v();
+								X();
+							},
+							{ capture: !0 },
+						);
+					}
+					function X() {
+						T(V);
+						V = M(t, "keydown", function (a) {
+							if (a.keyCode === 9) {
+								a = t;
+								var b = u;
+								if (a.classList) a.classList.add(b);
+								else if (!r(a, b)) {
+									var c = p(a);
+									q(a, c + (c.length > 0 ? " " + b : b));
+								}
+								W();
+							}
+						});
+					}
+					u = "zAoYTe";
+					X();
+				}).call(this);
+			</script>
+			<div class="cOl4Id">
+				<a href="/?sa=X&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQOwgC"
+					><svg
+						stroke="#4285f4"
+						aria-label="Google"
+						fill="none"
+						height="36"
+						stroke-width="18"
+						viewbox="0 0 520 174"
+						width="92"
+					>
+						<path
+							d="M69 70.4l61 0m-9 3.5a56 57 0 1 1-17-47"
+							stroke-width="19px"
+						></path>
+						<ellipse
+							stroke="#ea4335"
+							cx="179"
+							cy="90"
+							rx="33"
+							ry="34"
+						></ellipse>
+						<ellipse
+							stroke="#fbbc04"
+							cx="270"
+							cy="90"
+							rx="33"
+							ry="34"
+						></ellipse>
+						<ellipse
+							cx="358"
+							cy="90"
+							rx="32"
+							ry="34"
+							stroke-width="17px"
+						></ellipse>
+						<path d="M391 49l0 73l-2 0a 22 22-30 0 1-59 24"></path>
+						<path
+							style="stroke: #34a853"
+							d="M423 5l0 130"
+						></path>
+						<path
+							stroke="#ea4335"
+							d="M509 110a32 35-3 1 1 3-29M517 76l-63 24"
+							stroke-width="16px"
+						></path></svg
+				></a>
+			</div>
+			<div class="bz1lBb">
+				<form
+					class="Pg70bf hlm7Y"
+					id="sf"
+				>
+					<input
+						name="sca_esv"
+						value="0b05e7fa75492358"
+						type="hidden"
+					/><input
+						name="ucbcb"
+						value="1"
+						type="hidden"
+					/>
+					<div class="H0PQec">
+						<div class="sbc esbc">
+							<input
+								class="noHIxc"
+								value="test search"
+								autocapitalize="none"
+								autocomplete="off"
+								name="q"
+								spellcheck="false"
+								type="text"
+							/><input
+								name="oq"
+								type="hidden"
+							/><input
+								name="aqs"
+								type="hidden"
+							/>
+							<div class="x">×</div>
+							<div class="sc"></div>
+						</div>
+					</div>
+					<button
+						id="qdClwb"
+						type="submit"
+					></button>
+				</form>
+			</div>
+			<noscript
+				><meta
+					content="0;url=/search?q=test+search&amp;sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;gbv=1&amp;sei=1TxvZsnSEdfy4-EPk4mn4AQ"
+					http-equiv="refresh"
+				/><style>
+					table,
+					div,
+					span,
+					p {
+						display: none;
+					}
+				</style>
+				<div style="display: block">
+					Pokud nebude během pár sekund přesměrováni, klikněte prosím
+					<a
+						href="/search?q=test+search&amp;sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;gbv=1&amp;sei=1TxvZsnSEdfy4-EPk4mn4AQ"
+						>zde</a
+					>.
+				</div></noscript
+			>
+		</header>
+		<div id="main">
+			<div>
+				<div class="KP7LCb">
+					<div class="bRsWnc">
+						<div class="N6RWV">
+							<div class="Pg70bf Uv67qb">
+								<span class="OXXup">Vše</span
+								><a
+									class="eZt8xd"
+									href="/search?q=test+search&amp;sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;tbm=isch&amp;source=lnms&amp;sa=X&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ_AUIBigB"
+									>Obrázky</a
+								><a
+									class="eZt8xd"
+									href="/search?q=test+search&amp;sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;tbm=vid&amp;source=lnms&amp;sa=X&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ_AUIBygC"
+									>Videa</a
+								><a
+									class="eZt8xd"
+									href="/search?q=test+search&amp;sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;tbm=nws&amp;source=lnms&amp;sa=X&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ_AUICCgD"
+									>Zprávy</a
+								>
+								<a
+									href="/url?url=https://maps.google.com/maps%3Fq%3Dtest%2Bsearch%26ucbcb%3D1%26um%3D1%26ie%3DUTF-8%26ved%3D1t:200713%26ictx%3D111&amp;rct=j&amp;q=&amp;esrc=s&amp;opi=89978449&amp;sa=U&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQiaAMCAkoBA&amp;usg=AOvVaw0E5uu7Zv4w2ygWGLwHacmr"
+									>Mapy</a
+								>
+								<a
+									href="/url?url=/search%3Fq%3Dtest%2Bsearch%26sca_esv%3D0b05e7fa75492358%26ucbcb%3D1%26tbm%3Dshop%26source%3Dlnms%26ved%3D1t:200713%26ictx%3D111&amp;rct=j&amp;q=&amp;esrc=s&amp;opi=89978449&amp;sa=U&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQiaAMCAooBQ&amp;usg=AOvVaw2KbMl-v5uFv3TuW5iJZ5yr"
+									>Nákupy</a
+								>
+								<a
+									href="/search?q=test+search&amp;sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;tbm=bks&amp;source=lnms&amp;sa=X&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ_AUICygG"
+									>Knihy</a
+								>
+								<div class="FElbsf">
+									<a
+										href="/advanced_search"
+										style="white-space: nowrap"
+										id="st-toggle"
+										role="button"
+										>Vyhledávací nástroje</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div
+					class="Pg70bf wEsjbd Gx5Zad xpd EtOod pkphOe"
+					style="display: none"
+					id="st-card"
+				>
+					<style>
+						.wEsjbd {
+							height: 44px;
+							white-space: nowrap;
+						}
+						.coPU8c {
+							height: 60px;
+							-webkit-overflow-scrolling: touch;
+							overflow-x: auto;
+							overflow-y: hidden;
+						}
+						.Xj2aue {
+							height: 44px;
+							overflow: hidden;
+						}
+						.RnNGze {
+							margin: 11px 16px;
+						}
+						.wEsjbd div,
+						.wEsjbd a,
+						.wEsjbd li {
+							outline-width: 0;
+							outline: none;
+						}
+					</style>
+					<div class="Xj2aue">
+						<div class="coPU8c">
+							<div class="RnNGze">
+								<style>
+									.PA9J5 {
+										display: inline-block;
+									}
+									.RXaOfd,
+									.tbcPJb {
+										display: inline-block;
+										height: 22px;
+										position: relative;
+										padding-top: 0;
+										padding-bottom: 0;
+										padding-right: 16px;
+										padding-left: 0;
+										line-height: 22px;
+										cursor: pointer;
+										text-transform: uppercase;
+										font-size: 12px;
+										color: #70757a;
+									}
+									.sa1toc {
+										background: #fff;
+										display: none;
+										position: absolute;
+										border: 1px solid #dadce0;
+										box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+										margin: 0;
+										white-space: nowrap;
+										z-index: 103;
+										line-height: 17px;
+										padding-top: 5px;
+										padding-bottom: 5px;
+										padding-left: 0;
+									}
+									.PA9J5:hover .sa1toc {
+										display: block;
+									}
+									.mGSy8d a:active,
+									.RXaOfd:active {
+										color: #4285f4;
+									}
+								</style>
+								<div class="PA9J5">
+									<div
+										class="RXaOfd"
+										role="button"
+										tabindex="0"
+									>
+										<style>
+											.TWMOUc {
+												display: inline-block;
+												padding-right: 14px;
+												white-space: nowrap;
+											}
+											.vQYuGf {
+												font-weight: bold;
+											}
+											.OmTIzf {
+												border-color: #909090 transparent;
+												border-style: solid;
+												border-width: 4px 4px 0 4px;
+												width: 0;
+												height: 0;
+												margin-left: -10px;
+												top: 50%;
+												margin-top: -2px;
+												position: absolute;
+											}
+											.RXaOfd:active .OmTIzf {
+												border-color: #4285f4 transparent;
+											}
+										</style>
+										<div class="TWMOUc">Jakýkoli jazyk</div>
+										<span class="OmTIzf"></span>
+									</div>
+									<ul class="sa1toc ozatM">
+										<style>
+											.ozatM {
+												font-size: 12px;
+												text-transform: uppercase;
+											}
+											.ozatM .yNFsl,
+											.ozatM li {
+												list-style-type: none;
+												list-style-position: outside;
+												list-style-image: none;
+											}
+											.yNFsl.SkUj4c,
+											.yNFsl a {
+												color: #70757a;
+												text-decoration: none;
+												padding: 6px 44px 6px 14px;
+												line-height: 17px;
+												display: block;
+											}
+											.SkUj4c {
+												background-image: url(//ssl.gstatic.com/ui/v1/menu/checkmark2.png);
+												background-position: right center;
+												background-repeat: no-repeat;
+											}
+											.SkUj4c:active {
+												background-color: #f8f9fa;
+											}
+										</style>
+										<li class="yNFsl SkUj4c">
+											<style>
+												.tbcPJb a {
+													color: #70757a;
+													text-decoration: none;
+												}</style
+											>Jakýkoli jazyk
+										</li>
+										<li class="yNFsl">
+											<a
+												href="/search?q=test+search&amp;sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;source=lnt&amp;tbs=lr:lang_1cs&amp;lr=lang_cs&amp;sa=X&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQpwUIDQ"
+												>Stránky pouze česky</a
+											>
+										</li>
+									</ul>
+								</div>
+								<div class="PA9J5">
+									<div
+										class="RXaOfd"
+										role="button"
+										tabindex="0"
+									>
+										<div class="TWMOUc">Bez časového omezení</div>
+										<span class="OmTIzf"></span>
+									</div>
+									<ul class="sa1toc ozatM">
+										<li class="yNFsl SkUj4c">Bez časového omezení</li>
+										<li class="yNFsl">
+											<a
+												href="/search?q=test+search&amp;sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;source=lnt&amp;tbs=qdr:h&amp;sa=X&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQpwUIDw"
+											>
+												Za poslední hodinu</a
+											>
+										</li>
+										<li class="yNFsl">
+											<a
+												href="/search?q=test+search&amp;sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;source=lnt&amp;tbs=qdr:d&amp;sa=X&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQpwUIEA"
+											>
+												Posledních 24 hodin</a
+											>
+										</li>
+										<li class="yNFsl">
+											<a
+												href="/search?q=test+search&amp;sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;source=lnt&amp;tbs=qdr:w&amp;sa=X&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQpwUIEQ"
+											>
+												Poslední týden</a
+											>
+										</li>
+										<li class="yNFsl">
+											<a
+												href="/search?q=test+search&amp;sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;source=lnt&amp;tbs=qdr:m&amp;sa=X&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQpwUIEg"
+											>
+												Poslední měsíc</a
+											>
+										</li>
+										<li class="yNFsl">
+											<a
+												href="/search?q=test+search&amp;sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;source=lnt&amp;tbs=qdr:y&amp;sa=X&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQpwUIEw"
+											>
+												Poslední rok</a
+											>
+										</li>
+									</ul>
+								</div>
+								<div class="PA9J5">
+									<div
+										class="RXaOfd"
+										role="button"
+										tabindex="0"
+									>
+										<div class="TWMOUc">Všechny výsledky</div>
+										<span class="OmTIzf"></span>
+									</div>
+									<ul class="sa1toc ozatM">
+										<li class="yNFsl SkUj4c">Všechny výsledky</li>
+										<li class="yNFsl">
+											<a
+												href="/search?q=test+search&amp;sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;source=lnt&amp;tbs=li:1&amp;sa=X&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQpwUIFQ"
+												>Přesná shoda</a
+											>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script nonce="2sugm9vHSmZx8zv4XuNJfA">
+						(function () {
+							var a = document.getElementById("st-toggle"),
+								b = document.getElementById("st-card");
+							a &&
+								b &&
+								a.addEventListener(
+									"click",
+									function (c) {
+										b.style.display = b.style.display ? "" : "none";
+										c.preventDefault();
+									},
+									!1,
+								);
+						}).call(this);
+					</script>
+				</div>
+			</div>
+			<div class="BsXmcf"></div>
+			<style>
+				.Gx5Zad {
+					margin-bottom: 30px;
+					margin: 0px 0px 8px;
+				}
+				.pkphOe {
+					font-size: 14px;
+					line-height: 22px;
+				}
+				.EtOod > *:first-child {
+					border-top-left-radius: 8px;
+					border-top-right-radius: 8px;
+				}
+				.EtOod > *:last-child {
+					border-bottom-left-radius: 8px;
+					border-bottom-right-radius: 8px;
+				}
+				.EtOod.avPKgf > *:last-child {
+					border-bottom-left-radius: 4px;
+				}
+				.EtOod > .qxDOhb > *:first-child {
+					border-top-left-radius: 8px;
+					border-top-right-radius: 8px;
+				}
+				.EtOod > .qxDOhb > *:last-child {
+					border-bottom-left-radius: 8px;
+					border-bottom-right-radius: 8px;
+				}
+				.rLshyf,
+				.BmP5tf {
+					padding-top: 16px;
+					padding-bottom: 12px;
+				}
+				.YOx3Ab {
+					padding-left: 14px;
+				}
+				.w1C3Le,
+				.BmP5tf,
+				.G5NbBd,
+				.CS4w5b {
+					padding-left: 14px;
+					padding-right: 14px;
+				}
+				.G5NbBd {
+					padding-bottom: 12px;
+				}
+				.CS4w5b {
+					padding-top: 12px;
+				}
+				.Va3FIb {
+					font-size: 14px;
+					font-family: arial, sans-serif;
+					line-height: 22px;
+					padding-top: 1px;
+					margin-bottom: -1px;
+				}
+				.lVm3ye {
+					color: #202124;
+				}
+				a.fdYsqf {
+					color: #4b11a8;
+				}
+				.fP1Qef {
+					background: transparent !important;
+					box-shadow: none !important;
+					border: none !important;
+				}
+				.jqWpsc,
+				.jGGQ5e .jqWpsc {
+					margin-bottom: -23px;
+					position: relative;
+					z-index: 1;
+				}
+				.dJMePd,
+				.Qc4Zr {
+					display: flex;
+				}
+				.Qc4Zr {
+					align-items: center;
+				}
+				.T4Yo {
+					justify-content: space-between;
+				}
+				.v5yQqb {
+					position: relative;
+				}
+				.cz3goc {
+					display: block;
+				}
+				.F7oSbc {
+					padding-top: 16px;
+				}
+				.a7DO2d {
+					padding-top: 16px;
+				}
+				.OdK6Dd {
+					padding-top: 4px;
+				}
+				.QkcpZ {
+					margin-bottom: 5px;
+					padding-right: 20px;
+				}
+				.d8lRkd {
+				}
+				.d8lRkd {
+					white-space: nowrap;
+				}
+				.TElO2c {
+					white-space: nowrap;
+				}
+				.yIn8Od {
+					align-items: center;
+					display: inline-flex;
+					width: 100%;
+				}
+				.U3A9Ac {
+					background-color: #fff;
+					color: #202124;
+					display: inline-block;
+					font-family: inherit;
+					font-size: 14px;
+					font-weight: bold;
+					margin-left: 0px;
+					white-space: nowrap;
+				}
+				.U3A9Ac.HOR4Mc {
+					background-color: transparent;
+					color: #fff;
+				}
+				.qV8iec {
+					border-radius: 3px;
+					padding: 1px 3px 0 2px;
+					line-height: 11px;
+					margin-right: 7px;
+				}
+				.irmCpc {
+					padding: 0;
+					margin-right: 0;
+				}
+				.mZzqEf {
+					padding: 0 3px;
+				}
+				.WFktfd {
+					font-weight: 400;
+				}
+				.ob9lvb {
+					color: #202124;
+				}
+				.ob9lvb.HCMUuf {
+					color: #5e5e5e;
+				}
+				.r7TaRd {
+					padding-left: 8px;
+				}
+				.ynAwRc {
+					color: #1558d6;
+				}
+				a:visited .ynAwRc,
+				a:visited.ynAwRc {
+					color: #681da8;
+				}
+				.z8gr9e {
+					color: #474747;
+				}
+				.EE3Upf,
+				.Va3FIb.EE3Upf {
+					font-size: 20px;
+					line-height: 26px;
+					padding-top: 1px;
+					margin-bottom: -1px;
+				}
+				.UPajGf {
+					display: block;
+					overflow: hidden;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+				}
+				.jLvEdc {
+					margin-top: 6px;
+					position: absolute;
+					right: 0;
+					top: 0;
+				}
+				.oru2pc {
+					clear: both;
+				}
+				.c7YKNb {
+					overflow: hidden;
+				}
+				.Hdw6tb {
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					overflow: hidden;
+				}
+				.rl7ilb {
+					display: block;
+					clear: both;
+				}
+				.egMi0 {
+					margin-bottom: -23px;
+				}
+				.kCrYT {
+					padding: 16px 14px 12px;
+				}
+				.sCuL3 {
+					position: absolute;
+					width: 100%;
+					top: 0;
+					left: 0;
+					padding-top: 1px;
+					margin-bottom: -1px;
+				}
+				.j039Wc {
+					padding-top: 28px;
+					margin-bottom: -1px;
+				}
+				.DnJfK {
+					position: relative;
+				}
+				.l97dzf {
+					font-weight: 400;
+				}
+				.zBAuLc {
+					line-height: normal;
+					margin: 0;
+					padding: 0;
+				}
+				.BNeawe {
+					white-space: pre-line;
+					word-wrap: break-word;
+				}
+				.vvjwJb {
+					color: #1a0dab;
+					font-size: 20px;
+					line-height: 26px;
+				}
+				a:visited .vvjwJb,
+				.vvjwJb a:visited {
+					color: #4b11a8;
+				}
+				.vvjwJb.HrGdeb {
+					color: #fff;
+				}
+				a:visited .vvjwJb.HrGdeb,
+				.vvjwJb.HrGdeb a:visited {
+					color: rgba(255, 255, 255, 0.7);
+				}
+				.UwRFLe {
+					display: -webkit-box;
+					-webkit-box-orient: vertical;
+					overflow: hidden;
+				}
+				.UPmit {
+					font-size: 14px;
+					line-height: 22px;
+				}
+				.UPmit.HrGdeb {
+					color: rgba(255, 255, 255, 0.7);
+				}
+				.UPmit.AP7Wnd {
+					color: #202124;
+				}
+				.lRVwie {
+					text-overflow: ellipsis;
+					white-space: nowrap;
+					overflow: hidden;
+				}
+				.Ap5OSd {
+					padding-bottom: 12px;
+				}
+				.s3v9rd {
+					font-size: 14px;
+					line-height: 22px;
+				}
+				.s3v9rd.HrGdeb {
+					color: #fff;
+				}
+				.s3v9rd.AP7Wnd {
+					color: #202124;
+				}
+				.mSx1Ee {
+					padding-left: 48px;
+					margin: 0;
+				}
+				.v9i61e {
+					padding-bottom: 8px;
+				}
+				.K8tyEc {
+					padding-bottom: 12px;
+				}
+				.mEUgP {
+					font-size: 20px;
+					font-weight: bold;
+					line-height: 26px;
+					color: #1f1f1f;
+					height: 14px;
+					padding: 16px 14px 0px 14px;
+					margin: 0;
+				}
+				.FCUp0c {
+					font-weight: bold;
+				}
+				.nRlVm .FCUp0c {
+					background-color: #d3e3fd;
+				}
+				.C7GS5b {
+					margin-left: 12px;
+					display: table-cell;
+					vertical-align: middle;
+				}
+				.rkGIWe {
+					padding: 14px;
+				}
+				.rxk4ae {
+					padding-top: 6px;
+					padding-bottom: 6px;
+				}
+				.xpc .hwc,
+				.xpx .hwx {
+					display: none;
+				}
+				.iIWm4b {
+					box-sizing: border-box;
+					min-height: 48px;
+				}
+				.fLtXsc {
+					padding: 14px;
+					position: relative;
+				}
+				.NtmAdb {
+					width: 40px;
+					height: 40px;
+					overflow: hidden;
+					margin-top: -10px;
+					margin-bottom: -16px;
+					margin-right: 8px;
+					border-radius: 4px;
+				}
+				.xpc .NtmAdb {
+					display: inline-block;
+				}
+				.xpx .NtmAdb {
+					display: none;
+				}
+				.Lt3Tzc {
+					display: inline-block;
+					padding-right: 26px;
+					color: #474747;
+					font-size: 16px;
+				}
+				.Lym8W {
+					height: 8px;
+					width: 12px;
+				}
+				.xCgLUe {
+					position: absolute;
+					right: 16px;
+					top: 50%;
+					margin-right: -4px;
+					margin-top: -3px;
+				}
+				.FmuaHe {
+					margin-top: -4px;
+				}
+				.v7Y0Ge {
+					background-color: #f7f8f9;
+					padding: 10px;
+					width: 16px;
+					height: 16px;
+					right: 14px;
+					margin-top: -18px;
+					top: 50%;
+					position: absolute;
+					border-radius: 50%;
+				}
+				.WZP0ub {
+					display: inline-block;
+					margin-left: 5px;
+					margin-top: -6px;
+				}
+				.qxDOhb {
+					border-radius: 0;
+				}
+				.yStFkb .xpd {
+					box-shadow: none;
+					border-radius: 16px;
+					background-color: #f7f8f9;
+				}
+				.oTWEpb {
+					padding-top: 16px;
+				}
+				.n1Qedd {
+					overflow: hidden;
+					text-align: center;
+				}
+				.KMAGC {
+					margin: 0 auto;
+					display: block;
+				}
+				.ho0sdc {
+					margin: 0 -50%;
+					display: inline-block;
+				}
+				.PqksIc {
+					font-size: 16px;
+					line-height: 20px;
+				}
+				.x54gtf {
+					height: 1px;
+					background-color: #dadce0;
+					margin: 0 14px;
+				}
+				.Q0HXG {
+					height: 1px;
+					background-color: #dadce0;
+				}
+				.Xb5VRe {
+					color: #1a0dab;
+				}
+				a:visited .Xb5VRe {
+					color: #4b11a8;
+				}
+				.Xb5VRe.tr0dw {
+					color: #fff;
+				}
+				a:visited .Xb5VRe.tr0dw {
+					color: rgba(255, 255, 255, 0.7);
+				}
+				.P1NWSe {
+					display: table;
+					width: 100%;
+					padding-top: 16px;
+					padding-bottom: 16px;
+					margin-bottom: -12px;
+				}
+				.wOMIed {
+					display: table-cell;
+					vertical-align: top;
+				}
+				.nkPlDb {
+					vertical-align: middle;
+				}
+				.JhFlyf {
+					color: #3c4043;
+					font-size: 14px;
+					text-align: center;
+				}
+				.VQFmSd {
+					display: block;
+					white-space: pre-line;
+					word-wrap: break-word;
+				}
+				.JhFlyf.VQFmSd {
+					line-height: 22px;
+				}
+				.f4J0H {
+					padding: 18px;
+				}
+				.XLloXe {
+					color: #1a0dab;
+					font-size: 14px;
+					line-height: 20px;
+				}
+				a:visited .XLloXe,
+				.XLloXe a:visited {
+					color: #4b11a8;
+				}
+				.XLloXe.HrGdeb {
+					color: #fff;
+				}
+				a:visited .XLloXe.HrGdeb,
+				.XLloXe.HrGdeb a:visited {
+					color: rgba(255, 255, 255, 0.7);
+				}
+				.gGQDvd {
+					position: relative;
+					padding: 20px 14px 14px 14px;
+					height: 60px;
+				}
+				.Q71vJc {
+					display: block;
+					position: relative;
+					width: 100%;
+				}
+				.kjGX2 {
+					position: absolute;
+					vertical-align: bottom;
+					display: inline-block;
+					right: 48px;
+					left: 0;
+					color: #4d5156;
+				}
+				.Xe4YD {
+					font-size: 16px;
+				}
+				.ieB2Dd {
+					overflow: hidden;
+					margin-top: -10px;
+					margin-bottom: -16px;
+					margin-right: 8px;
+					border-radius: 4px;
+					display: inline-block;
+					border-radius: 50%;
+					padding: 8px 7px 8px 9px;
+					background-color: #f7f8f9;
+				}
+				.toMBf {
+					position: absolute;
+					right: 0;
+					margin-right: -8px;
+					margin-top: -2px;
+				}
+				.d9dqO {
+					flex: none;
+				}
+				.z1asCe {
+					display: inline-block;
+					fill: currentColor;
+					height: 24px;
+					line-height: 24px;
+					position: relative;
+					width: 24px;
+				}
+				.z1asCe svg {
+					display: block;
+					height: 100%;
+					width: 100%;
+				}
+				.C5GhQc {
+					color: rgba(0, 0, 0, 0.54);
+				}
+				.nMymef {
+					display: flex;
+				}
+				.G5eFlf {
+					flex: 1;
+					display: block;
+				}
+				.nMymef span {
+					text-align: center;
+				}
+				.EYqSq {
+					margin: 6px 4px 9px 0;
+					border-radius: 100%;
+					display: inline-block;
+					height: 10px;
+					vertical-align: middle;
+					width: 10px;
+				}
+				.dfB0uf {
+					color: #3c4043;
+					font-weight: bold;
+				}
+				.IffyKc {
+					word-wrap: break-word;
+				}
+			</style>
+			<div></div>
+			<div class="Gx5Zad xpd EtOod pkphOe">
+				<div class="BmP5tf">
+					<div class="Va3FIb lVm3ye">
+						Tip:
+						<a
+							href="/search?q=test+search&amp;sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;lr=lang_cs&amp;sa=X&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQuAF6BAgAEAE"
+							data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQuAF6BAgAEAE"
+							>Hledat pouze výsledky v angličtině</a
+						>. Jazyk vyhledávání můžete nastavit na stránce
+						<a
+							href="/url?esrc=s&amp;q=&amp;rct=j&amp;sa=U&amp;url=https://www.google.com/preferences%3Fhl%3Dcs&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQtwF6BAgAEAI&amp;usg=AOvVaw0cm_iyKSt7jRXqTFLE1aJw"
+							data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQtwF6BAgAEAI"
+							>Nastavení</a
+						>.
+					</div>
+				</div>
+			</div>
+			<script nonce="2sugm9vHSmZx8zv4XuNJfA">
+				(function () {
+					var g =
+							typeof Object.defineProperties == "function"
+								? Object.defineProperty
+								: function (a, b, c) {
+										if (a == Array.prototype || a == Object.prototype) return a;
+										a[b] = c.value;
+										return a;
+								  },
+						h = function (a) {
+							a = [
+								"object" == typeof globalThis && globalThis,
+								a,
+								"object" == typeof window && window,
+								"object" == typeof self && self,
+								"object" == typeof global && global,
+							];
+							for (var b = 0; b < a.length; ++b) {
+								var c = a[b];
+								if (c && c.Math == Math) return c;
+							}
+							throw Error("a");
+						},
+						k = h(this),
+						l = function (a, b) {
+							if (b)
+								a: {
+									var c = k;
+									a = a.split(".");
+									for (var d = 0; d < a.length - 1; d++) {
+										var f = a[d];
+										if (!(f in c)) break a;
+										c = c[f];
+									}
+									a = a[a.length - 1];
+									d = c[a];
+									b = b(d);
+									b != d && b != null && g(c, a, { configurable: !0, writable: !0, value: b });
+								}
+						};
+					l("Object.is", function (a) {
+						return a
+							? a
+							: function (b, c) {
+									return b === c ? b !== 0 || 1 / b === 1 / c : b !== b && c !== c;
+							  };
+					});
+					l("Array.prototype.includes", function (a) {
+						return a
+							? a
+							: function (b, c) {
+									var d = this;
+									d instanceof String && (d = String(d));
+									var f = d.length;
+									c = c || 0;
+									for (c < 0 && (c = Math.max(c + f, 0)); c < f; c++) {
+										var e = d[c];
+										if (e === b || Object.is(e, b)) return !0;
+									}
+									return !1;
+							  };
+					});
+					l("String.prototype.includes", function (a) {
+						return a
+							? a
+							: function (b, c) {
+									if (this == null)
+										throw new TypeError(
+											"The 'this' value for String.prototype.includes must not be null or undefined",
+										);
+									if (b instanceof RegExp)
+										throw new TypeError(
+											"First argument to String.prototype.includes must not be a regular expression",
+										);
+									return (this + "").indexOf(b, c || 0) !== -1;
+							  };
+					});
+					var m = function (a) {
+							var b = a.url;
+							a = a.j;
+							this.i = b;
+							this.s = a;
+							this.D = /[?&]co=1(&|$)/.test(b);
+							(this.A = /[?&]gclid=([^&]*)/.exec(b)) && this.A[1] && (this.B = this.A[1].toString());
+							a = /[?&]dsh=1(&|$)/.test(b);
+							this.l = !a && /[?&]ae=1(&|$)/.test(b);
+							this.C = !a && /[?&]ae=2(&|$)/.test(b);
+							if ((this.g = /[?&]adurl=([^&]*)/.exec(b)) && this.g[1]) {
+								try {
+									var c = decodeURIComponent(this.g[1]);
+								} catch (d) {
+									c = null;
+								}
+								this.v = c;
+							}
+						},
+						p = function (a, b) {
+							return (a.l && a.v) || a.C
+								? b == 1
+									? a.l
+										? a.v
+										: n(a, "&dct=1")
+									: b == 2
+									? n(a, "&ri=2")
+									: n(a, "&ri=16")
+								: a.i;
+						},
+						n = function (a, b) {
+							return a.g ? a.i.slice(0, a.g.index) + b + a.i.slice(a.g.index) : a.i + b;
+						},
+						q = function (a) {
+							a = a.s;
+							var b = encodeURIComponent,
+								c = "";
+							a.platform && (c += "&uap=" + b(a.platform));
+							a.platformVersion && (c += "&uapv=" + b(a.platformVersion));
+							a.uaFullVersion && (c += "&uafv=" + b(a.uaFullVersion));
+							a.architecture && (c += "&uaa=" + b(a.architecture));
+							a.model && (c += "&uam=" + b(a.model));
+							a.bitness && (c += "&uab=" + b(a.bitness));
+							a.fullVersionList &&
+								(c +=
+									"&uafvl=" +
+									b(
+										a.fullVersionList
+											.map(function (d) {
+												return b(d.brand) + ";" + b(d.version);
+											})
+											.join("|"),
+									));
+							typeof a.wow64 !== "undefined" && (c += "&uaw=" + Number(a.wow64));
+							return c;
+						};
+					var r = function (a) {
+						this.g = a;
+					};
+					r.prototype.toString = function () {
+						return this.g + "";
+					};
+					var u = function (a) {
+						this.i = a;
+					};
+					u.prototype.toString = function () {
+						return this.i;
+					};
+					var v = new u("about:invalid#zClosurez");
+					var w = function (a) {
+						this.G = a;
+					};
+					function x(a) {
+						return new w(function (b) {
+							return b.substr(0, a.length + 1).toLowerCase() === a + ":";
+						});
+					}
+					var y = [
+						x("data"),
+						x("http"),
+						x("https"),
+						x("mailto"),
+						x("ftp"),
+						new w(function (a) {
+							return /^[^:]*([/?#]|$)/.test(a);
+						}),
+					];
+					function z(a) {
+						var b = b === void 0 ? y : b;
+						a: if (((b = b === void 0 ? y : b), !(a instanceof u))) {
+							for (var c = 0; c < b.length; ++c) {
+								var d = b[c];
+								if (d instanceof w && d.G(a)) {
+									a = new u(a);
+									break a;
+								}
+							}
+							a = void 0;
+						}
+						return a || v;
+					}
+					var A = /^\s*(?!javascript:)(?:[\w+.-]+:|[^:/?#]*(?:[/?#]|$))/i;
+					function B(a) {
+						if (a instanceof u)
+							if (a instanceof u) a = a.i;
+							else throw Error("b");
+						else a = A.test(a) ? a : void 0;
+						return a;
+					}
+					var C = /^((market|itms|intent|itms-appss):\/\/)/i;
+					function D(a, b) {
+						b = B(b);
+						b !== void 0 && (a.href = b);
+					}
+					var E =
+						"alternate author bookmark canonical cite help icon license modulepreload next prefetch dns-prefetch prerender preconnect preload prev search subresource".split(
+							" ",
+						);
+					var F = function () {
+						var a = { F: google.eufsv },
+							b = this;
+						a = (a === void 0 ? {} : a).F;
+						this.g = null;
+						a &&
+							navigator.userAgentData &&
+							navigator.userAgentData.getHighEntropyValues &&
+							(a = navigator.userAgentData.getHighEntropyValues(
+								"platform platformVersion uaFullVersion architecture model bitness fullVersionList wow64".split(
+									" ",
+								),
+							)) &&
+							a.then(function (c) {
+								b.g = c;
+							});
+					};
+					F.prototype.handle = function (a) {
+						if (a.hasAttribute("data-ohref")) var b = a.getAttribute("data-ohref");
+						else (b = a.href), a.setAttribute("data-ohref", b);
+						var c = new m({ url: b, j: {}.j });
+						c.D &&
+							((c =
+								"https://www.googleadservices.com/pagead/conversion/16521530460/?gad_source=1&adview_type=3" +
+								(c.B ? "&adview_gclid=" + c.B : "")),
+							navigator.sendBeacon(c, "") || fetch(c, { method: "GET", keepalive: !0, mode: "no-cors" }));
+						var d = b;
+						c = { j: this.g };
+						c = new m({ url: d, j: (c === void 0 ? {} : c).j });
+						if ((c.l && c.v) || c.C)
+							if (navigator.sendBeacon) {
+								d = navigator;
+								var f = d.sendBeacon,
+									e = "&act=1&ri=1";
+								c.l && c.s && (e += q(c));
+								c = f.call(d, n(c, e), "") ? p(c, 1) : p(c, 2);
+							} else c = p(c, 0);
+						else c = d;
+						c = c instanceof u || !C.test(c) ? c : new u(c);
+						b != c && D(a, c);
+					};
+					function G(a, b) {
+						var c = /[?&]adurl=/.exec(b);
+						return c
+							? "" + b.slice(0, c.index + 1) + a + "&" + b.slice(c.index + 1)
+							: "" + b + (b.indexOf("?") === -1 ? "?" : "&") + a;
+					}
+					function H(a, b) {
+						a = a.href;
+						var c = /[?&]nis=([^&]*)/.exec(a);
+						return c && c[1] === b
+							? a
+							: c
+							? a.replace(/([?&])nis=([^&]*)/, function (d, f) {
+									return f + "nis=" + b;
+							  })
+							: G("nis=" + b, a);
+					}
+					function I() {
+						var a;
+						return !(
+							(a = document.featurePolicy) == null ||
+							!a.allowedFeatures().includes("attribution-reporting")
+						);
+					}
+					function J(a) {
+						a &&
+							a.indexOf("&sph") != -1 &&
+							((google.cufph =
+								a.indexOf("ctype=") != -1
+									? a.replace(/(.*ctype=)(\d+)(.*)/, "$1331$3")
+									: a + "&ctype=331"),
+							(google.vcmd = "clicked"));
+					}
+					var K = new F();
+					function L(a, b, c) {
+						if ((a = a.dataset[b]))
+							for (a = a.split(","), b = 0; b < a.length; b++) {
+								var d = document.createElement("link");
+								a: {
+									var f = d,
+										e = z(a[b]),
+										t = c;
+									if (e instanceof r)
+										f.href = (
+											e instanceof r && e.constructor === r
+												? e.g
+												: "type_error:TrustedResourceUrl"
+										).toString();
+									else {
+										if (E.indexOf(t) === -1) throw Error("c`" + t);
+										e = B(e);
+										if (e === void 0) break a;
+										f.href = e;
+									}
+									f.rel = t;
+								}
+								document.head.appendChild(d);
+							}
+					}
+					function M(a, b) {
+						if (b) {
+							L(b, "pcu", "preconnect");
+							L(b, "pfu", "prefetch");
+							if (b.hasAttribute("data-impdclcc"))
+								try {
+									var c =
+										b.hasAttribute("attributionsourceid") &&
+										b.hasAttribute("attributiondestination")
+											? "2"
+											: b.hasAttribute("attributionsrc")
+											? I()
+												? "6"
+												: "5"
+											: I()
+											? "7"
+											: "8";
+									D(b, z(H(b, c)));
+								} catch (d) {}
+							(google.eplfdd || google.ellfdd) &&
+								b.target !== "_blank" &&
+								(google.iutaicc
+									? ((c = b.hasAttribute("data-ohref") ? b.getAttribute("data-ohref") : b.href),
+									  (c = new m({ url: c, j: K.g })),
+									  (c = c.s ? n(c, q(c)) : c.i),
+									  J(c))
+									: ((c = b.hasAttribute("data-ohref") ? b.getAttribute("data-ohref") : b.href),
+									  J(c)));
+							b.hasAttribute("data-ae") && K.handle(b);
+							b.hasAttribute("data-ems") && a.stopPropagation();
+						}
+					}
+					function N(a) {
+						if (a.dataset) {
+							var b = a.dataset.rw;
+							if (b) {
+								var c;
+								a: {
+									if (a && (c = a.dataset.ved)) {
+										c = "&ved=" + c;
+										break a;
+									}
+									c = "";
+								}
+								D(a, b + c);
+							}
+						}
+					}
+					window.IMVCy = function (a) {
+						M(a, a.currentTarget);
+					};
+					window.YvikHb = M;
+					window.TPUtub = N;
+					window.J4LCUe = N;
+				}).call(this);
+			</script>
+			<div class="uEierd">
+				<div>
+					<div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+						<div class="v5yQqb jqWpsc">
+							<a
+								class="cz3goc BmP5tf"
+								role="presentation"
+								href="https://www.google.com/aclk?sa=L&amp;ai=DChcSEwif0vrP7eCGAxXUq2YCHU1sBCMYABAAGgJzbQ&amp;gclid=EAIaIQobChMIn9L6z-3ghgMV1KtmAh1NbAQjEAAYASAAEgJ7ffD_BwE&amp;sig=AOD64_1mDgVr8KWoklk4suau7L-X6Xl1lQ&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ0Qx6BAgNEAE&amp;adurl="
+								data-agch="HJ3bqe"
+								data-impdclcc="1"
+								data-pcu="https://mirrortesting-search-dedup.web.app/,https://mirrortesting-custom.web.app/"
+								data-al="1"
+								data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ0Qx6BAgNEAE"
+								><div class="QkcpZ">
+									<div>
+										<div
+											class="d8lRkd OSrXXb Va3FIb lVm3ye TElO2c"
+											role="link"
+											aria-label="mirrortesting-search-dedup.web.app/"
+										>
+											<span class="CnP9N U3A9Ac irmCpc"
+												>Reklama<span style="padding: 0 5px">&middot;</span></span
+											><span
+												aria-hidden="true"
+												class="ob9lvb"
+												data-dtld="web.app"
+												role="text"
+												>mirrortesting-search-dedup.web.app/</span
+											>
+										</div>
+									</div>
+								</div>
+								<div
+									class="CCgQ5 Va3FIb EE3Upf TElO2c OSrXXb"
+									aria-level="3"
+									role="heading"
+								>
+									<span>Mirror Test - Search Dedup OPC</span>
+								</div></a
+							><span></span>
+						</div>
+						<w-ad-creative-spacer
+							><div
+								class="oru2pc"
+								style="height: 16px"
+							></div
+						></w-ad-creative-spacer>
+						<div class="w1C3Le">
+							<div
+								class="Va3FIb r025kc lVm3ye Hdw6tb"
+								style="-webkit-line-clamp: 2"
+							>
+								<div>
+									Transaction ID — Mirror test is a comprehensive and well-defined test to run against
+									a mirror. Learn how to run a mirror test.
+								</div>
+							</div>
+						</div>
+						<w-ad-creative-spacer
+							><div
+								class="oru2pc"
+								style="height: 12px"
+							></div
+						></w-ad-creative-spacer>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+					<div class="egMi0 kCrYT">
+						<a
+							href="/url?esrc=s&amp;q=&amp;rct=j&amp;sa=U&amp;url=https://search.google.com/test/rich-results%3Fhl%3Dcs&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAwQAg&amp;usg=AOvVaw1JUmv4e_iGKxttKwlA5sxx"
+							data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAwQAg"
+							><div class="DnJfK">
+								<div class="j039Wc">
+									<h3 class="zBAuLc l97dzf">
+										<div
+											class="BNeawe vvjwJb AP7Wnd UwRFLe"
+											style="-webkit-line-clamp: 2"
+										>
+											Test rozšířených výsledků – Google Search Console
+										</div>
+									</h3>
+								</div>
+								<div class="sCuL3">
+									<div class="BNeawe UPmit AP7Wnd lRVwie">
+										search.google.com › test › rich-results
+									</div>
+								</div>
+							</div></a
+						>
+					</div>
+					<div class="kCrYT">
+						<div>
+							<div class="BNeawe s3v9rd AP7Wnd">
+								<div>
+									<div>
+										<div class="BNeawe s3v9rd AP7Wnd">
+											Co je toto za test? Otestujte svou veřejně přístupnou stránku, abyste
+											zjistili, jaké rozšířené výsledky lze vygenerovat ze strukturovaných dat,
+											která obsahuje.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="Gx5Zad xpd EtOod pkphOe">
+					<div class="K8tyEc">
+						<div class="mEUgP">
+							<span
+								><div class="BNeawe"><span class="FCUp0c rQMQod">Lidé se také ptají</span></div></span
+							>
+						</div>
+					</div>
+					<div>
+						<div class="rxk4ae xpc">
+							<div class="duf-h">
+								<div
+									class="fLtXsc iIWm4b"
+									aria-expanded="false"
+									id="tsuid_1"
+									role="button"
+									tabindex="0"
+									data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQuk56BAgBEAI"
+								>
+									<div class="Lt3Tzc">How do you test a search engine?</div>
+									<div class="v7Y0Ge">
+										<svg
+											class="Lym8W xCgLUe hwc"
+											viewbox="0 0 12 8"
+											xmlns="http://www.w3.org/2000/sg"
+										>
+											<path
+												fill="#70757a"
+												d="M6 0l-6 6 1.41 1.41 4.59 -4.58 4.59 4.58 1.41 -1.41z"
+											></path></svg
+										><svg
+											class="Lym8W xCgLUe hwx"
+											viewbox="0 0 12 8"
+											xmlns="http://www.w3.org/2000/sg"
+										>
+											<path
+												fill="#70757a"
+												d="M10.59 0l-4.59 4.58 -4.59 -4.58 -1.41 1.41 6 6 6 -6z"
+											></path>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div
+								class="qxDOhb"
+								id="accdef_1"
+							></div>
+						</div>
+					</div>
+					<div class="x54gtf"></div>
+					<div>
+						<div class="rxk4ae xpc">
+							<div class="duf-h">
+								<div
+									class="fLtXsc iIWm4b"
+									aria-expanded="false"
+									id="tsuid_2"
+									role="button"
+									tabindex="0"
+									data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQuk56BAgBEAk"
+								>
+									<div class="Lt3Tzc">How to write test cases for search box?</div>
+									<div class="v7Y0Ge">
+										<svg
+											class="Lym8W xCgLUe hwc"
+											viewbox="0 0 12 8"
+											xmlns="http://www.w3.org/2000/sg"
+										>
+											<path
+												fill="#70757a"
+												d="M6 0l-6 6 1.41 1.41 4.59 -4.58 4.59 4.58 1.41 -1.41z"
+											></path></svg
+										><svg
+											class="Lym8W xCgLUe hwx"
+											viewbox="0 0 12 8"
+											xmlns="http://www.w3.org/2000/sg"
+										>
+											<path
+												fill="#70757a"
+												d="M10.59 0l-4.59 4.58 -4.59 -4.58 -1.41 1.41 6 6 6 -6z"
+											></path>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div
+								class="qxDOhb"
+								id="accdef_3"
+							></div>
+						</div>
+					</div>
+					<div class="x54gtf"></div>
+					<div>
+						<div class="rxk4ae xpc">
+							<div class="duf-h">
+								<div
+									class="fLtXsc iIWm4b"
+									aria-expanded="false"
+									id="tsuid_3"
+									role="button"
+									tabindex="0"
+									data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQuk56BAgBEBA"
+								>
+									<div class="Lt3Tzc">How to test Google search results?</div>
+									<div class="v7Y0Ge">
+										<svg
+											class="Lym8W xCgLUe hwc"
+											viewbox="0 0 12 8"
+											xmlns="http://www.w3.org/2000/sg"
+										>
+											<path
+												fill="#70757a"
+												d="M6 0l-6 6 1.41 1.41 4.59 -4.58 4.59 4.58 1.41 -1.41z"
+											></path></svg
+										><svg
+											class="Lym8W xCgLUe hwx"
+											viewbox="0 0 12 8"
+											xmlns="http://www.w3.org/2000/sg"
+										>
+											<path
+												fill="#70757a"
+												d="M10.59 0l-4.59 4.58 -4.59 -4.58 -1.41 1.41 6 6 6 -6z"
+											></path>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div
+								class="qxDOhb"
+								id="accdef_5"
+							></div>
+						</div>
+					</div>
+					<div class="x54gtf"></div>
+					<div>
+						<div class="rxk4ae xpc">
+							<div class="duf-h">
+								<div
+									class="fLtXsc iIWm4b"
+									aria-expanded="false"
+									id="tsuid_4"
+									role="button"
+									tabindex="0"
+									data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQuk56BAgBEBc"
+								>
+									<div class="Lt3Tzc">What is the rich test result checker?</div>
+									<div class="v7Y0Ge">
+										<svg
+											class="Lym8W xCgLUe hwc"
+											viewbox="0 0 12 8"
+											xmlns="http://www.w3.org/2000/sg"
+										>
+											<path
+												fill="#70757a"
+												d="M6 0l-6 6 1.41 1.41 4.59 -4.58 4.59 4.58 1.41 -1.41z"
+											></path></svg
+										><svg
+											class="Lym8W xCgLUe hwx"
+											viewbox="0 0 12 8"
+											xmlns="http://www.w3.org/2000/sg"
+										>
+											<path
+												fill="#70757a"
+												d="M10.59 0l-4.59 4.58 -4.59 -4.58 -1.41 1.41 6 6 6 -6z"
+											></path>
+										</svg>
+									</div>
+								</div>
+							</div>
+							<div
+								class="qxDOhb"
+								id="accdef_7"
+							></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+					<div class="egMi0 kCrYT">
+						<a
+							href="/url?esrc=s&amp;q=&amp;rct=j&amp;sa=U&amp;url=https://www.google.com/search/howsearchworks/how-search-works/rigorous-testing/&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAoQAg&amp;usg=AOvVaw05hlubdfgPMSM03gdLXWEJ"
+							data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAoQAg"
+							><div class="DnJfK">
+								<div class="j039Wc">
+									<h3 class="zBAuLc l97dzf">
+										<div
+											class="BNeawe vvjwJb AP7Wnd UwRFLe"
+											style="-webkit-line-clamp: 2"
+										>
+											Rigorous Testing – How Google Search Works
+										</div>
+									</h3>
+								</div>
+								<div class="sCuL3">
+									<div class="BNeawe UPmit AP7Wnd lRVwie">
+										www.google.com › search › rigorous-testing
+									</div>
+								</div>
+							</div></a
+						>
+					</div>
+					<div class="kCrYT">
+						<div>
+							<div class="BNeawe s3v9rd AP7Wnd">
+								<div>
+									<div>
+										<div class="BNeawe s3v9rd AP7Wnd">
+											We put all possible changes to Search through a rigorous evaluation process
+											to analyze metrics and decide whether to implement a proposed change. Data
+											from ...
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+					<div class="egMi0 kCrYT">
+						<a
+							href="/url?esrc=s&amp;q=&amp;rct=j&amp;sa=U&amp;url=https://search.google.com/test/rich-results&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAsQAg&amp;usg=AOvVaw0DkajxUrmH-oeZMOzwqInh"
+							data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAsQAg"
+							><div class="DnJfK">
+								<div class="j039Wc">
+									<h3 class="zBAuLc l97dzf">
+										<div
+											class="BNeawe vvjwJb AP7Wnd UwRFLe"
+											style="-webkit-line-clamp: 2"
+										>
+											Rich Results Test - Google Search Console
+										</div>
+									</h3>
+								</div>
+								<div class="sCuL3">
+									<div class="BNeawe UPmit AP7Wnd lRVwie">
+										search.google.com › test › rich-results
+									</div>
+								</div>
+							</div></a
+						>
+					</div>
+					<div class="kCrYT">
+						<div>
+							<div class="BNeawe s3v9rd AP7Wnd">
+								<div>
+									<div>
+										<div class="BNeawe s3v9rd AP7Wnd">
+											Test your publicly accessible page to see which rich results can be
+											generated by the structured data it contains.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+					<div class="egMi0 kCrYT">
+						<a
+							href="/url?esrc=s&amp;q=&amp;rct=j&amp;sa=U&amp;url=https://katalon.com/resources-center/blog/test-cases-for-search-functionality&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAUQAg&amp;usg=AOvVaw0TyK1NAa7quEp-NzsPJMrT"
+							data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAUQAg"
+							><div class="DnJfK">
+								<div class="j039Wc">
+									<h3 class="zBAuLc l97dzf">
+										<div
+											class="BNeawe vvjwJb AP7Wnd UwRFLe"
+											style="-webkit-line-clamp: 2"
+										>
+											100+ Test Cases For Search Functionality You Should Know - Katalon
+										</div>
+									</h3>
+								</div>
+								<div class="sCuL3">
+									<div class="BNeawe UPmit AP7Wnd lRVwie">
+										katalon.com › resources-center › blog › test-cases-fo...
+									</div>
+								</div>
+							</div></a
+						>
+					</div>
+					<div class="kCrYT">
+						<div>
+							<div class="BNeawe s3v9rd AP7Wnd">
+								<div>
+									<div>
+										<div class="BNeawe s3v9rd AP7Wnd">
+											Find 100 test cases for search functionality already categorized for your
+											team to use. A free test case template is also available to download.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+					<div class="egMi0 kCrYT">
+						<a
+							href="/url?esrc=s&amp;q=&amp;rct=j&amp;sa=U&amp;url=https://en.wikipedia.org/wiki/Wikipedia:Search_engine_test&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAcQAg&amp;usg=AOvVaw3C0x3tY3DXy0sXvqS-6N8n"
+							data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAcQAg"
+							><div class="DnJfK">
+								<div class="j039Wc">
+									<h3 class="zBAuLc l97dzf">
+										<div
+											class="BNeawe vvjwJb AP7Wnd UwRFLe"
+											style="-webkit-line-clamp: 2"
+										>
+											Wikipedia:Search engine test
+										</div>
+									</h3>
+								</div>
+								<div class="sCuL3">
+									<div class="BNeawe UPmit AP7Wnd lRVwie">
+										en.wikipedia.org › wiki › Wikipedia:Search_engine_...
+									</div>
+								</div>
+							</div></a
+						>
+					</div>
+					<div class="kCrYT">
+						<div>
+							<div class="BNeawe s3v9rd AP7Wnd">
+								<div>
+									<div class="v9i61e">
+										<div class="BNeawe s3v9rd AP7Wnd">
+											A search engine lists web pages on the Internet. This facilitates research
+											by offering an immediate variety of applicable options. Possibly useful
+											items on ...
+										</div>
+									</div>
+									<div>
+										<div class="BNeawe s3v9rd AP7Wnd">
+											<span class="BNeawe"
+												><a
+													href="/url?esrc=s&amp;q=&amp;rct=j&amp;sa=U&amp;url=https://en.wikipedia.org/wiki/Wikipedia:Search_engine_test%23Some_search_engine_tests&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ0gJ6BAgHEAU&amp;usg=AOvVaw0KSIQLIniFM-krjxPzdKno"
+													data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ0gJ6BAgHEAU"
+													><span class="XLloXe AP7Wnd">Some search engine tests</span></a
+												></span
+											>
+											·
+											<span class="BNeawe"
+												><a
+													href="/url?esrc=s&amp;q=&amp;rct=j&amp;sa=U&amp;url=https://en.wikipedia.org/wiki/Wikipedia:Search_engine_test%23Search_engine_tests&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ0gJ6BAgHEAY&amp;usg=AOvVaw0F_V7wNIdFTVyM2PA015BD"
+													data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ0gJ6BAgHEAY"
+													><span class="XLloXe AP7Wnd">Search engine tests</span></a
+												></span
+											>
+											·
+											<span class="BNeawe"
+												><a
+													href="/url?esrc=s&amp;q=&amp;rct=j&amp;sa=U&amp;url=https://en.wikipedia.org/wiki/Wikipedia:Search_engine_test%23Search_engine_tests_and_Wikipedia_policies&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ0gJ6BAgHEAc&amp;usg=AOvVaw0KhPXHFXfNxJW7TQ5IRRGF"
+													data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ0gJ6BAgHEAc"
+													><span class="XLloXe AP7Wnd">Search engine tests and...</span></a
+												></span
+											>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+					<div class="egMi0 kCrYT">
+						<a
+							href="/url?esrc=s&amp;q=&amp;rct=j&amp;sa=U&amp;url=https://support.google.com/webmasters/answer/7445569%3Fhl%3Den&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAkQAg&amp;usg=AOvVaw2tYANvYMjzg7PMtFTWcx4x"
+							data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAkQAg"
+							><div class="DnJfK">
+								<div class="j039Wc">
+									<h3 class="zBAuLc l97dzf">
+										<div
+											class="BNeawe vvjwJb AP7Wnd UwRFLe"
+											style="-webkit-line-clamp: 2"
+										>
+											Rich Results Test - Search Console Help
+										</div>
+									</h3>
+								</div>
+								<div class="sCuL3">
+									<div class="BNeawe UPmit AP7Wnd lRVwie">
+										support.google.com › webmasters › answer
+									</div>
+								</div>
+							</div></a
+						>
+					</div>
+					<div class="kCrYT">
+						<div>
+							<div class="BNeawe s3v9rd AP7Wnd">
+								<div>
+									<div>
+										<div class="BNeawe s3v9rd AP7Wnd">
+											Review the results. The test shows which rich result types were found on the
+											page, as well as any errors or suggestions for your structured data. If
+											there are ...
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+					<div class="egMi0 kCrYT">
+						<a
+							href="/url?esrc=s&amp;q=&amp;rct=j&amp;sa=U&amp;url=https://www.testfinder.info/&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAMQAg&amp;usg=AOvVaw0STArVMkdsPKbKpjp9s8wW"
+							data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAMQAg"
+							><div class="DnJfK">
+								<div class="j039Wc">
+									<h3 class="zBAuLc l97dzf">
+										<div
+											class="BNeawe vvjwJb AP7Wnd UwRFLe"
+											style="-webkit-line-clamp: 2"
+										>
+											European Test Finder
+										</div>
+									</h3>
+								</div>
+								<div class="sCuL3">
+									<div class="BNeawe UPmit AP7Wnd lRVwie">www.testfinder.info</div>
+								</div>
+							</div></a
+						>
+					</div>
+					<div class="kCrYT">
+						<div>
+							<div class="BNeawe s3v9rd AP7Wnd">
+								<div>
+									<div>
+										<div class="BNeawe s3v9rd AP7Wnd">
+											The European Test Finder is an easy way to search for the nearest place to
+											get tested for HIV, Hepatitis B or C and other STIs.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+					<div class="egMi0 kCrYT">
+						<a
+							href="/url?esrc=s&amp;q=&amp;rct=j&amp;sa=U&amp;url=https://developers.google.com/search/docs/appearance/structured-data&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAYQAg&amp;usg=AOvVaw3rV-Tp9G-D0DmPr5HgXSYd"
+							data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAYQAg"
+							><div class="DnJfK">
+								<div class="j039Wc">
+									<h3 class="zBAuLc l97dzf">
+										<div
+											class="BNeawe vvjwJb AP7Wnd UwRFLe"
+											style="-webkit-line-clamp: 2"
+										>
+											Schema Markup Testing Tool | Google Search Central
+										</div>
+									</h3>
+								</div>
+								<div class="sCuL3">
+									<div class="BNeawe UPmit AP7Wnd lRVwie">
+										developers.google.com › appearance › structured-data
+									</div>
+								</div>
+							</div></a
+						>
+					</div>
+					<div class="kCrYT">
+						<div>
+							<div class="BNeawe s3v9rd AP7Wnd">
+								<div>
+									<div>
+										<div class="BNeawe s3v9rd AP7Wnd">
+											The official Google tool for testing your structured data to see which
+											Google rich results can be generated by the structured data on your page.
+											You can also ...
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+					<div class="egMi0 kCrYT">
+						<a
+							href="/url?esrc=s&amp;q=&amp;rct=j&amp;sa=U&amp;url=https://www.practitest.com/help/general-actions/search/&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAgQAg&amp;usg=AOvVaw2yfAaXaHHsSgB6mbTVrNfI"
+							data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAgQAg"
+							><div class="DnJfK">
+								<div class="j039Wc">
+									<h3 class="zBAuLc l97dzf">
+										<div
+											class="BNeawe vvjwJb AP7Wnd UwRFLe"
+											style="-webkit-line-clamp: 2"
+										>
+											Search - PractiTest
+										</div>
+									</h3>
+								</div>
+								<div class="sCuL3">
+									<div class="BNeawe UPmit AP7Wnd lRVwie">
+										www.practitest.com › help › general-actions › search
+									</div>
+								</div>
+							</div></a
+						>
+					</div>
+					<div class="kCrYT">
+						<div>
+							<div class="BNeawe s3v9rd AP7Wnd">
+								<div>
+									<div>
+										<div class="BNeawe s3v9rd AP7Wnd">
+											PractiTest search option allows you to find information fast and easily. Our
+											search box appears on the top of your screen next to the project name.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="Gx5Zad fP1Qef xpd EtOod pkphOe">
+					<div class="egMi0 kCrYT">
+						<a
+							href="/url?esrc=s&amp;q=&amp;rct=j&amp;sa=U&amp;url=https://www.labcorp.com/test-menu/search&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAQQAg&amp;usg=AOvVaw2d7qpLMW2AkCnbDOB42dOZ"
+							data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAQQAg"
+							><div class="DnJfK">
+								<div class="j039Wc">
+									<h3 class="zBAuLc l97dzf">
+										<div
+											class="BNeawe vvjwJb AP7Wnd UwRFLe"
+											style="-webkit-line-clamp: 2"
+										>
+											Search Our Health Care Diagnostics Tests Menu - Labcorp
+										</div>
+									</h3>
+								</div>
+								<div class="sCuL3">
+									<div class="BNeawe UPmit AP7Wnd lRVwie">www.labcorp.com › test-menu › search</div>
+								</div>
+							</div></a
+						>
+					</div>
+					<div class="kCrYT">
+						<div>
+							<div class="BNeawe s3v9rd AP7Wnd">
+								<div>
+									<div>
+										<div class="BNeawe s3v9rd AP7Wnd">
+											Search our comprehensive test menu which includes both specialty and general
+											laboratory testing services. Search. Browse Tests by Name.
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="Gx5Zad xpd EtOod pkphOe">
+					<div class="K8tyEc">
+						<div class="mEUgP">
+							<span><div class="BNeawe">Související vyhledávání</div></span>
+						</div>
+					</div>
+					<div>
+						<div class="gGQDvd iIWm4b">
+							<a
+								class="Q71vJc"
+								href="/search?sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;q=How+to+Test+search+functionality&amp;sa=X&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ1QJ6BAgCEAI"
+								data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ1QJ6BAgCEAI"
+								><accordion-entry-search-icon class="toMBf"
+									><span
+										class="d9dqO ieB2Dd C5GhQc z1asCe MZy1Rb"
+										style="height: 20px; line-height: 20px; width: 20px"
+										><svg
+											focusable="false"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+										>
+											<path
+												d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+											></path></svg></span
+								></accordion-entry-search-icon>
+								<div class="kjGX2">
+									<span class="Xe4YD"
+										><div class="BNeawe lRVwie">How to Test search functionality</div></span
+									>
+								</div></a
+							>
+						</div>
+					</div>
+					<div class="x54gtf"></div>
+					<div>
+						<div class="gGQDvd iIWm4b">
+							<a
+								class="Q71vJc"
+								href="/search?sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;q=Web+test&amp;sa=X&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ1QJ6BAgCEAQ"
+								data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ1QJ6BAgCEAQ"
+								><accordion-entry-search-icon class="toMBf"
+									><span
+										class="d9dqO ieB2Dd C5GhQc z1asCe MZy1Rb"
+										style="height: 20px; line-height: 20px; width: 20px"
+										><svg
+											focusable="false"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+										>
+											<path
+												d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+											></path></svg></span
+								></accordion-entry-search-icon>
+								<div class="kjGX2">
+									<span class="Xe4YD"><div class="BNeawe lRVwie">Web test</div></span>
+								</div></a
+							>
+						</div>
+					</div>
+					<div class="x54gtf"></div>
+					<div>
+						<div class="gGQDvd iIWm4b">
+							<a
+								class="Q71vJc"
+								href="/search?sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;q=Manual+testing&amp;sa=X&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ1QJ6BAgCEAY"
+								data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ1QJ6BAgCEAY"
+								><accordion-entry-search-icon class="toMBf"
+									><span
+										class="d9dqO ieB2Dd C5GhQc z1asCe MZy1Rb"
+										style="height: 20px; line-height: 20px; width: 20px"
+										><svg
+											focusable="false"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+										>
+											<path
+												d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+											></path></svg></span
+								></accordion-entry-search-icon>
+								<div class="kjGX2">
+									<span class="Xe4YD"><div class="BNeawe lRVwie">Manual testing</div></span>
+								</div></a
+							>
+						</div>
+					</div>
+					<div class="x54gtf"></div>
+					<div>
+						<div class="gGQDvd iIWm4b">
+							<a
+								class="Q71vJc"
+								href="/search?sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;q=Google+Search+Console&amp;sa=X&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ1QJ6BAgCEAg"
+								data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ1QJ6BAgCEAg"
+								><accordion-entry-search-icon class="toMBf"
+									><span
+										class="d9dqO ieB2Dd C5GhQc z1asCe MZy1Rb"
+										style="height: 20px; line-height: 20px; width: 20px"
+										><svg
+											focusable="false"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+										>
+											<path
+												d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+											></path></svg></span
+								></accordion-entry-search-icon>
+								<div class="kjGX2">
+									<span class="Xe4YD"><div class="BNeawe lRVwie">Google Search Console</div></span>
+								</div></a
+							>
+						</div>
+					</div>
+					<div class="x54gtf"></div>
+					<div>
+						<div class="gGQDvd iIWm4b">
+							<a
+								class="Q71vJc"
+								href="/search?sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;q=Google+search+historical+data&amp;sa=X&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ1QJ6BAgCEAo"
+								data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ1QJ6BAgCEAo"
+								><accordion-entry-search-icon class="toMBf"
+									><span
+										class="d9dqO ieB2Dd C5GhQc z1asCe MZy1Rb"
+										style="height: 20px; line-height: 20px; width: 20px"
+										><svg
+											focusable="false"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+										>
+											<path
+												d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+											></path></svg></span
+								></accordion-entry-search-icon>
+								<div class="kjGX2">
+									<span class="Xe4YD"
+										><div class="BNeawe lRVwie">Google search historical data</div></span
+									>
+								</div></a
+							>
+						</div>
+					</div>
+					<div class="x54gtf"></div>
+					<div>
+						<div class="gGQDvd iIWm4b">
+							<a
+								class="Q71vJc"
+								href="/search?sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;q=Google+site+search&amp;sa=X&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ1QJ6BAgCEAw"
+								data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ1QJ6BAgCEAw"
+								><accordion-entry-search-icon class="toMBf"
+									><span
+										class="d9dqO ieB2Dd C5GhQc z1asCe MZy1Rb"
+										style="height: 20px; line-height: 20px; width: 20px"
+										><svg
+											focusable="false"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+										>
+											<path
+												d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+											></path></svg></span
+								></accordion-entry-search-icon>
+								<div class="kjGX2">
+									<span class="Xe4YD"><div class="BNeawe lRVwie">Google site search</div></span>
+								</div></a
+							>
+						</div>
+					</div>
+					<div class="x54gtf"></div>
+					<div>
+						<div class="gGQDvd iIWm4b">
+							<a
+								class="Q71vJc"
+								href="/search?sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;q=Google+search+status+dashboard&amp;sa=X&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ1QJ6BAgCEA4"
+								data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ1QJ6BAgCEA4"
+								><accordion-entry-search-icon class="toMBf"
+									><span
+										class="d9dqO ieB2Dd C5GhQc z1asCe MZy1Rb"
+										style="height: 20px; line-height: 20px; width: 20px"
+										><svg
+											focusable="false"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+										>
+											<path
+												d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+											></path></svg></span
+								></accordion-entry-search-icon>
+								<div class="kjGX2">
+									<span class="Xe4YD"
+										><div class="BNeawe lRVwie">Google search status dashboard</div></span
+									>
+								</div></a
+							>
+						</div>
+					</div>
+					<div class="x54gtf"></div>
+					<div>
+						<div class="gGQDvd iIWm4b">
+							<a
+								class="Q71vJc"
+								href="/search?sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;q=How+Search+works&amp;sa=X&amp;ved=2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ1QJ6BAgCEBA"
+								data-ved="2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ1QJ6BAgCEBA"
+								><accordion-entry-search-icon class="toMBf"
+									><span
+										class="d9dqO ieB2Dd C5GhQc z1asCe MZy1Rb"
+										style="height: 20px; line-height: 20px; width: 20px"
+										><svg
+											focusable="false"
+											xmlns="http://www.w3.org/2000/svg"
+											viewBox="0 0 24 24"
+										>
+											<path
+												d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+											></path></svg></span
+								></accordion-entry-search-icon>
+								<div class="kjGX2">
+									<span class="Xe4YD"><div class="BNeawe lRVwie">How Search works</div></span>
+								</div></a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<div>
+					<div class="Gx5Zad xpd EtOod pkphOe BmP5tf">
+						<div class="nMymef Va3FIb lVm3ye">
+							<a
+								class="nBDE1b G5eFlf"
+								href="/search?q=test+search&amp;sca_esv=0b05e7fa75492358&amp;ucbcb=1&amp;ei=1TxvZsnSEdfy4-EPk4mn4AQ&amp;start=10&amp;sa=N"
+								aria-label="Další stránka"
+								>Další &gt;</a
+							>
+						</div>
+					</div>
+				</div>
+				<div id="EOlPnc">
+					<div class="Srfpq">
+						<div><span class="EYqSq unknown_loc"></span><span class="dfB0uf">Česko</span></div>
+						<span>Z vaší IP adresy</span><span>&nbsp;-&nbsp;</span
+						><a
+							class="IffyKc"
+							href="/url?url=https://support.google.com/websearch%3Fp%3Dws_settings_location%26hl%3Dcs&amp;rct=j&amp;q=&amp;esrc=s&amp;opi=89978449&amp;sa=U&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQty4Ieg&amp;usg=AOvVaw1Xsru7mYqKe24JQyVGZAYq"
+							aria-label="Další informace o tomto místě"
+							tabindex="0"
+							>Další informace</a
+						>
+					</div>
+					<div>
+						<a
+							href="/url?url=https://accounts.google.com/ServiceLogin%3Fcontinue%3Dhttps://www.google.com/search%253Fq%253Dtest%252Bsearch%2526ucbcb%253D1%26hl%3Dcs&amp;rct=j&amp;q=&amp;esrc=s&amp;opi=89978449&amp;sa=U&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQxs8CCHs&amp;usg=AOvVaw3KZeCenGFYZnkdk65PjYXT"
+							>Přihlásit se</a
+						>
+					</div>
+					<div>
+						<a
+							class="xeDNfc"
+							href="https://www.google.com/preferences?hl=cs&amp;fg=1&amp;sa=X&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQ5fUCCHw"
+							>Nastavení</a
+						><a
+							class="xeDNfc"
+							href="https://policies.google.com/privacy?hl=cs&amp;fg=1"
+							>Ochrana soukromí</a
+						><a
+							class="xeDNfc"
+							href="https://policies.google.com/terms?hl=cs&amp;fg=1"
+							>Smluvní podmínky</a
+						><a
+							class="xeDNfc"
+							href="/setprefs?hl=cs&amp;prev=https://www.google.com/search?q%3Dtest%2Bsearch%26ucbcb%3D1%26pccc%3D1&amp;sig=0_7PqX6lF6zSaXU1IRjV9NPh17KNI%3D&amp;cs=2&amp;sa=X&amp;ved=0ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQjcAJCH0"
+							>Tmavý motiv: Vypnuto</a
+						>
+					</div>
+				</div>
+			</footer>
+			<script nonce="2sugm9vHSmZx8zv4XuNJfA">
+				(function () {
+					var hl = "cs";
+					(function () {
+						var f = this || self,
+							g = function (a) {
+								return a;
+							};
+						var l = function (a, b) {
+							this.g = (a === h && b) || "";
+							this.i = k;
+						};
+						l.prototype.toString = function () {
+							return this.g;
+						};
+						var m = function (a) {
+								return a instanceof l && a.constructor === l && a.i === k ? a.g : "type_error:Const";
+							},
+							k = {},
+							h = {};
+						var p,
+							q = function () {
+								if (p === void 0) {
+									var a = null,
+										b = f.trustedTypes;
+									if (b && b.createPolicy) {
+										try {
+											a = b.createPolicy("goog#html", {
+												createHTML: g,
+												createScript: g,
+												createScriptURL: g,
+											});
+										} catch (c) {
+											f.console && f.console.error(c.message);
+										}
+										p = a;
+									} else p = a;
+								}
+								return p;
+							};
+						var r = function (a) {
+							this.g = a;
+						};
+						r.prototype.toString = function () {
+							return this.g + "";
+						};
+						var t = function (a) {
+								return a instanceof r && a.constructor === r ? a.g : "type_error:TrustedResourceUrl";
+							},
+							x = function () {
+								var a = {},
+									b = m(new l(h, "/complete/search"));
+								if (!u.test(b)) throw Error("e`" + b);
+								var c = b.replace(v, function (e, d) {
+									if (!Object.prototype.hasOwnProperty.call(a, d))
+										throw Error("f`" + d + "`" + b + "`" + JSON.stringify(a));
+									e = a[d];
+									return e instanceof l ? m(e) : encodeURIComponent(String(e));
+								});
+								return w(c);
+							},
+							v = /%{(\w+)}/g,
+							u = RegExp(
+								"^((https:)?//[0-9a-z.:[\\]-]+/|/[^/\\\\]|[^:/\\\\%]+/|[^:/\\\\%]*[?#]|about:blank#)",
+								"i",
+							),
+							y = /^([^?#]*)(\?[^#]*)?(#[\s\S]*)?/,
+							z = {},
+							w = function (a) {
+								var b = q();
+								a = b ? b.createScriptURL(a) : a;
+								return new r(a, z);
+							},
+							A = function (a, b, c) {
+								if (c == null) return b;
+								if (typeof c === "string") return c ? a + encodeURIComponent(c) : "";
+								for (var e in c)
+									if (Object.prototype.hasOwnProperty.call(c, e)) {
+										var d = c[e];
+										d = Array.isArray(d) ? d : [d];
+										for (var n = 0; n < d.length; n++) {
+											var O = d[n];
+											O != null &&
+												(b || (b = a),
+												(b +=
+													(b.length > a.length ? "&" : "") +
+													encodeURIComponent(e) +
+													"=" +
+													encodeURIComponent(String(O))));
+										}
+									}
+								return b;
+							};
+						var B = {},
+							C = function (a) {
+								this.g = a;
+							};
+						C.prototype.toString = function () {
+							return this.g.toString();
+						};
+						function D(a, b) {
+							if (a.nodeType === 1) {
+								var c = a.tagName;
+								if (c === "SCRIPT" || c === "STYLE") throw Error("g");
+							}
+							a.innerHTML = b instanceof C && b.constructor === C ? b.g : "type_error:SafeHtml";
+						}
+						function E(a) {
+							a = a === null ? "null" : a === void 0 ? "undefined" : a;
+							var b = q();
+							a = b ? b.createHTML(a) : a;
+							return new C(a, B);
+						}
+						var F = document.querySelector(".l"),
+							G = document.querySelector("#sf"),
+							H = G.querySelector(".sbc"),
+							I = G.querySelector("[type=text]"),
+							J = G.querySelector("[type=submit]"),
+							K = G.querySelector(".sc"),
+							L = G.querySelector(".x"),
+							M = I.value,
+							N = [],
+							P = -1,
+							Q = M,
+							R,
+							S,
+							T;
+						M || (L && (L.style.display = "none"), U(!1));
+						function U(a) {
+							if (H.classList.contains("esbc")) {
+								var b = H.classList.contains("chsbc"),
+									c = H.classList.contains("rtlsbc");
+								a &&
+									((K.style.display = "block"),
+									b
+										? ((G.style.borderRadius = "20px 20px 0 0"),
+										  (K.style.borderBottom = "1px solid #DFE1E5"),
+										  (J.style.borderRadius = c ? "20px 0 0 0" : "0 20px 0 0"))
+										: (H.style.borderRadius = c ? "0 8px 0 0" : "8px 0 0 0"));
+								a ||
+									((K.style.display = "none"),
+									b
+										? ((G.style.borderRadius = "20px"),
+										  (K.style.borderBottom = "none"),
+										  (J.style.borderRadius = c ? "20px 0 0 20px" : "0 20px 20px 0"))
+										: (H.style.borderRadius = c ? "0 8px 8px 0" : "8px 0 0 8px"));
+							}
+						}
+						function V() {
+							G.querySelector("[name=oq]").value = Q;
+							G.querySelector("[name=aqs]").value =
+								"heirloom-srp." + (P >= 0 ? P : "") + "." + (N.length > 0 ? "0l" + N.length : "");
+						}
+						function W() {
+							R = null;
+							if (S) {
+								var a = { client: "heirloom-srp", hl: hl, json: "t", callback: "hS", q: S };
+								typeof ds !== "undefined" && ds && (a.ds = ds);
+								var b = document;
+								var c = "SCRIPT";
+								b.contentType === "application/xhtml+xml" && (c = c.toLowerCase());
+								c = b.createElement(c);
+								b = x();
+								b = y.exec(t(b).toString());
+								var e = b[3] || "";
+								a = w(b[1] + A("?", b[2] || "", a) + A("#", e));
+								c.src = t(a);
+								var d, n;
+								(d = (a =
+									(n = (d = ((c.ownerDocument && c.ownerDocument.defaultView) || window).document)
+										.querySelector) == null
+										? void 0
+										: n.call(d, "script[nonce]"))
+									? a.nonce || a.getAttribute("nonce") || ""
+									: "") && c.setAttribute("nonce", d);
+								document.body.appendChild(c);
+								S = null;
+								R = setTimeout(W, 500);
+							}
+						}
+						function X() {
+							for (; K.firstChild; ) K.removeChild(K.firstChild);
+							N = [];
+							P = -1;
+							U(!1);
+						}
+						function Y() {
+							var a = K.querySelector(".scs");
+							a && (a.className = "");
+							P >= 0 ? ((a = K.childNodes[P]), (a.className = "scs"), (M = a.textContent)) : (M = Q);
+							I.value = M;
+						}
+						I.addEventListener(
+							"focus",
+							function () {
+								F && (F.style.display = "none");
+							},
+							!1,
+						);
+						I.addEventListener(
+							"blur",
+							function () {
+								X();
+								F && (F.style.display = "");
+							},
+							!1,
+						);
+						I.addEventListener(
+							"keyup",
+							function (a) {
+								M = I.value;
+								T = !1;
+								a.which === 13
+									? V()
+									: a.which === 27
+									? (X(), F && (F.style.display = ""), (M = Q), (I.value = M))
+									: a.which === 40
+									? (P++, P >= N.length && (P = -1), Y())
+									: a.which === 38
+									? (P--, P < -1 && (P = N.length - 1), Y())
+									: (a = M)
+									? (L && (L.style.display = ""), (S = a), R || W(), (Q = a))
+									: (L && (L.style.display = "none"), U(!1), X(), (Q = ""), (T = !0));
+							},
+							!1,
+						);
+						J.addEventListener("click", V, !1);
+						L.addEventListener(
+							"click",
+							function () {
+								I.value = "";
+								L.style.display = "none";
+								U(!1);
+							},
+							!1,
+						);
+						H.addEventListener(
+							"click",
+							function () {
+								I.focus();
+							},
+							!1,
+						);
+						window.hS = function (a) {
+							if (!T) {
+								X();
+								a[1].length === 0 && U(!1);
+								for (var b = 0; b < a[1].length; b++) {
+									var c = a[1][b][0],
+										e = document.createElement("div");
+									D(e, E(c));
+									e.addEventListener(
+										"mousedown",
+										function (d) {
+											d.preventDefault();
+											return !1;
+										},
+										!1,
+									);
+									c = c.replace(/<\/?b>/g, "");
+									e.addEventListener(
+										"click",
+										(function (d) {
+											return function () {
+												P = d;
+												V();
+												Y();
+												X();
+												G.submit();
+											};
+										})(b),
+										!1,
+									);
+									e.addEventListener(
+										"mouseover",
+										(function (d) {
+											return function () {
+												P !== d && ((P = d), Y());
+											};
+										})(b),
+										!1,
+									);
+									K.appendChild(e);
+									U(!0);
+									N.push(c);
+								}
+							}
+						};
+					}).call(this);
+				})();
+				(function () {
+					window.prh = function (d, a) {
+						a = a.split(",");
+						for (var b = 0; b < a.length; b++) {
+							var c = document.createElement("link");
+							c.rel = d;
+							c.href = a[b];
+							(document.head || document.querySelector("head")).appendChild(c);
+						}
+					};
+				}).call(this);
+				(function () {
+					function b(a) {
+						for (a = a.target || a.srcElement; a && a.nodeName !== "A"; ) a = a.parentElement;
+						a &&
+							(a.href || "").match(/\/search.*[?&]tbm=isch/) &&
+							((a.href += "&biw=" + document.documentElement.clientWidth),
+							(a.href += "&bih=" + document.documentElement.clientHeight));
+					}
+					document.addEventListener("click", b, !1);
+					document.addEventListener("touchStart", b, !1);
+				}).call(this);
+			</script>
+		</div>
+		<!-- cctlcm 5 cctlcm --><textarea
+			class="csi"
+			name="csi"
+			style="display: none"
+		></textarea>
+		<script nonce="2sugm9vHSmZx8zv4XuNJfA">
+			(function () {
+				var e = "1TxvZsnSEdfy4-EPk4mn4AQ";
+				var sn = "web";
+				var timl = false;
+				(function () {
+					function C(a) {
+						if (!a || D(a)) return 0;
+						if (!a.getBoundingClientRect) return 1;
+						var c = function (d) {
+							return d.getBoundingClientRect();
+						};
+						if (E(a, c)) return 0;
+						var b;
+						return K(a, c, (b = google.c) == null ? void 0 : b.cvb);
+					}
+					function E(a, c) {
+						var b;
+						a: {
+							for (b = a; b && b !== null; b = b.parentElement)
+								if (
+									b.style.overflow === "hidden" ||
+									(b.tagName === "G-EXPANDABLE-CONTENT" &&
+										getComputedStyle(b).getPropertyValue("overflow") === "hidden")
+								)
+									break a;
+							b = null;
+						}
+						if (!b) return !1;
+						a = c(a);
+						c = c(b);
+						return a.bottom < c.top || a.top >= c.bottom || a.right < c.left || a.left >= c.right;
+					}
+					function D(a) {
+						return a.style.display === "none"
+							? !0
+							: document.defaultView && document.defaultView.getComputedStyle
+							? ((a = document.defaultView.getComputedStyle(a)),
+							  !!a && (a.visibility === "hidden" || (a.height === "0px" && a.width === "0px")))
+							: !1;
+					}
+					function K(a, c) {
+						var b = c(a);
+						a = b.left + window.pageXOffset;
+						c = b.top + window.pageYOffset;
+						var d = b.width;
+						b = b.height;
+						var f = 0;
+						if (b <= 0 && d <= 0) return f;
+						var q = window.innerHeight || document.documentElement.clientHeight;
+						c + b < 0 ? (f = 2) : c >= q && (f = 4);
+						if (a + d < 0 || a >= (window.innerWidth || document.documentElement.clientWidth)) f |= 8;
+						f || ((f = 1), c + b > q && (f |= 4));
+						return f;
+					}
+					var L = e,
+						M = sn,
+						N = typeof de === "undefined" ? !0 : de !== !1,
+						O = [];
+					function P(a, c, b) {
+						a =
+							"/gen_204?atyp=csi&s=" +
+							M +
+							"&t=" +
+							a +
+							("&lite=1&ei=" +
+								L +
+								"&conn=" +
+								(window.navigator && window.navigator.connection
+									? window.navigator.connection.type
+									: -1) +
+								c);
+						c = "&rt=";
+						for (var d in b) (a += "" + c + d + "." + b[d]), (c = ",");
+						return a;
+					}
+					function Q(a) {
+						a = { prt: a };
+						window.wsrt && (a.wsrt = window.wsrt);
+						return a;
+					}
+					function R(a) {
+						window.ping ? window.ping(a) : (new Image().src = a);
+					}
+					(function () {
+						for (
+							var a = new Date().getTime() - window.start,
+								c = Q(a),
+								b = 0,
+								d = 0,
+								f = 0,
+								q = document.getElementsByTagName("img"),
+								r = N ? "&biw=" + window.innerWidth + "&bih=" + window.innerHeight : "",
+								F = function () {
+									r += "&ima=" + f;
+									c.aft = b;
+									R(P("aft", r, c));
+								},
+								y = 0,
+								S = function (g, t, u) {
+									var n = g.src;
+									g.onload = function () {
+										(u && n && n === g.src) ||
+											((d = new Date().getTime() - window.start),
+											t && ++y === f && ((b = d), F()),
+											(g.onload = null));
+									};
+								},
+								T = 0,
+								h = void 0;
+							(h = q[T++]);
+
+						) {
+							var v = C(h),
+								p = !!(v & 1);
+							p && ++f;
+							var l = h.hasAttribute("data-ilite"),
+								w = h.hasAttribute("data-deferred"),
+								G = h.hasAttribute("data-src") || h.hasAttribute("data-lzysrc"),
+								z = !w && !l && G;
+							O.push([v, w || l, z, h.id, l && G]);
+							l = ((v = h.complete && !w && !(p && z)) && Number(h.getAttribute("data-iml"))) || 0;
+							v && l
+								? (p && ++y,
+								  l && ((h = l - window.start), p && (b = Math.max(b, h)), (d = Math.max(d, h))))
+								: S(h, p, w || z);
+						}
+						b || (b = a);
+						d || (d = b);
+						y === f && F();
+						google.rglh && google.rglh();
+						window.addEventListener(
+							"load",
+							function () {
+								window.setTimeout(function () {
+									c.ol = new Date().getTime() - window.start;
+									timl && (c.iml = d);
+									var g = window.performance && window.performance.timing;
+									g &&
+										((c.rqst = g.responseEnd - g.requestStart),
+										(c.rspt = g.responseEnd - g.responseStart));
+									for (var t = (g = 0), u = 0, n = 0, H = 0, I = 0, U = 0, k; (k = O[U++]); ) {
+										var m = k[0],
+											A = k[1],
+											J = k[2],
+											x = k[3];
+										k = k[4] || (google.ldi && x && google.ldi[x]);
+										x = m == 0;
+										var V = m & 8,
+											B = m & 1;
+										m = !B && m & 4;
+										B && ((A && !k) || ++u, J && ++I);
+										A && (B && k && ++g, m && !k && ++t);
+										x || V ? J || ++H : A || ++n;
+									}
+									r +=
+										"&ime=" +
+										u +
+										"&imel=" +
+										I +
+										("&imex=" + n + "&imeh=" + H) +
+										("&imea=" + g + "&imeb=" + t);
+									R(P("all", r, c));
+								}, 0);
+							},
+							!1,
+						);
+					})();
+				}).call(this);
+			})();
+			(function () {
+				window.google = window.google || {};
+				window.google.ishk = [];
+				function a() {
+					return (
+						window.scrollY + window.document.documentElement.clientHeight >=
+						Math.max(document.body.scrollHeight, document.body.offsetHeight)
+					);
+				}
+				function b() {
+					a() &&
+						window.google.ishk.length === 0 &&
+						((window.google.bs = !0), window.removeEventListener("scroll", b));
+				}
+				a() ? (window.google.bs = !0) : ((window.google.bs = !1), window.addEventListener("scroll", b));
+			}).call(this);
+		</script>
+		<style>
+			.v0rrvd {
+				padding-bottom: 16px;
+			}
+			.OSrXXb {
+				overflow: hidden;
+				text-overflow: ellipsis;
+			}
+			.cHaqb {
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.q8U8x {
+				font-family: Google Sans, Roboto, Helvetica Neue, Arial, sans-serif;
+				font-weight: 400;
+			}
+			.lUn2nc {
+				padding-right: 12px;
+			}
+			.MBeuO {
+				font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+				font-size: 18px;
+				font-weight: 400;
+			}
+			.MBeuO {
+				line-height: 24px;
+			}
+			.wHYlTd {
+				font-family: Roboto, Helvetica Neue, Arial, sans-serif;
+				font-size: 14px;
+				line-height: 20px;
+			}
+		</style>
+		<script nonce="2sugm9vHSmZx8zv4XuNJfA">
+			(function () {
+				prh("preconnect", "https://www.googleadservices.com/");
+			})();
+			(function () {
+				var e = "1TxvZsnSEdfy4-EPk4mn4AQ";
+				(function () {
+					var a = e;
+					if (
+						(window.performance && window.performance.navigation && window.performance.navigation.type) ===
+						2
+					) {
+						var b = "",
+							c = [],
+							d =
+								window.google !== void 0 && window.google.kOPI !== void 0 && window.google.kOPI !== 0
+									? window.google.kOPI
+									: null;
+						d != null && c.push(["opi", d.toString()]);
+						for (var f = 0; f < c.length; f++) {
+							if (f === 0 || f > 0) b += "&";
+							b += c[f][0] + "=" + c[f][1];
+						}
+						window.ping("/gen_204?ct=backbutton&ei=" + a + b);
+					}
+				}).call(this);
+			})();
+			(function () {
+				google.drc = [
+					function () {
+						google.tick && google.tick("load", "dcl");
+					},
+				];
+				google.dclc = function (a) {
+					google.drc.length ? google.drc.push(a) : a();
+				};
+				function b() {
+					for (var a = google.drc.shift(); a; ) a(), (a = google.drc.shift());
+				}
+				window.addEventListener
+					? (document.addEventListener("DOMContentLoaded", b, !1), window.addEventListener("load", b, !1))
+					: window.attachEvent && window.attachEvent("onload", b);
+			}).call(this);
+			(function () {
+				var c = function (a) {
+					var b = 0;
+					return function () {
+						return b < a.length ? { done: !1, value: a[b++] } : { done: !0 };
+					};
+				};
+				var e = this || self;
+				var g, h;
+				a: {
+					for (var k = ["CLOSURE_FLAGS"], l = e, n = 0; n < k.length; n++)
+						if (((l = l[k[n]]), l == null)) {
+							h = null;
+							break a;
+						}
+					h = l;
+				}
+				var p = h && h[610401301];
+				g = p != null ? p : !1;
+				var q,
+					r = e.navigator;
+				q = r ? r.userAgentData || null : null;
+				function t(a) {
+					return g
+						? q
+							? q.brands.some(function (b) {
+									return (b = b.brand) && b.indexOf(a) != -1;
+							  })
+							: !1
+						: !1;
+				}
+				function u(a) {
+					var b;
+					a: {
+						if ((b = e.navigator)) if ((b = b.userAgent)) break a;
+						b = "";
+					}
+					return b.indexOf(a) != -1;
+				}
+				function v() {
+					return g ? !!q && q.brands.length > 0 : !1;
+				}
+				function w() {
+					return (
+						u("Safari") &&
+						!(
+							x() ||
+							(v() ? 0 : u("Coast")) ||
+							(v() ? 0 : u("Opera")) ||
+							(v() ? 0 : u("Edge")) ||
+							(v() ? t("Microsoft Edge") : u("Edg/")) ||
+							(v() ? t("Opera") : u("OPR")) ||
+							u("Firefox") ||
+							u("FxiOS") ||
+							u("Silk") ||
+							u("Android")
+						)
+					);
+				}
+				function x() {
+					return v() ? t("Chromium") : ((u("Chrome") || u("CriOS")) && !(v() ? 0 : u("Edge"))) || u("Silk");
+				}
+				function y() {
+					return u("Android") && !(x() || u("Firefox") || u("FxiOS") || (v() ? 0 : u("Opera")) || u("Silk"));
+				}
+				var z = v() ? !1 : u("Trident") || u("MSIE");
+				y();
+				x();
+				w();
+				var A;
+				A = typeof Symbol === "function" && typeof Symbol() === "symbol" ? Symbol() : void 0;
+				var B = [];
+				(A
+					? function (a, b) {
+							a[A] = b;
+					  }
+					: function (a, b) {
+							a.g !== void 0
+								? (a.g = b)
+								: Object.defineProperties(a, {
+										g: { value: b, configurable: !0, writable: !0, enumerable: !1 },
+								  });
+					  })(B, 55);
+				Object.freeze(B);
+				var C = function () {};
+				Object.freeze(new (function () {})());
+				Object.freeze(new C());
+				Object.freeze(new C());
+				var D = !z && !w(),
+					G = function (a) {
+						if (/-[a-z]/.test("ved")) return null;
+						if (D && a.dataset) {
+							if (y() && !("ved" in a.dataset)) return null;
+							a = a.dataset.ved;
+							return a === void 0 ? null : a;
+						}
+						return a.getAttribute("data-" + "ved".replace(/([A-Z])/g, "-$1").toLowerCase());
+					};
+				var H = [],
+					I = null;
+				function J(a) {
+					a = a.target;
+					var b = performance.now(),
+						f = [],
+						K = f.concat,
+						d = H;
+					if (!(d instanceof Array)) {
+						var m = typeof Symbol != "undefined" && Symbol.iterator && d[Symbol.iterator];
+						if (m) d = m.call(d);
+						else if (typeof d.length == "number") d = { next: c(d) };
+						else throw Error("b`" + String(d));
+						for (var E = []; !(m = d.next()).done; ) E.push(m.value);
+						d = E;
+					}
+					H = K.call(f, d, [b]);
+					if (a && a instanceof HTMLElement)
+						if (a === I) {
+							if ((b = H.length >= 4)) b = (H[H.length - 1] - H[H.length - 4]) / 1e3 < 5;
+							if (b) {
+								b = google.getEI(a);
+								a.hasAttribute("data-ved")
+									? (f = a ? G(a) || "" : "")
+									: (f = (f = a.closest("[data-ved]")) ? G(f) || "" : "");
+								f = f || "";
+								if (a.hasAttribute("jsname")) a = a.getAttribute("jsname");
+								else {
+									var F;
+									a = (F = a.closest("[jsname]")) == null ? void 0 : F.getAttribute("jsname");
+								}
+								google.log("rcm", "&ei=" + b + "&tgtved=" + f + "&jsname=" + (a || ""));
+							}
+						} else (I = a), (H = [b]);
+				}
+				window.document.addEventListener("DOMContentLoaded", function () {
+					document.body.addEventListener("click", J);
+				});
+			}).call(this);
+			var w = function (a) {
+				var b = 0;
+				return function () {
+					return b < a.length ? { done: !1, value: a[b++] } : { done: !0 };
+				};
+			};
+			window.jsl = window.jsl || {};
+			window.jsl.dh = function (a, b, m) {
+				try {
+					var h = document.getElementById(a),
+						e;
+					if (!h && ((e = google.stvsc) == null ? 0 : e.dds)) {
+						e = [];
+						var f = e.concat,
+							c = google.stvsc.dds;
+						if (c instanceof Array) var n = c;
+						else {
+							var p = typeof Symbol != "undefined" && Symbol.iterator && c[Symbol.iterator];
+							if (p) var g = p.call(c);
+							else if (typeof c.length == "number") g = { next: w(c) };
+							else throw Error(String(c) + " is not an iterable or ArrayLike");
+							c = g;
+							var q;
+							for (g = []; !(q = c.next()).done; ) g.push(q.value);
+							n = g;
+						}
+						var r = f.call(e, n);
+						for (f = 0; f < r.length && !(h = r[f].getElementById(a)); f++);
+					}
+					if (h) (h.innerHTML = b), m && m();
+					else {
+						var d = { id: a, script: String(!!m), milestone: String(google.jslm || 0) };
+						google.jsla && (d.async = google.jsla);
+						var t = a.indexOf("_"),
+							k = t > 0 ? a.substring(0, t) : "",
+							u = document.createElement("div");
+						u.innerHTML = b;
+						var l = u.children[0];
+						if (
+							l &&
+							((d.tag = l.tagName),
+							(d["class"] = String(l.className || null)),
+							(d.name = String(l.getAttribute("jsname"))),
+							k)
+						) {
+							a = [];
+							var v = document.querySelectorAll('[id^="' + k + '_"]');
+							for (b = 0; b < v.length; ++b) a.push(v[b].id);
+							d.ids = a.join(",");
+						}
+						google.ml(Error(k ? "Missing ID with prefix " + k : "Missing ID"), !1, d);
+					}
+				} catch (x) {
+					google.ml(x, !0, { "jsl.dh": !0 });
+				}
+			};
+			(function () {
+				var x = false;
+				google.jslm = x ? 2 : 1;
+			})();
+			(function () {
+				(function () {
+					google.csct = {};
+					google.csct.ps = "AOvVaw2oJmCvhdnXlfkC6unWDlQ5\x26ust\x3d1718652501314469";
+				})();
+			})();
+			(function () {
+				(function () {
+					google.csct.rd = true;
+				})();
+			})();
+			(function () {
+				(function () {
+					google.csct.pi = true;
+				})();
+			})();
+			(function () {
+				window.xp = function (b) {
+					function f(k, g, h) {
+						return "xp" + (g == "x" ? "c" : "x") + h;
+					}
+					for (var c = /\bxp(x|c)(\d?)\b/, a = b; a; ) {
+						var e = a.className,
+							d = e.match(c);
+						if (d) {
+							d = d[1] == "c";
+							a.className = e.replace(c, f);
+							b && b.setAttribute("aria-expanded", d);
+							if (d)
+								for (b = a.getElementsByTagName("img"), c = 0; c < b.length; ++c)
+									if (((a = b[c]), (e = a.getAttribute("data-ll"))))
+										(a.src = e), a.removeAttribute("data-ll");
+							break;
+						}
+						a = a.parentElement;
+					}
+				};
+			})();
+			(function () {
+				(function () {
+					window.logVe = function (a) {
+						a && a.attributes["data-ved"] && window.ping("/gen_204?ved=" + a.attributes["data-ved"].value);
+					};
+				}).call(this);
+			})();
+			(function () {
+				(function () {
+					var id = "tsuid_1";
+					var lve = true;
+					(function () {
+						var e =
+								typeof navigator !== "undefined" &&
+								!/Opera/.test(navigator.userAgent) &&
+								/WebKit/.test(navigator.userAgent),
+							f = { A: 1, INPUT: 1, TEXTAREA: 1, SELECT: 1, BUTTON: 1 },
+							g = { Enter: 13, " ": 32 },
+							h = {
+								A: 13,
+								BUTTON: 0,
+								CHECKBOX: 32,
+								COMBOBOX: 13,
+								FILE: 0,
+								GRIDCELL: 13,
+								LINK: 13,
+								LISTBOX: 13,
+								MENU: 0,
+								MENUBAR: 0,
+								MENUITEM: 0,
+								MENUITEMCHECKBOX: 0,
+								MENUITEMRADIO: 0,
+								OPTION: 0,
+								RADIO: 32,
+								RADIOGROUP: 32,
+								RESET: 0,
+								SUBMIT: 0,
+								SWITCH: 32,
+								TAB: 0,
+								TREE: 13,
+								TREEITEM: 13,
+							},
+							k = { CHECKBOX: !0, FILE: !0, OPTION: !0, RADIO: !0 },
+							l = {
+								COLOR: !0,
+								DATE: !0,
+								DATETIME: !0,
+								"DATETIME-LOCAL": !0,
+								EMAIL: !0,
+								MONTH: !0,
+								NUMBER: !0,
+								PASSWORD: !0,
+								RANGE: !0,
+								SEARCH: !0,
+								TEL: !0,
+								TEXT: !0,
+								TEXTAREA: !0,
+								TIME: !0,
+								URL: !0,
+								WEEK: !0,
+							};
+						document.getElementById(id).onclick = function () {
+							window.xp(this);
+							lve && window.logVe(this);
+						};
+						document.getElementById(id).onkeydown = function (d) {
+							var c = d.which || d.keyCode;
+							!c && d.key && (c = g[d.key]);
+							e && c === 3 && (c = 13);
+							if (c !== 13 && c !== 32) c = !1;
+							else {
+								var a = d.target;
+								!a.getAttribute && a.parentNode && (a = a.parentNode);
+								var b;
+								if (!(b = d.type !== "keydown")) {
+									if ((b = "getAttribute" in a))
+										b = !((a.getAttribute("type") || a.tagName).toUpperCase() in l);
+									b = !(
+										b &&
+										!(
+											a.tagName.toUpperCase() === "BUTTON" ||
+											(a.type && a.type.toUpperCase() === "FILE")
+										) &&
+										!a.isContentEditable
+									);
+								}
+								(b =
+									b ||
+									d.ctrlKey ||
+									d.shiftKey ||
+									d.altKey ||
+									d.metaKey ||
+									((a.getAttribute("type") || a.tagName).toUpperCase() in k && c === 32)) ||
+									((b = a.tagName in f) ||
+										((b = a.getAttributeNode("tabindex")), (b = b != null && b.specified)),
+									(b = !(b && !a.disabled)));
+								if (b) c = !1;
+								else {
+									b = (a.getAttribute("role") || a.type || a.tagName).toUpperCase();
+									var m = !(b in h) && c === 13;
+									a = a.tagName.toUpperCase() !== "INPUT" || !!a.type;
+									c = (h[b] % c === 0 || m) && a;
+								}
+							}
+							c && (d.preventDefault(), window.xp(this), lve && window.logVe(this));
+						};
+					}).call(this);
+				})();
+			})();
+			(function () {
+				window.jsl = window.jsl || {};
+				window.jsl.dh =
+					window.jsl.dh ||
+					function (i, c, d) {
+						try {
+							var e = document.getElementById(i);
+							if (e) {
+								e.innerHTML = c;
+								if (d) {
+									d();
+								}
+							} else {
+								if (window.jsl.el) {
+									window.jsl.el(new Error("Missing ID."), { id: i });
+								}
+							}
+						} catch (e) {
+							if (window.jsl.el) {
+								window.jsl.el(new Error("jsl.dh"));
+							}
+						}
+					};
+			})();
+			(function () {
+				window.jsl.dh(
+					"accdef_1",
+					"\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22Gx5Zad xpd EtOod pkphOe\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv class\x3d\x22PqksIc nRlVm\x22\x3e\x3cdiv class\x3d\x22BNeawe\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe\x22\x3e\x3cspan class\x3d\x22FCUp0c rQMQod\x22\x3eEvaluate the placement and visibility of the search bar on the website\x3c/span\x3e. Test the responsiveness and compatibility of the search feature on different devices and browsers. Verify that the search bar accepts user inputs without delays. Check if search suggestions and auto-corrections are helpful and user-friendly.\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22x54gtf\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3ca href\x3d\x22/url?esrc\x3ds\x26amp;q\x3d\x26amp;rct\x3dj\x26amp;sa\x3dU\x26amp;url\x3dhttps://katalon.com/resources-center/blog/test-cases-for-search-functionality\x26amp;ved\x3d2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAEQBg\x26amp;usg\x3dAOvVaw0bEoZfl3ZTOHCSrkQXtc8m\x22 data-ved\x3d\x222ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAEQBg\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe vvjwJb AP7Wnd UwRFLe\x22 style\x3d\x22-webkit-line-clamp:2\x22\x3e\x3cspan class\x3d\x22rQMQod Xb5VRe\x22\x3e100+ Test Cases For Search Functionality You Should Know - Katalon\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe UPmit AP7Wnd UwRFLe\x22 style\x3d\x22-webkit-line-clamp:2\x22\x3ekatalon.com \u203a resources-center \u203a blog \u203a test-cases-for-search-functionality\x3c/div\x3e\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.com/search?sca_esv\x3d0b05e7fa75492358\x26amp;ucbcb\x3d1\x26amp;ei\x3d1TxvZsnSEdfy4-EPk4mn4AQ\x26amp;q\x3dHow+do+you+test+a+search+engine?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQzmd6BAgBEAc\x22 data-ved\x3d\x222ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQzmd6BAgBEAc\x22\x3eDal\u0161\xed v\xfdsledky\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e",
+				);
+			})();
+			(function () {
+				(function () {
+					var id = "tsuid_2";
+					var lve = true;
+					(function () {
+						var e =
+								typeof navigator !== "undefined" &&
+								!/Opera/.test(navigator.userAgent) &&
+								/WebKit/.test(navigator.userAgent),
+							f = { A: 1, INPUT: 1, TEXTAREA: 1, SELECT: 1, BUTTON: 1 },
+							g = { Enter: 13, " ": 32 },
+							h = {
+								A: 13,
+								BUTTON: 0,
+								CHECKBOX: 32,
+								COMBOBOX: 13,
+								FILE: 0,
+								GRIDCELL: 13,
+								LINK: 13,
+								LISTBOX: 13,
+								MENU: 0,
+								MENUBAR: 0,
+								MENUITEM: 0,
+								MENUITEMCHECKBOX: 0,
+								MENUITEMRADIO: 0,
+								OPTION: 0,
+								RADIO: 32,
+								RADIOGROUP: 32,
+								RESET: 0,
+								SUBMIT: 0,
+								SWITCH: 32,
+								TAB: 0,
+								TREE: 13,
+								TREEITEM: 13,
+							},
+							k = { CHECKBOX: !0, FILE: !0, OPTION: !0, RADIO: !0 },
+							l = {
+								COLOR: !0,
+								DATE: !0,
+								DATETIME: !0,
+								"DATETIME-LOCAL": !0,
+								EMAIL: !0,
+								MONTH: !0,
+								NUMBER: !0,
+								PASSWORD: !0,
+								RANGE: !0,
+								SEARCH: !0,
+								TEL: !0,
+								TEXT: !0,
+								TEXTAREA: !0,
+								TIME: !0,
+								URL: !0,
+								WEEK: !0,
+							};
+						document.getElementById(id).onclick = function () {
+							window.xp(this);
+							lve && window.logVe(this);
+						};
+						document.getElementById(id).onkeydown = function (d) {
+							var c = d.which || d.keyCode;
+							!c && d.key && (c = g[d.key]);
+							e && c === 3 && (c = 13);
+							if (c !== 13 && c !== 32) c = !1;
+							else {
+								var a = d.target;
+								!a.getAttribute && a.parentNode && (a = a.parentNode);
+								var b;
+								if (!(b = d.type !== "keydown")) {
+									if ((b = "getAttribute" in a))
+										b = !((a.getAttribute("type") || a.tagName).toUpperCase() in l);
+									b = !(
+										b &&
+										!(
+											a.tagName.toUpperCase() === "BUTTON" ||
+											(a.type && a.type.toUpperCase() === "FILE")
+										) &&
+										!a.isContentEditable
+									);
+								}
+								(b =
+									b ||
+									d.ctrlKey ||
+									d.shiftKey ||
+									d.altKey ||
+									d.metaKey ||
+									((a.getAttribute("type") || a.tagName).toUpperCase() in k && c === 32)) ||
+									((b = a.tagName in f) ||
+										((b = a.getAttributeNode("tabindex")), (b = b != null && b.specified)),
+									(b = !(b && !a.disabled)));
+								if (b) c = !1;
+								else {
+									b = (a.getAttribute("role") || a.type || a.tagName).toUpperCase();
+									var m = !(b in h) && c === 13;
+									a = a.tagName.toUpperCase() !== "INPUT" || !!a.type;
+									c = (h[b] % c === 0 || m) && a;
+								}
+							}
+							c && (d.preventDefault(), window.xp(this), lve && window.logVe(this));
+						};
+					}).call(this);
+				})();
+			})();
+			(function () {
+				window.jsl.dh(
+					"accdef_3",
+					"\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22Gx5Zad xpd EtOod pkphOe\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv class\x3d\x22PqksIc nRlVm\x22\x3e\x3cdiv class\x3d\x22BNeawe\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe\x22\x3eWrite a test case for a search box functionality \x3cspan class\x3d\x22FCUp0c rQMQod\x22\x3eby specifying the input, expected behavior, and validation criteria\x3c/span\x3e. For example: Test Case: Enter a valid search query, such as \x27keyword,\x27 into the search box. Expected Outcome: The system should display relevant search results matching the input query.\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22x54gtf\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3ca href\x3d\x22/url?esrc\x3ds\x26amp;q\x3d\x26amp;rct\x3dj\x26amp;sa\x3dU\x26amp;url\x3dhttps://testsigma.com/blog/test-cases-for-text-box/\x26amp;ved\x3d2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAEQDQ\x26amp;usg\x3dAOvVaw2A-Av-ihyo-2OwxQvDIY46\x22 data-ved\x3d\x222ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAEQDQ\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe vvjwJb AP7Wnd UwRFLe\x22 style\x3d\x22-webkit-line-clamp:2\x22\x3e\x3cspan class\x3d\x22rQMQod Xb5VRe\x22\x3eHow Do You Write Test Cases for a Text Box? - Testsigma\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe UPmit AP7Wnd UwRFLe\x22 style\x3d\x22-webkit-line-clamp:2\x22\x3etestsigma.com \u203a blog \u203a test-cases-for-text-box\x3c/div\x3e\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.com/search?sca_esv\x3d0b05e7fa75492358\x26amp;ucbcb\x3d1\x26amp;ei\x3d1TxvZsnSEdfy4-EPk4mn4AQ\x26amp;q\x3dHow+to+write+test+cases+for+search+box?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQzmd6BAgBEA4\x22 data-ved\x3d\x222ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQzmd6BAgBEA4\x22\x3eDal\u0161\xed v\xfdsledky\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e",
+				);
+			})();
+			(function () {
+				(function () {
+					var id = "tsuid_3";
+					var lve = true;
+					(function () {
+						var e =
+								typeof navigator !== "undefined" &&
+								!/Opera/.test(navigator.userAgent) &&
+								/WebKit/.test(navigator.userAgent),
+							f = { A: 1, INPUT: 1, TEXTAREA: 1, SELECT: 1, BUTTON: 1 },
+							g = { Enter: 13, " ": 32 },
+							h = {
+								A: 13,
+								BUTTON: 0,
+								CHECKBOX: 32,
+								COMBOBOX: 13,
+								FILE: 0,
+								GRIDCELL: 13,
+								LINK: 13,
+								LISTBOX: 13,
+								MENU: 0,
+								MENUBAR: 0,
+								MENUITEM: 0,
+								MENUITEMCHECKBOX: 0,
+								MENUITEMRADIO: 0,
+								OPTION: 0,
+								RADIO: 32,
+								RADIOGROUP: 32,
+								RESET: 0,
+								SUBMIT: 0,
+								SWITCH: 32,
+								TAB: 0,
+								TREE: 13,
+								TREEITEM: 13,
+							},
+							k = { CHECKBOX: !0, FILE: !0, OPTION: !0, RADIO: !0 },
+							l = {
+								COLOR: !0,
+								DATE: !0,
+								DATETIME: !0,
+								"DATETIME-LOCAL": !0,
+								EMAIL: !0,
+								MONTH: !0,
+								NUMBER: !0,
+								PASSWORD: !0,
+								RANGE: !0,
+								SEARCH: !0,
+								TEL: !0,
+								TEXT: !0,
+								TEXTAREA: !0,
+								TIME: !0,
+								URL: !0,
+								WEEK: !0,
+							};
+						document.getElementById(id).onclick = function () {
+							window.xp(this);
+							lve && window.logVe(this);
+						};
+						document.getElementById(id).onkeydown = function (d) {
+							var c = d.which || d.keyCode;
+							!c && d.key && (c = g[d.key]);
+							e && c === 3 && (c = 13);
+							if (c !== 13 && c !== 32) c = !1;
+							else {
+								var a = d.target;
+								!a.getAttribute && a.parentNode && (a = a.parentNode);
+								var b;
+								if (!(b = d.type !== "keydown")) {
+									if ((b = "getAttribute" in a))
+										b = !((a.getAttribute("type") || a.tagName).toUpperCase() in l);
+									b = !(
+										b &&
+										!(
+											a.tagName.toUpperCase() === "BUTTON" ||
+											(a.type && a.type.toUpperCase() === "FILE")
+										) &&
+										!a.isContentEditable
+									);
+								}
+								(b =
+									b ||
+									d.ctrlKey ||
+									d.shiftKey ||
+									d.altKey ||
+									d.metaKey ||
+									((a.getAttribute("type") || a.tagName).toUpperCase() in k && c === 32)) ||
+									((b = a.tagName in f) ||
+										((b = a.getAttributeNode("tabindex")), (b = b != null && b.specified)),
+									(b = !(b && !a.disabled)));
+								if (b) c = !1;
+								else {
+									b = (a.getAttribute("role") || a.type || a.tagName).toUpperCase();
+									var m = !(b in h) && c === 13;
+									a = a.tagName.toUpperCase() !== "INPUT" || !!a.type;
+									c = (h[b] % c === 0 || m) && a;
+								}
+							}
+							c && (d.preventDefault(), window.xp(this), lve && window.logVe(this));
+						};
+					}).call(this);
+				})();
+			})();
+			(function () {
+				window.jsl.dh(
+					"accdef_5",
+					"\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22Gx5Zad xpd EtOod pkphOe\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv class\x3d\x22PqksIc nRlVm\x22\x3e\x3cdiv class\x3d\x22BNeawe\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe\x22\x3eFor a definitive test of whether your URL is appearing, \x3cspan class\x3d\x22FCUp0c rQMQod\x22\x3esearch for the page URL on Google\x3c/span\x3e. If the URL redirects to another URL, the results reflect the tested URL in the index, not the redirect target in the index.\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22x54gtf\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3ca href\x3d\x22/url?esrc\x3ds\x26amp;q\x3d\x26amp;rct\x3dj\x26amp;sa\x3dU\x26amp;url\x3dhttps://support.google.com/webmasters/answer/9012289%3Fhl%3Den\x26amp;ved\x3d2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAEQFA\x26amp;usg\x3dAOvVaw3UR4K3Rizl604oThko8zxP\x22 data-ved\x3d\x222ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAEQFA\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe vvjwJb AP7Wnd UwRFLe\x22 style\x3d\x22-webkit-line-clamp:2\x22\x3e\x3cspan class\x3d\x22rQMQod Xb5VRe\x22\x3eURL Inspection Tool - Search Console Help\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe UPmit AP7Wnd UwRFLe\x22 style\x3d\x22-webkit-line-clamp:2\x22\x3esupport.google.com \u203a webmasters \u203a answer\x3c/div\x3e\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.com/search?sca_esv\x3d0b05e7fa75492358\x26amp;ucbcb\x3d1\x26amp;ei\x3d1TxvZsnSEdfy4-EPk4mn4AQ\x26amp;q\x3dHow+to+test+Google+search+results?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQzmd6BAgBEBU\x22 data-ved\x3d\x222ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQzmd6BAgBEBU\x22\x3eDal\u0161\xed v\xfdsledky\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e",
+				);
+			})();
+			(function () {
+				(function () {
+					var id = "tsuid_4";
+					var lve = true;
+					(function () {
+						var e =
+								typeof navigator !== "undefined" &&
+								!/Opera/.test(navigator.userAgent) &&
+								/WebKit/.test(navigator.userAgent),
+							f = { A: 1, INPUT: 1, TEXTAREA: 1, SELECT: 1, BUTTON: 1 },
+							g = { Enter: 13, " ": 32 },
+							h = {
+								A: 13,
+								BUTTON: 0,
+								CHECKBOX: 32,
+								COMBOBOX: 13,
+								FILE: 0,
+								GRIDCELL: 13,
+								LINK: 13,
+								LISTBOX: 13,
+								MENU: 0,
+								MENUBAR: 0,
+								MENUITEM: 0,
+								MENUITEMCHECKBOX: 0,
+								MENUITEMRADIO: 0,
+								OPTION: 0,
+								RADIO: 32,
+								RADIOGROUP: 32,
+								RESET: 0,
+								SUBMIT: 0,
+								SWITCH: 32,
+								TAB: 0,
+								TREE: 13,
+								TREEITEM: 13,
+							},
+							k = { CHECKBOX: !0, FILE: !0, OPTION: !0, RADIO: !0 },
+							l = {
+								COLOR: !0,
+								DATE: !0,
+								DATETIME: !0,
+								"DATETIME-LOCAL": !0,
+								EMAIL: !0,
+								MONTH: !0,
+								NUMBER: !0,
+								PASSWORD: !0,
+								RANGE: !0,
+								SEARCH: !0,
+								TEL: !0,
+								TEXT: !0,
+								TEXTAREA: !0,
+								TIME: !0,
+								URL: !0,
+								WEEK: !0,
+							};
+						document.getElementById(id).onclick = function () {
+							window.xp(this);
+							lve && window.logVe(this);
+						};
+						document.getElementById(id).onkeydown = function (d) {
+							var c = d.which || d.keyCode;
+							!c && d.key && (c = g[d.key]);
+							e && c === 3 && (c = 13);
+							if (c !== 13 && c !== 32) c = !1;
+							else {
+								var a = d.target;
+								!a.getAttribute && a.parentNode && (a = a.parentNode);
+								var b;
+								if (!(b = d.type !== "keydown")) {
+									if ((b = "getAttribute" in a))
+										b = !((a.getAttribute("type") || a.tagName).toUpperCase() in l);
+									b = !(
+										b &&
+										!(
+											a.tagName.toUpperCase() === "BUTTON" ||
+											(a.type && a.type.toUpperCase() === "FILE")
+										) &&
+										!a.isContentEditable
+									);
+								}
+								(b =
+									b ||
+									d.ctrlKey ||
+									d.shiftKey ||
+									d.altKey ||
+									d.metaKey ||
+									((a.getAttribute("type") || a.tagName).toUpperCase() in k && c === 32)) ||
+									((b = a.tagName in f) ||
+										((b = a.getAttributeNode("tabindex")), (b = b != null && b.specified)),
+									(b = !(b && !a.disabled)));
+								if (b) c = !1;
+								else {
+									b = (a.getAttribute("role") || a.type || a.tagName).toUpperCase();
+									var m = !(b in h) && c === 13;
+									a = a.tagName.toUpperCase() !== "INPUT" || !!a.type;
+									c = (h[b] % c === 0 || m) && a;
+								}
+							}
+							c && (d.preventDefault(), window.xp(this), lve && window.logVe(this));
+						};
+					}).call(this);
+				})();
+			})();
+			(function () {
+				window.jsl.dh(
+					"accdef_7",
+					"\x3cdiv\x3e\x3cdiv style\x3d\x22padding-bottom:12px;padding-top:0px\x22 class\x3d\x22hwc kCrYT\x22\x3e\x3cdiv class\x3d\x22yStFkb\x22\x3e\x3cdiv class\x3d\x22Gx5Zad xpd EtOod pkphOe\x22\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3cdiv class\x3d\x22PqksIc nRlVm\x22\x3e\x3cdiv class\x3d\x22BNeawe\x22\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22BNeawe\x22\x3eRich results are experiences on Google surfaces, such as Search, that go beyond the standard blue link. Rich results can include carousels, images, or other non-textual elements. What is this test? \x3cspan class\x3d\x22FCUp0c rQMQod\x22\x3eTest your publicly accessible page to see which rich results can be generated by the structured data it contains\x3c/span\x3e.\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv class\x3d\x22x54gtf\x22\x3e\x3c/div\x3e\x3cdiv class\x3d\x22kCrYT\x22\x3e\x3ca href\x3d\x22/url?esrc\x3ds\x26amp;q\x3d\x26amp;rct\x3dj\x26amp;sa\x3dU\x26amp;url\x3dhttps://search.google.com/test/rich-results\x26amp;ved\x3d2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAEQGw\x26amp;usg\x3dAOvVaw1ON5mqAzp4BBbLiBqzeb0d\x22 data-ved\x3d\x222ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQFnoECAEQGw\x22\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe vvjwJb AP7Wnd UwRFLe\x22 style\x3d\x22-webkit-line-clamp:2\x22\x3e\x3cspan class\x3d\x22rQMQod Xb5VRe\x22\x3eRich Results Test - Google Search Console\x3c/span\x3e\x3c/div\x3e\x3c/span\x3e\x3cspan\x3e\x3cdiv class\x3d\x22BNeawe UPmit AP7Wnd UwRFLe\x22 style\x3d\x22-webkit-line-clamp:2\x22\x3esearch.google.com \u203a test \u203a rich-results\x3c/div\x3e\x3c/span\x3e\x3c/a\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3cdiv\x3e\x3cdiv class\x3d\x22P1NWSe\x22\x3e\x3cdiv class\x3d\x22wOMIed nkPlDb\x22\x3e\x3cspan class\x3d\x22JhFlyf VQFmSd\x22\x3e\x3ca class\x3d\x22f4J0H\x22 href\x3d\x22https://www.google.com/search?sca_esv\x3d0b05e7fa75492358\x26amp;ucbcb\x3d1\x26amp;ei\x3d1TxvZsnSEdfy4-EPk4mn4AQ\x26amp;q\x3dWhat+is+the+rich+test+result+checker?\x26amp;sa\x3dX\x26amp;ved\x3d2ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQzmd6BAgBEBw\x22 data-ved\x3d\x222ahUKEwiJkfbP7eCGAxVX-TgGHZPECUwQzmd6BAgBEBw\x22\x3eDal\u0161\xed v\xfdsledky\x3c/a\x3e\x3c/span\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e\x3c/div\x3e",
+				);
+			})();
+			if (!google.stvsc) {
+				google.drty && google.drty(undefined, true);
+			}
+		</script>
+	</body>
+</html>
