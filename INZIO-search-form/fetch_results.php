@@ -17,7 +17,7 @@ if (isset($_GET['keyword'])) {
     $debugFile = __DIR__ . '/debug.html';
     file_put_contents($debugFile, $html);
 
-    require 'engine/parser/simple_html_dom.php';
+    require 'parser/simple_html_dom.php';
 
     $dom = new simple_html_dom();
     $dom->load($html);
