@@ -1,0 +1,58 @@
+/* ---footer--- */
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+body {
+  margin: 0;
+}
+
+.main {
+  padding: 0 20px;
+}
+
+.autor {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px;
+  background-color: rgba(1, 46, 64, 0.3);
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: currentColor;
+}
+.autor_description {
+  width: 100%;
+  font-size: 12px;
+}
+.autor_socials {
+  width: 100%;
+  margin-top: 0.1rem;
+}
+.autor a {
+  color: #025159;
+}
+.autor a:hover {
+  color: #f28705;
+}
+.autor li {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: solid 1px #025159;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.autor li:hover {
+  border-color: #f28705;
+}
+.autor li svg,
+.autor li img {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .autor {
+    position: fixed;
+    bottom: 0;
+  }
+}/*# sourceMappingURL=autor-footer-style.css.map */

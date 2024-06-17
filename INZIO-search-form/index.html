@@ -6,18 +6,25 @@
     <title>Google Search Fetcher</title>
 </head>
 <body>
-    <h1>Google Search Fetcher</h1>
+    <main class="main">
+        <h1>Google Search Fetcher</h1>
     
-    <form id="searchForm">
-        <input type="text" id="keyword" name="keyword" placeholder="Enter keyword" required>
-        <button type="submit">Search</button>
-    </form>
-
-    <pre id="results"></pre>
+        <form id="searchForm">
+            <input type="text" id="keyword" name="keyword" placeholder="Enter keyword" required>
+            <button type="submit">Search</button>
+        </form>
     
-    <button id="saveJson">Save as JSON</button>
-    <button id="saveCsv">Save as CSV</button>
+        <pre id="results"></pre>
+        
+        <button id="saveJson">Save as JSON</button>
+        <button id="saveCsv">Save as CSV</button>
+    </main>
 
-    <script src="script.js"></script>
+    <footer>
+        <div id="autor"></div>
+    </footer>
+
+    <script src="engine/script.js"></script>
+    <script src="src/autor-resourse/autor-footer-script.js"></script>
 </body>
 </html>

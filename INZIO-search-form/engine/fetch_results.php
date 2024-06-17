@@ -13,11 +13,11 @@ if (isset($_GET['keyword'])) {
     $html = curl_exec($ch);
     curl_close($ch);
 
-    // Сохранение HTML в файл для отладки
+    // check: create my debug file for structure html
     $debugFile = __DIR__ . '/debug.html';
     file_put_contents($debugFile, $html);
 
-    require 'parser/simple_html_dom.php';
+    require 'engine/parser/simple_html_dom.php';
 
     $dom = new simple_html_dom();
     $dom->load($html);
@@ -25,17 +25,16 @@ if (isset($_GET['keyword'])) {
     $results = [];
     $counter = 0;
 
-    // Обновленные селекторы для заголовков и ссылок
+    // call parser
     foreach ($dom->find('div.Gx5Zad') as $result) {
         $titleElement = $result->find('div.BNeawe.vvjwJb.AP7Wnd.UwRFLe', 0);
         $linkElement = $result->find('div.BNeawe.UPmit.AP7Wnd.lRVwie', 0);
 
         if ($titleElement && $linkElement) {
-            // Извлекаем текст из элементов
+            
             $title = trim($titleElement->plaintext);
             $link = trim($linkElement->plaintext);
 
-            // Добавляем результат в массив
             $results[] = [
                 'title' => $title,
                 'link' => $link
@@ -44,7 +43,7 @@ if (isset($_GET['keyword'])) {
         $counter++;
     }
 
-    // Проверка, нашлись ли элементы
+    // check: how many items parser find
     if ($counter == 0) {
         echo json_encode(['error' => 'No results found']);
     } else {
