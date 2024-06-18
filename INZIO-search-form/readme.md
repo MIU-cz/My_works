@@ -1,6 +1,6 @@
 # INIZIO Internet Media
 
-## testovací úkol - vytvoření vyhledávacího formuláře
+## Praktický test - vytvoření vyhledávacího formuláře
 
 ### Zpracujte prosím samostatně následující zadání
 
@@ -25,6 +25,9 @@
 
 ## >> řešení daného úkolu
 
-- kode: [git-hub](https://github.com/MIU-cz/My_works/tree/master/INZIO-search-form)
-- deploy: [project](https://miu.jecool.net/new_sites/INZIO-search-form/index.html)
-- video: [youtube](---)
+- kode => [git-hub](https://github.com/MIU-cz/My_works/tree/master/INZIO-search-form)
+- deploy => [project](https://miu.jecool.net/new_sites/INZIO-search-form/index.html)
+- video => [youtube](---)
+
+> - parser => [PHP Simple HTML DOM Parser](simplehtmldom.sourceforge.io)
+> - zvuk ve videu byl vytvořen pomocí => [voicemaker](https://voicemaker.in)
