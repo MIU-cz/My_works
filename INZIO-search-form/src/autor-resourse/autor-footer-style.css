@@ -1,7 +1,13 @@
 /* ---footer--- */
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 body {
+  width: 100%;
+  height: 100vh;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .main {
@@ -48,11 +54,4 @@ body {
   display: flex;
   width: 100%;
   height: 100%;
-}
-
-@media (min-width: 768px) {
-  .autor {
-    position: fixed;
-    bottom: 0;
-  }
 }/*# sourceMappingURL=autor-footer-style.css.map */

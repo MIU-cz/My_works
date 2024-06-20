@@ -4,8 +4,8 @@ document.getElementById('searchForm').addEventListener('submit', function(event)
     fetch(`fetch_results.php?keyword=${encodeURIComponent(keyword)}`)
         .then(response => response.json())
         .then(data => {
-            document.getElementById('results').textContent = JSON.stringify(data, null, 2);
-            document.getElementById('saveJson').addEventListener('click', () => saveFile(data, 'results.json', 'application/json'));
+            displayResults(data);
+            document.getElementById('saveJson').addEventListener('click', () => saveFile(JSON.stringify(data, null, 2), 'results.json', 'application/json'));
             document.getElementById('saveCsv').addEventListener('click', () => saveFile(convertToCSV(data), 'results.csv', 'text/csv'));
         })
         .catch(error => console.error('Error:', error));
@@ -30,4 +30,24 @@ function convertToCSV(data) {
     }
 
     return csvRows.join('\n');
+}
+
+function displayResults(data) {
+    const resultsContainer = document.getElementById('results');
+    resultsContainer.innerHTML = ''; // Clear previous results
+
+    data.forEach(item => {
+        const resultItem = document.createElement('div');
+        const titleLink = document.createElement('a');
+        titleLink.href = item.link;
+        titleLink.textContent = item.title;
+        titleLink.target = '_blank'; // Open in new tab
+        resultItem.appendChild(titleLink);
+        resultsContainer.appendChild(resultItem);
+    });
+
+    // Also display the raw JSON for saving
+    const pre = document.createElement('pre');
+    pre.textContent = JSON.stringify(data, null, 2);
+    resultsContainer.appendChild(pre);
 }
