@@ -1,5 +1,8 @@
 <?php
 header('Content-Type: application/json');
+require 'parser/simple_html_dom.php'; 
+
+use simplehtmldom\HtmlWeb;
 
 // Получение данных из запроса
 $data = json_decode(file_get_contents('php://input'), true);
@@ -14,40 +17,32 @@ if (!isset($data['name'], $data['email'], $data['phone'], $data['product'], $dat
 $currency = 'USD'; // Или другая нужная валюта
 $exchangeRate = 1; // По умолчанию, если не удается получить курс
 
-// Путь к файлу с курсами валют
-$filename = 'denni_kurz_24.06.2024.txt';
+// URL страницы с курсами валют
+$url = 'https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/';
 
-// Проверяем существование файла
-if (!file_exists($filename)) {
-    echo json_encode(['error' => 'Currency rate file not found']);
-    exit;
-}
+$html = new HtmlWeb();
+$response = $html->load($url);
 
-// Чтение содержимого файла в массив строк
-$lines = file($filename, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
-
-// Поиск курса валюты
-$found = false;
-foreach ($lines as $line) {
-    // Проверяем, что строка начинается с "USA|"
-    if (strpos($line, 'USA|') === 0) {
-        // Разбиваем строку на части по разделителю "|"
-        $parts = explode('|', $line);
-        
-        // Проверяем, что у нас есть достаточно частей и валюта совпадает с искомой
-        if (count($parts) >= 5 && trim($parts[3]) === $currency) {
-            // Извлекаем курс из строки и преобразуем в число
-            $exchangeRate = floatval(str_replace(',', '.', $parts[2]));
-            $found = true;
-            break;
+if ($response !== false) {
+    $exchangeData = [];
+    foreach ($response->find('table.tbl-silver tbody tr') as $row) { // Изменено на соответствующий класс таблицы
+        $cells = $row->find('td');
+        if (count($cells) >= 5) { // Убедимся, что достаточно столбцов для извлечения данных
+            $currencyCode = trim($cells[1]->plaintext);
+            $rate = floatval(str_replace(',', '.', trim($cells[4]->plaintext))); // Изменен индекс столбца для курса
+            $exchangeData[$currencyCode] = $rate;
         }
     }
-}
 
-// Если курс не был найден, возвращаем ошибку
-if (!$found) {
-    echo json_encode(['error' => 'Exchange rate not found for ' . $currency]);
-    exit;
+    if (isset($exchangeData[$currency])) {
+        $exchangeRate = $exchangeData[$currency];
+    }
+
+    // Логирование полученных данных
+    file_put_contents('exchange_rate_log.txt', print_r($exchangeData, true), FILE_APPEND);
+} else {
+    // Логирование ошибки получения данных
+    file_put_contents('exchange_rate_log.txt', "Failed to fetch exchange rate data\n", FILE_APPEND);
 }
 
 // Расчет общей цены с НДС

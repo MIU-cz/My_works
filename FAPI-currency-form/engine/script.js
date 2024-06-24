@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const totalPriceDisplay = document.getElementById('totalPrice');
     const summaryDiv = document.getElementById('summary');
     const summaryContent = document.getElementById('summaryContent');
+    const currencyDisplay = document.getElementById('currencyDisplay');
 
     function updateTotalPrice() {
         const price = parseFloat(priceInput.value) || 0;
@@ -19,11 +20,26 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (event) {
         event.preventDefault();
 
-        const formData = new FormData(form);
-        const data = {};
-        formData.forEach((value, key) => {
-            data[key] = value;
-        });
+        const name = form.querySelector('input[name="name"]').value.trim();
+        const email = form.querySelector('input[name="email"]').value.trim();
+        const phone = form.querySelector('input[name="phone"]').value.trim();
+        const product = form.querySelector('input[name="product"]').value.trim();
+        const price = parseFloat(priceInput.value);
+        const quantity = parseInt(quantityInput.value);
+
+        if (!name || !email || !phone || !product || isNaN(price) || isNaN(quantity)) {
+            alert('Please fill in all required fields correctly.');
+            return;
+        }
+
+        const data = {
+            name: name,
+            email: email,
+            phone: phone,
+            product: product,
+            price: price,
+            quantity: quantity
+        };
 
         const totalPrice = parseFloat(totalPriceDisplay.textContent);
         data.totalPrice = totalPrice;
@@ -35,7 +51,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 'Content-Type': 'application/json'
             }
         })
-        .then(response => response.json())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
         .then(result => {
             if (result.error) {
                 alert(result.error);
@@ -43,20 +64,24 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             summaryDiv.style.display = 'block';
+            currencyDisplay.textContent = `Exchange rate: 1 ${result.currency} = ${result.exchangeRate.toFixed(4)} CZK`;
             summaryContent.innerHTML = `
                 <p>Name: ${result.name}</p>
                 <p>Email: ${result.email}</p>
                 <p>Phone: ${result.phone}</p>
                 <p>Product: ${result.product}</p>
-                <p>Price: ${result.price} CZK</p>
+                <p>Price: ${result.price} ${result.currency}</p>
                 <p>Quantity: ${result.quantity}</p>
-                <p>Total Price: ${result.totalPrice} CZK</p>
-                <p>VAT (21%): ${result.vat} CZK</p>
-                <p>Total Price with VAT: ${result.totalPriceWithVat} CZK</p>
-                <p>Total Price (Converted): ${result.totalPriceConverted} ${result.currency}</p>
+                <p>Total Price: ${result.totalPrice} ${result.currency}</p>
+                <p>VAT (21%): ${result.vat} ${result.currency}</p>
+                <p>Total Price with VAT: ${result.totalPriceWithVat} ${result.currency}</p>
+                <p>Total Price (Converted): ${result.totalPriceConverted.toFixed(2)} CZK</p>
             `;
         })
-        .catch(error => console.error('Error:', error));
+        .catch(error => {
+            console.error('Error:', error);
+            alert('An error occurred while processing your request. Please try again later.');
+        });
     });
 
     updateTotalPrice();
