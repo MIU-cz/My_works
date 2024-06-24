@@ -9,43 +9,87 @@
 </head>
 <body>
     <main class="main">
-        <h1>Order Form</h1>
-        <form class="form_item" id="orderForm">
-            <fieldset class="fieldset">
-                <legend>Customer Information</legend>
-                <label class="labels" for="name">Name:</label>
-                <input class="input_item" type="text" id="name" name="name" required>
-                <label class="labels" for="email">Email:</label>
-                <input class="input_item" type="email" id="email" name="email" required>
-                <label class="labels" for="phone">Phone:</label>
-                <input class="input_item" type="tel" id="phone" name="phone" required>
-            </fieldset>
+        <section class="exchangerates_cnb">
+            <h1>Order Form</h1>
+            <form class="form_item" id="orderForm">
+                <fieldset class="fieldset">
+                    <legend>Customer Information</legend>
+                    <label class="labels" for="name">Name:</label>
+                    <input class="input_item" type="text" id="name" name="name" required>
+                    <label class="labels" for="email">Email:</label>
+                    <input class="input_item" type="email" id="email" name="email" required>
+                    <label class="labels" for="phone">Phone:</label>
+                    <input class="input_item" type="tel" id="phone" name="phone" required>
+                </fieldset>
 
-            <fieldset class="fieldset">
-                <legend>Product Information</legend>
-                <label class="labels" for="product">Product:</label>
-                <input class="input_item" type="text" id="product" name="product" required>
-                <label class="labels" for="price">Price (CZK):</label>
-                <input class="input_item" type="number" id="price" name="price" required>
-                <label class="labels" for="quantity">Quantity:</label>
-                <input class="input_item" type="number" id="quantity" name="quantity" value="1" min="1" required>
-                <p>Total Price (CZK): <span id="totalPrice"></span></p>
-            </fieldset>
+                <fieldset class="fieldset">
+                    <legend>Product Information</legend>
+                    <label class="labels" for="product">Product:</label>
+                    <input class="input_item" type="text" id="product" name="product" required>
+                    <label class="labels" for="price">Price (CZK):</label>
+                    <input class="input_item" type="number" id="price" name="price" required>
+                    <label class="labels" for="quantity">Quantity:</label>
+                    <input class="input_item" type="number" id="quantity" name="quantity" value="1" min="1" required>
+                    <p>Total Price (CZK): <span id="totalPrice"></span></p>
+                </fieldset>
 
-            <button class="btn_submit" type="submit">Submit</button>    
-        </form>     
+                <button class="btn_submit" type="submit">Submit</button>    
+            </form>     
 
-        <div id="summary" style="display:none;">
-            <h2>Order Summary</h2>
-            <p id="summaryContent"></p>
-        </div>   
+            <div id="summary" style="display:none;">
+                <h2>Order Summary</h2>
+                <p id="summaryContent"></p>
+            </div>   
+        </section>
+
+        <section class="exchangerates_api">
+            <form id="orderForm" onsubmit="return validateOrder();">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="product">Product:</label>
+                    <select id="product" name="product" required>
+                        <option value="product1">Prod 1 (1000 CZK)</option>
+                        <option value="product2">Prod 2 (2500 CZK)</option>
+                        <option value="product3">Prod 3 (5000 CZK)</option>
+                    </select>
+                </div>
+        
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="currency">Currency:</label>
+                    <select id="currency" name="currency" required>
+                        <option value="CZK">CZK</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                    </select>
+                </div>
+        
+                <button type="submit">Submit</button>
+            </form>
+        
+            <div id="orderSummary"></div>
+        </section>
+
     </main>
 
     <footer>
         <div id="autor"></div>
     </footer>
 
-    <script src="engine/script.js"></script>
+    <script src="engine/script_cnb.js"></script>
     <script src="src/autor-resourse/autor-footer-script.js"></script>
 </body>
 </html>
