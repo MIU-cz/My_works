@@ -239,7 +239,7 @@
 }
 .txt_marquee {
   white-space: nowrap;
-  animation: run-txt 30s linear infinite;
+  animation: run-txt 45s linear infinite;
 }
 .txt_marquee:hover {
   animation-play-state: paused;

@@ -61,6 +61,7 @@
 	}
 }
 
+// ####################################################
 // ### content_header_item :: first-child
 .header_brand {
 	display: flex;
@@ -198,6 +199,7 @@
 	}
 }
 
+// ### chess
 .fig_chess {
 	position: absolute;
 	top: 0;
@@ -330,6 +332,7 @@
 	}
 }
 
+// ####################################################
 // ##### MAIN #####
 .content_main {
 	display: grid;
@@ -373,7 +376,8 @@
 
 }
 
-// ### FOOTER
+// ####################################################
+// ### FOOTER ###
 .footer_content {
 	width: 100%;
 	padding: 40px 20px;
