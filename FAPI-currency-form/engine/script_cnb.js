@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const price = parseFloat(priceInput.value) || 0;
         const quantity = parseInt(quantityInput.value) || 0;
         const totalPrice = price * quantity;
-        totalPriceDisplay.textContent = totalPrice.toFixed(2);
+        totalPriceDisplay.textContent = totalPrice.toFixed(2) + ' CZK';
     }
 
     priceInput.addEventListener('input', updateTotalPrice);
@@ -70,12 +70,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 <p>Email: ${result.email}</p>
                 <p>Phone: ${result.phone}</p>
                 <p>Product: ${result.product}</p>
-                <p>Price: ${result.price} ${result.currency}</p>
+                <p>Price: ${result.price} CZK</p>
                 <p>Quantity: ${result.quantity}</p>
-                <p>Total Price: ${result.totalPrice} ${result.currency}</p>
-                <p>VAT (21%): ${result.vat} ${result.currency}</p>
-                <p>Total Price with VAT: ${result.totalPriceWithVat} ${result.currency}</p>
-                <p>Total Price (Converted): ${result.totalPriceConverted.toFixed(2)} CZK</p>
+                <p>Total Price: ${result.totalPrice}</p>
+                <p>VAT (21%): ${result.vat}</p>
+                <p>Total Price with VAT: ${result.totalPriceWithVat}</p>
+                <p>Total Price (Converted): ${result.totalPriceConverted}</p>
             `;
         })
         .catch(error => {

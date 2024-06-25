@@ -13,7 +13,6 @@ body {
 }
 
 .form_item {
-  max-width: 600px;
   margin: auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -49,5 +48,5 @@ body {
   cursor: pointer;
 }
 .btn_submit:hover {
-  background-color: #80c501;
+  background-color: #01aec5;
 }/*# sourceMappingURL=style.css.map */
