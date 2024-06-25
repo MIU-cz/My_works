@@ -14,8 +14,10 @@ foreach ($requiredFields as $field) {
 }
 
 // Конвертация валюты
-$currency = 'USD'; // Валюта для конвертации
-$exchangeRate = 1; // По умолчанию, если не удается получить курс
+$currencyUSD = 'USD'; // Валюта для конвертации в USD
+$currencyEUR = 'EUR'; // Валюта для конвертации в EUR
+$exchangeRateUSD = 1; // По умолчанию, если не удается получить курс
+$exchangeRateEUR = 1; // По умолчанию, если не удается получить курс
 
 // URL текстового файла с курсами валют
 $date = date('d.m.Y'); // Текущая дата
@@ -55,22 +57,32 @@ function getExchangeRate($currency, $url, $localFile) {
     return ['error' => 'Exchange rate not found for ' . $currency];
 }
 
-// Получение курса валюты
-$exchangeRateResult = getExchangeRate($currency, $url, $localFile);
-if (isset($exchangeRateResult['error'])) {
-    echo json_encode($exchangeRateResult);
+// Получение курса валюты USD
+$exchangeRateResultUSD = getExchangeRate($currencyUSD, $url, $localFile);
+if (isset($exchangeRateResultUSD['error'])) {
+    echo json_encode($exchangeRateResultUSD);
     exit;
 }
-$exchangeRate = $exchangeRateResult;
+$exchangeRateUSD = $exchangeRateResultUSD;
+
+// Получение курса валюты EUR
+$exchangeRateResultEUR = getExchangeRate($currencyEUR, $url, $localFile);
+if (isset($exchangeRateResultEUR['error'])) {
+    echo json_encode($exchangeRateResultEUR);
+    exit;
+}
+$exchangeRateEUR = $exchangeRateResultEUR;
 
 // Логирование полученных данных
-file_put_contents('exchange_rate_log.txt', "Exchange rate for $currency on $date: $exchangeRate\n", FILE_APPEND);
+file_put_contents('exchange_rate_log.txt', "Exchange rate for $currencyUSD on $date: $exchangeRateUSD\n", FILE_APPEND);
+file_put_contents('exchange_rate_log.txt', "Exchange rate for $currencyEUR on $date: $exchangeRateEUR\n", FILE_APPEND);
 
 // Расчет общей цены с НДС
 $totalPrice = $data['totalPrice'];
 $vat = $totalPrice * 0.21; // НДС 21%
 $totalPriceWithVat = $totalPrice + $vat;
-$totalPriceConverted = $totalPriceWithVat / $exchangeRate;
+$totalPriceConvertedUSD = $totalPriceWithVat / $exchangeRateUSD;
+$totalPriceConvertedEUR = $totalPriceWithVat / $exchangeRateEUR;
 
 // Возвращаем данные клиенту
 echo json_encode([
@@ -82,9 +94,12 @@ echo json_encode([
     'quantity' => (int)$data['quantity'],
     'totalPrice' => round($totalPrice, 2) . ' CZK',
     'totalPriceWithVat' => round($totalPriceWithVat, 2) . ' CZK',
-    'totalPriceConverted' => round($totalPriceConverted, 2) . ' ' . $currency,
-    'currency' => $currency,
+    'totalPriceConvertedUSD' => round($totalPriceConvertedUSD, 2) . ' ' . $currencyUSD,
+    'totalPriceConvertedEUR' => round($totalPriceConvertedEUR, 2) . ' ' . $currencyEUR,
+    'currencyUSD' => $currencyUSD,
+    'currencyEUR' => $currencyEUR,
     'vat' => round($vat, 2) . ' CZK',
-    'exchangeRate' => $exchangeRate // Добавляем курс валюты в ответ
+    'exchangeRateUSD' => $exchangeRateUSD,
+    'exchangeRateEUR' => $exchangeRateEUR
 ]);
 ?>

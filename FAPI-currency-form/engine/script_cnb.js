@@ -64,7 +64,10 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             summaryDiv.style.display = 'block';
-            currencyDisplay.textContent = `Exchange rate: 1 ${result.currency} = ${result.exchangeRate.toFixed(4)} CZK`;
+            currencyDisplay.innerHTML = `
+                <p>Exchange rate: 1 ${result.currencyUSD} = ${result.exchangeRateUSD.toFixed(4)} CZK</p>
+                <p>Exchange rate: 1 ${result.currencyEUR} = ${result.exchangeRateEUR.toFixed(4)} CZK</p>
+            `;
             summaryContent.innerHTML = `
                 <p>Name: ${result.name}</p>
                 <p>Email: ${result.email}</p>
@@ -75,7 +78,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 <p>Total Price: ${result.totalPrice}</p>
                 <p>VAT (21%): ${result.vat}</p>
                 <p>Total Price with VAT: ${result.totalPriceWithVat}</p>
-                <p>Total Price (Converted): ${result.totalPriceConverted}</p>
+                <p>Total Price (Converted to USD): ${result.totalPriceConvertedUSD}</p>
+                <p>Total Price (Converted to EUR): ${result.totalPriceConvertedEUR}</p>
             `;
         })
         .catch(error => {
