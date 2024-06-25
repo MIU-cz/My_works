@@ -30,5 +30,5 @@
 - deploy => [project][project]
 
 <!-- links -->
-[git-hub]:git-hub.com
+[git-hub]:https://github.com/MIU-cz/My_works/tree/master/FAPI-currency-form
 [project]:https://miu.jecool.net/new_sites/FAPI-currency-form/index.html
