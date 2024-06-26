@@ -812,6 +812,55 @@
   }
 }
 
+.slider_btns {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 16px;
+}
+@media (min-width: 768px) {
+  .slider_btns {
+    display: none;
+  }
+}
+
+.slider_btn, .pugination_btn {
+  display: flex;
+  width: 36px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+  background: rgba(49, 49, 49, 0.2);
+  color: #ffffff;
+}
+.slider_btn:hover, .pugination_btn:hover {
+  background: #313131;
+}
+
+.pugination_btn {
+  width: auto;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.pug_btn_item {
+  display: block;
+  width: 16px;
+  aspect-ratio: 1/1;
+  background: rgba(49, 49, 49, 0.2);
+}
+.pug_btn_item:hover {
+  background: #313131;
+}
+
+.btn_active {
+  background: #313131;
+}
+
 .footer_content {
   width: 100%;
   padding: 40px 20px;
