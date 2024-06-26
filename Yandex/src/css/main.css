@@ -755,7 +755,7 @@
   grid-template-rows: repeat(2, 150px);
   -moz-column-gap: 20px;
        column-gap: 20px;
-  transform: translateX(0);
+  transition: 0.35s all;
 }
 @media (min-width: 768px) {
   .content_stage .stage_stages .stages_wraper {
@@ -826,7 +826,7 @@
   }
 }
 
-.slider_btn, .pugination_btn {
+.slider_btn, .pug_btn_item {
   display: flex;
   width: 36px;
   height: 36px;
@@ -837,20 +837,21 @@
   background: rgba(49, 49, 49, 0.2);
   color: #ffffff;
 }
-.slider_btn:hover, .pugination_btn:hover {
+.slider_btn:hover, .pug_btn_item:hover {
   background: #313131;
 }
 
 .pugination_btn {
+  display: flex;
   width: auto;
   flex-direction: row;
+  align-items: center;
   gap: 6px;
 }
 
 .pug_btn_item {
-  display: block;
   width: 16px;
-  aspect-ratio: 1/1;
+  height: 16px;
   background: rgba(49, 49, 49, 0.2);
 }
 .pug_btn_item:hover {

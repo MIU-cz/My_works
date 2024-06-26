@@ -496,7 +496,8 @@
 			grid-template-rows: repeat(2, 150px);
 			column-gap: 20px;
 
-			transform: translateX(0);
+			// transform: translateX(0);
+			transition: 0.35s all;
 
 			@media (min-width: 768px) {
 				grid-auto-flow: row;
@@ -601,16 +602,17 @@
 }
 
 .pugination_btn {
-	@extend .slider_btn;
+	display: flex;
 	width: auto;
-	flex-direction: row;	
+	flex-direction: row;
+	align-items: center;	
 	gap: 6px;
 }
 
 .pug_btn_item {
-	display: block;
+	@extend .slider_btn;
 	width: 16px;
-	aspect-ratio: 1/1;
+	height: 16px;
 
 	background: rgba($c-main-black, 0.2);
 
