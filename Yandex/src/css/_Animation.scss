@@ -15,8 +15,12 @@
 
 .txt_marquee {
 	white-space: nowrap;
-	animation: run-txt 45s linear infinite;
-	// transform: translateX(-425%);
+	animation: run-txt 25s linear infinite;
+	// transform: translateX(0%);
+
+	@media (min-width: 768px) {
+		animation-duration: 45s;
+	}
 
 	&:hover {
 		animation-play-state: paused;
