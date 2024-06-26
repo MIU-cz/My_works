@@ -218,7 +218,7 @@
 			left: 50px;
 			transform: rotate(-6deg);
 
-			@media (min-width: 1366px) {
+			@media (min-width: 768px) {
 				width: 105px;
 				top: 280px;
 				left: 105px;
@@ -231,7 +231,7 @@
 			left: 155px;
 			transform: rotate(8deg);
 
-			@media (min-width: 1366px) {
+			@media (min-width: 768px) {
 				width: 115px;
 				top: 165px;
 				left: 325px;
@@ -254,7 +254,7 @@
 			left: 120px;
 			transform: rotate(-10.5deg);
 
-			@media (min-width: 1366px) {
+			@media (min-width: 768px) {
 				width: 156px;
 				top: 495px;
 				left: 220px;
@@ -264,7 +264,7 @@
 		&:last-child {
 			display: none;
 
-			@media (min-width: 1366px) {
+			@media (min-width: 768px) {
 				display: inherit;
 				top: 560px;
 				right: -25px;
@@ -286,7 +286,7 @@
 	background-size: 230%;
 	pointer-events: none;
 
-	@media (min-width: 1366px) {
+	@media (min-width: 1024px) {
 		background-position-x: center;
 		background-size: inherit;
 	}
