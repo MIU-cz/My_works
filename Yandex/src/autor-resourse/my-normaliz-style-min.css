@@ -56,7 +56,8 @@ a:visited {
 	text-decoration: none;
 }
 
-ul li {
+ul li,
+ol li {
 	list-style: none;
 }
 

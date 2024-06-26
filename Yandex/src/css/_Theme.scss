@@ -89,6 +89,7 @@ $c-bg-header: #e9ded4;
 
 .txt_main_h {
 	@include fontStyle($fsz: 36px, $lh: 120%);
+	text-transform: uppercase;
 
 	@media (min-width: 1366px) {
 		font-size: 54px;
