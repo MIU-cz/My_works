@@ -443,8 +443,11 @@
 	}
 
 	.stage_title {
-		width: 66.66%;
 		position: relative;
+
+		@media (min-width:768px) {
+			width: 66.66%;
+		}
 
 		.txt_main_dsc {
 			padding: 12px 0 0;
@@ -467,6 +470,22 @@
 			padding: 54px 0 0;
 		}
 
+		// ### plane ###
+		&::after {
+			content: url(../img/main/img-plane.svg);
+			display: block;
+			position: absolute;
+			top: -5%;
+			right: -10%;
+
+			@media (min-width: 768px) {
+				width: max-content;
+				top: auto;
+				bottom: -5%;
+				right: -7%;
+			}
+		}
+
 		.stages_wraper {
 			counter-reset: stages;
 			display: grid;
@@ -476,11 +495,11 @@
 			grid-auto-columns: 100%;
 			grid-template-rows: repeat(2, 150px);
 
-			@media (min-width: 768px) {		
+			@media (min-width: 768px) {
 				grid-auto-flow: row;
-				grid-template-rows: auto;		
+				grid-template-rows: auto;
 				grid-template-columns: repeat(12, 1fr);
-				
+
 				gap: 20px;
 			}
 		}
@@ -506,13 +525,12 @@
 				font-weight: 600;
 				align-items: center;
 				justify-content: center;
-				
 			}
 
 			&:nth-child(3):nth-child(4):nth-child(7) {
 				grid-row: span 2;
 			}
-			
+
 			&:not(:nth-child(2)):not(:nth-child(5)) {
 				padding: 64px 20px 20px;
 			}
@@ -520,7 +538,7 @@
 			// &:nth-child(n+2) {
 			// 	display: none;
 			// }
-			
+
 			@media (min-width: 768px) {
 				padding: 20px !important;
 				grid-column: span 4;
@@ -539,11 +557,9 @@
 					grid-row: span 1;
 
 					span {
-						width: 65%;
+						width: 55%;
 					}
 				}
-
-				
 			}
 		}
 	}

@@ -703,8 +703,12 @@
   }
 }
 .content_stage .stage_title {
-  width: 66.66%;
   position: relative;
+}
+@media (min-width: 768px) {
+  .content_stage .stage_title {
+    width: 66.66%;
+  }
 }
 .content_stage .stage_title .txt_main_dsc {
   padding: 12px 0 0;
@@ -725,6 +729,22 @@
 @media (min-width: 1366px) {
   .content_stage .stage_stages {
     padding: 54px 0 0;
+  }
+}
+.content_stage .stage_stages::after {
+  content: url(../img/main/img-plane.svg);
+  display: block;
+  position: absolute;
+  top: -5%;
+  right: -10%;
+}
+@media (min-width: 768px) {
+  .content_stage .stage_stages::after {
+    width: -moz-max-content;
+    width: max-content;
+    top: auto;
+    bottom: -5%;
+    right: -7%;
   }
 }
 .content_stage .stage_stages .stages_wraper {
@@ -786,7 +806,7 @@
     grid-row: span 1;
   }
   .content_stage .stage_stages .stage_item:nth-child(7) span {
-    width: 65%;
+    width: 55%;
   }
 }
 
