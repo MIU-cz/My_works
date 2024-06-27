@@ -445,7 +445,7 @@
 	.stage_title {
 		position: relative;
 
-		@media (min-width:768px) {
+		@media (min-width: 768px) {
 			width: 66.66%;
 		}
 
@@ -490,7 +490,7 @@
 		.stages_wraper {
 			counter-reset: stages;
 			display: grid;
-			
+
 			grid-auto-flow: column;
 			grid-auto-columns: 100%;
 			grid-template-rows: repeat(2, 150px);
@@ -579,7 +579,7 @@
 	justify-content: center;
 	gap: 16px;
 
-	@media (min-width:768px) {
+	@media (min-width: 768px) {
 		display: none;
 	}
 }
@@ -605,7 +605,7 @@
 	display: flex;
 	width: auto;
 	flex-direction: row;
-	align-items: center;	
+	align-items: center;
 	gap: 6px;
 }
 
@@ -619,15 +619,47 @@
 	&:hover {
 		background: $c-main-black;
 	}
-
 }
 
 .btn_active {
 	background: $c-main-black;
 }
 
+// ### PLAYERS ###
+.content_players {
+	padding-top: 120px;
+
+	@media (min-width: 1366px) {
+		padding-top: 200px;
+	}
+
+	.players_title {
+		position: relative;
+	}
+}
+
+.player_btns {
+	.slider_btn {
+		background: $c-main-black;
+		color: $c-main-white;
+	
+		&:hover {
+			background: rgba($c-main-black, 0.2);
+		}
+	}
+}
+
 // ####################################################
 // ### FOOTER ###
+
+.footer {
+	padding-top: 100px;
+
+	@media (min-width: 1366px) {
+		padding-top: 140px;
+	}
+}
+
 .footer_content {
 	width: 100%;
 	padding: 40px 20px;

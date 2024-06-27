@@ -14,6 +14,7 @@
 * Карусель с этапами не должна быть зацикленной и не должна автоматически менять слайды.
 
 ---
+[git-hub](https://github.com/MIU-cz/My_works/tree/master/Yandex)
 [deploy](https://miu-cz.github.io/My_works/Yandex/)
 
 ---

@@ -862,6 +862,35 @@
   background: #313131;
 }
 
+.content_players {
+  padding-top: 120px;
+}
+@media (min-width: 1366px) {
+  .content_players {
+    padding-top: 200px;
+  }
+}
+.content_players .players_title {
+  position: relative;
+}
+
+.player_btns .slider_btn, .player_btns .pug_btn_item {
+  background: #313131;
+  color: #ffffff;
+}
+.player_btns .slider_btn:hover, .player_btns .pug_btn_item:hover {
+  background: rgba(49, 49, 49, 0.2);
+}
+
+.footer {
+  padding-top: 100px;
+}
+@media (min-width: 1366px) {
+  .footer {
+    padding-top: 140px;
+  }
+}
+
 .footer_content {
   width: 100%;
   padding: 40px 20px;
