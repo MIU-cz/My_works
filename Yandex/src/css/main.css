@@ -874,6 +874,11 @@
   position: relative;
 }
 
+.card_img {
+  width: -moz-max-content;
+  width: max-content;
+}
+
 .player_btns .slider_btn, .player_btns .pug_btn_item {
   background: #313131;
   color: #ffffff;
