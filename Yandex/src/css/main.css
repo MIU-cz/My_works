@@ -743,6 +743,15 @@
     width: -moz-max-content;
     width: max-content;
     top: auto;
+    bottom: 15%;
+    right: -7%;
+  }
+}
+@media (min-width: 1024px) {
+  .content_stage .stage_stages::after {
+    width: -moz-max-content;
+    width: max-content;
+    top: auto;
     bottom: -5%;
     right: -7%;
   }
@@ -864,21 +873,85 @@
 
 .content_players {
   padding-top: 120px;
+  position: relative;
 }
 @media (min-width: 1366px) {
   .content_players {
     padding-top: 200px;
   }
 }
-.content_players .players_title {
-  position: relative;
+.content_players_cards {
+  margin-top: 40px;
+  width: 100%;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .content_players_cards {
+    margin-top: 60px;
+  }
 }
 
-.card_img {
-  width: -moz-max-content;
-  width: max-content;
+.players_cards_wraper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+@media (min-width: 768px) {
+  .players_cards_wraper {
+    grid-auto-columns: 50%;
+  }
+}
+@media (min-width: 1240px) {
+  .players_cards_wraper {
+    grid-auto-columns: 33.33%;
+  }
 }
 
+.player_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.player_card .card_img {
+  width: 244px;
+  height: 244px;
+}
+@media (min-width: 1240px) {
+  .player_card .card_img {
+    width: 320px;
+    height: 320px;
+  }
+}
+.player_card .card_img img {
+  width: 100%;
+}
+.player_card .card_name {
+  padding-top: 28px;
+}
+.player_card .card_dsc {
+  padding: 8px 0 20px;
+}
+.player_btns {
+  display: flex;
+  margin-top: 40px;
+}
+@media (min-width: 1240px) {
+  .player_btns {
+    position: absolute;
+    margin-top: 0;
+    top: 120px;
+    right: 0;
+  }
+}
+@media (min-width: 1366px) {
+  .player_btns {
+    top: 220px;
+    right: 0;
+  }
+}
 .player_btns .slider_btn, .player_btns .pug_btn_item {
   background: #313131;
   color: #ffffff;

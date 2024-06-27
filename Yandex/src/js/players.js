@@ -28,8 +28,8 @@ const addPlayers = () => {
                         onmouseover="this.src='src/img/players/img-player-${player.id}.png'"
                         onmouseout="this.src='${playerCard.mainFoto}'">
                 </figure>
-                <span class="card_name txt_player_name">${player.name}</span>
-                <description class="card_dsc txt_player_description">${dsc}</description>
+                <h3 class="card_name txt_player_name">${player.name}</h3>
+                <p class="card_dsc txt_player_description">${dsc}</p>
                 <a href="#${player.id}" class="card_btn txt_player_btn">Подробнее</a>
             </div>
         `;

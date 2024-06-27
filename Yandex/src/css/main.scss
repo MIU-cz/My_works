@@ -482,6 +482,13 @@
 			@media (min-width: 768px) {
 				width: max-content;
 				top: auto;
+				bottom: 15%;
+				right: -7%;
+			}
+
+			@media (min-width: 1024px) {
+				width: max-content;
+				top: auto;
 				bottom: -5%;
 				right: -7%;
 			}
@@ -490,7 +497,6 @@
 		.stages_wraper {
 			counter-reset: stages;
 			display: grid;
-
 			grid-auto-flow: column;
 			grid-auto-columns: 100%;
 			grid-template-rows: repeat(2, 150px);
@@ -628,41 +634,98 @@
 // ### PLAYERS ###
 .content_players {
 	padding-top: 120px;
-
+	position: relative;
+	
 	@media (min-width: 1366px) {
 		padding-top: 200px;
 	}
 
 	.players_title {
-		position: relative;
+		
+	}
+
+	&_cards {
+		margin-top: 40px;
+		width: 100%;
+		overflow: hidden;		
+	
+		@media (min-width: 768px) {
+			margin-top: 60px;
+		}
 	}
 }
 
 .players_cards_wraper {
+	display: grid;
+	grid-auto-flow: column;
+	grid-auto-columns: 100%;
+	column-gap: 20px;
+
+	@media (min-width: 768px) {
+		grid-auto-columns: 50%;
+
+		// .player_card {
+		// 	grid-column: span 6;
+		// }
+	}
+	@media (min-width: 1240px) {
+		grid-auto-columns: 33.33%;
+		// grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 .player_card {
-}
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
 
-.card_img {
-	width: max-content;
-	
-}
+	.card_img {
+		width: 244px;
+		height: 244px;
 
-.card_name {
-}
+		@media (min-width: 1240px) {
+			width: 320px;
+			height: 320px;
+		}
 
-.card_dsc {
-}
+		img {
+			width: 100%;
+		}
+	}
 
-.card_btn {
+	.card_name {
+		padding-top: 28px;
+	}
+
+	.card_dsc {
+		padding: 8px 0 20px;
+	}
+
+	.card_btn {
+	}
 }
 
 .player_btns {
+	display: flex;
+	margin-top: 40px;
+
+	@media (min-width:1240px) {
+		position: absolute;
+		margin-top: 0;
+		top: 120px;
+		right: 0;
+	}
+
+	@media (min-width:1366px) {
+		top: 220px;
+		right: 0;
+	}
+
 	.slider_btn {
 		background: $c-main-black;
 		color: $c-main-white;
-	
+
 		&:hover {
 			background: rgba($c-main-black, 0.2);
 		}
