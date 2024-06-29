@@ -640,9 +640,8 @@
 		padding-top: 200px;
 	}
 
-	.players_title {
-		
-	}
+	// .players_title {
+	// }
 
 	&_cards {
 		margin-top: 40px;
@@ -703,6 +702,13 @@
 	}
 
 	.card_btn {
+		padding: 12px;
+		border: 1px solid $c-text-dsc;
+		border-radius: 62px;
+
+		&:hover {
+			background-color: rgba($c-text-dsc, 0.2);
+		}
 	}
 }
 
