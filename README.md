@@ -2,6 +2,46 @@
 
 > => [ list of projects ]
 
+## Chess-club - 4 horses  (js + scss)
+
+<img src="yandex\docs\main.png" alt="screen-shot" width="250">
+
+> ### Links
+
+- Popis práce na projektu: <https://miu-cz.github.io/My_works/Yandex/>
+- GitHub: <https://github.com/MIU-cz/My_works/tree/master/Yandex>
+- Deploy: <https://miu-cz.github.io/My_works/Yandex/>
+
+===========================
+===========================
+
+## INIZIO Internet Media (php + js)
+
+<img src="inzio-search-form/docs/Screenshot 2024-06-30 163538.png" alt="screen-shot" width="250">
+
+> ### Links
+
+- Popis práce na projektu: <https://miu-cz.github.io/My_works/inzio-search-form/>
+- GitHub: <https://github.com/MIU-cz/My_works/tree/master/INZIO-search-form>
+- Deploy: <https://miu.jecool.net/new_sites/INZIO-search-form/index.html>
+
+===========================
+===========================
+
+## FAPI Business (php + js)
+
+<img src="./FAPI-currency-form/docs/Screenshot 2024-06-30 164108.png" alt="screen-shot" width="250">
+<img src="./FAPI-currency-form/docs/Screenshot 2024-06-30 164119.png" alt="screen-shot" width="250">
+
+> ### Links
+
+- Popis práce na projektu: <https://miu-cz.github.io/My_works/FAPI-currency-form/>
+- GitHub: <https://github.com/MIU-cz/My_works/tree/master/FAPI-currency-form>
+- Deploy: <https://miu.jecool.net/new_sites/FAPI-currency-form/index.html>
+
+===========================
+===========================
+
 ## VVM-ipso - v2 (php + js + scss)
 
 <img src="marf-vvm-v2\docs\main.png" alt="screen-shot" width="250">
@@ -12,6 +52,7 @@
 - GitHub: <https://github.com/MIU-cz/My_works/tree/master/marf-vvm-v2>
 - Deploy: <http://miu.jecool.net/new_sites/marf-vvm-v2/index.php>
 
+===========================
 ===========================
 
 ## MARF-TRAVEL (php + mySQL)
@@ -25,6 +66,7 @@
 - Deploy: <http://miu.jecool.net/new_sites/marf-Tour/>
 
 ===========================
+===========================
 
 ### MARF-vvm-ipso
 
@@ -35,6 +77,7 @@
 - Solution URL: [github](https://github.com/MIU-cz/My_works/tree/master/MARF-vvm-ipso)
 - Live Site URL: [preview](https://miu-cz.github.io/My_works/MARF-vvm-ipso/)
 
+===========================
 ===========================
 
 ### Poski-uloha
@@ -47,6 +90,7 @@
 - Live Site URL: [preview](https://miu-cz.github.io/My_works/Poski-uloha/)
 
 ===========================
+===========================
 
 ### Upgates EVici webdesign
 
@@ -57,6 +101,7 @@
 - Solution URL: [github](https://github.com/MIU-cz/My_works/tree/master/upgates)
 - Live Site URL: [preview](https://miu-cz.github.io/My_works/upgates/)
 
+===========================
 ===========================
 
 ### Webdevel
@@ -69,6 +114,7 @@
 - Live Site URL: [preview](http://miu.jecool.net/new_sites/webdevel/index.php)
 
 ===========================
+===========================
 
 ### Pied-Piper
 
@@ -79,6 +125,7 @@
 - Solution URL: [github](https://github.com/MIU-cz/My_works/tree/master/pied-piper)
 - Live Site URL: [preview](https://miu-cz.github.io/My_works/pied-piper/)
 
+===========================
 ===========================
 
 ### Netology-test-3-hero
