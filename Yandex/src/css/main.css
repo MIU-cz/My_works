@@ -349,6 +349,7 @@
 @media (min-width: 1366px) {
   .content {
     width: 1222px;
+    grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -357,7 +358,6 @@
 }
 .content_header_item:first-child {
   padding-top: 18px;
-  position: relative;
   z-index: 1;
 }
 @media (min-width: 1366px) {
@@ -510,7 +510,37 @@
   left: 50px;
   transform: rotate(-6deg);
 }
+@media (min-width: 576px) {
+  .chess_behind img:first-child {
+    top: 35vw;
+    left: 0vw;
+  }
+}
 @media (min-width: 768px) {
+  .chess_behind img:first-child {
+    top: 31vw;
+    left: 10vw;
+  }
+}
+@media (min-width: 992px) {
+  .chess_behind img:first-child {
+    top: 26.5vw;
+    left: 20vw;
+  }
+}
+@media (min-width: 1024px) {
+  .chess_behind img:first-child {
+    top: 24vw;
+    left: 10vw;
+  }
+}
+@media (min-width: 1200px) {
+  .chess_behind img:first-child {
+    top: 20.5vw;
+    left: 10vw;
+  }
+}
+@media (min-width: 1366px) {
   .chess_behind img:first-child {
     width: 105px;
     top: 280px;
@@ -523,7 +553,37 @@
   left: 155px;
   transform: rotate(8deg);
 }
+@media (min-width: 576px) {
+  .chess_behind img:last-child {
+    top: 35vw;
+    left: 0vw;
+  }
+}
 @media (min-width: 768px) {
+  .chess_behind img:last-child {
+    top: 31vw;
+    left: 10vw;
+  }
+}
+@media (min-width: 992px) {
+  .chess_behind img:last-child {
+    top: 26.5vw;
+    left: 20vw;
+  }
+}
+@media (min-width: 1024px) {
+  .chess_behind img:last-child {
+    top: 24vw;
+    left: 10vw;
+  }
+}
+@media (min-width: 1200px) {
+  .chess_behind img:last-child {
+    top: 20.5vw;
+    left: 10vw;
+  }
+}
+@media (min-width: 1366px) {
   .chess_behind img:last-child {
     width: 115px;
     top: 165px;
@@ -541,7 +601,37 @@
   left: 120px;
   transform: rotate(-10.5deg);
 }
+@media (min-width: 576px) {
+  .chess_front img:first-child {
+    top: 42vw;
+    left: 40vw;
+  }
+}
 @media (min-width: 768px) {
+  .chess_front img:first-child {
+    top: 37vw;
+    left: 40vw;
+  }
+}
+@media (min-width: 992px) {
+  .chess_front img:first-child {
+    top: 31vw;
+    left: 40vw;
+  }
+}
+@media (min-width: 1024px) {
+  .chess_front img:first-child {
+    top: 30vw;
+    left: 40vw;
+  }
+}
+@media (min-width: 1200px) {
+  .chess_front img:first-child {
+    top: 26vw;
+    left: 40vw;
+  }
+}
+@media (min-width: 1366px) {
   .chess_front img:first-child {
     width: 156px;
     top: 495px;
@@ -551,9 +641,35 @@
 .chess_front img:last-child {
   display: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .chess_front img:last-child {
     display: inherit;
+    top: 42vw;
+    right: 0;
+  }
+}
+@media (min-width: 768px) {
+  .chess_front img:last-child {
+    top: 36vw;
+  }
+}
+@media (min-width: 992px) {
+  .chess_front img:last-child {
+    top: 30vw;
+  }
+}
+@media (min-width: 1024px) {
+  .chess_front img:last-child {
+    top: 30vw;
+  }
+}
+@media (min-width: 1200px) {
+  .chess_front img:last-child {
+    top: 25vw;
+  }
+}
+@media (min-width: 1366px) {
+  .chess_front img:last-child {
     top: 560px;
     right: -25px;
   }
@@ -567,10 +683,10 @@
   left: 0;
   background: url(../img/header/bg-img-city.png) bottom no-repeat;
   background-position-x: 80%;
-  background-size: 230%;
+  background-size: 110vh;
   pointer-events: none;
 }
-@media (min-width: 1024px) {
+@media (min-width: 1366px) {
   .header_wraper {
     background-position-x: center;
     background-size: inherit;
