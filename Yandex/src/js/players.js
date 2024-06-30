@@ -90,6 +90,7 @@ function PlayerPrev() {
 
 playerNext.addEventListener("click", PlayerNext);
 playerPrev.addEventListener("click", PlayerPrev);
+setInterval(PlayerNext, 4500);
 
 window.addEventListener("load", updatePlayers);
 window.addEventListener("resize", function () {
