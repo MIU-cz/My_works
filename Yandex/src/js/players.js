@@ -36,6 +36,7 @@ const addPlayers = () => {
     }
 
     playersCards.innerHTML = cardsHTML;
+
 };
 
 window.addEventListener("load", addPlayers);

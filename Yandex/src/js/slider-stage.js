@@ -12,7 +12,7 @@ let blockWidth = 0,
 	stageItems = 0,
 	pugBtnsItems = "";
 
-function apdateVariables() {
+function updateStages() {
 	blockWidth = sliderBlock.clientWidth + 20;
 	let lineLength = sliderLine.scrollWidth;
 	stageItems = Math.round(lineLength / blockWidth);
@@ -66,12 +66,10 @@ pugContainer.addEventListener("click", function (e) {
 	stageItem = e.target.dataset.stage - 1;
 	moveStageLine();
 
-    // console.log(e.target);
-    // console.log(e.currentTarget);
+	// console.log(e.target);
+	// console.log(e.currentTarget);
 });
 
-window.addEventListener("load", apdateVariables);
-window.addEventListener("resize", apdateVariables);
+window.addEventListener("load", updateStages);
+window.addEventListener("resize", updateStages);
 
-// ################################
-// Player slider

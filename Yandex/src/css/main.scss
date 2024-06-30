@@ -658,7 +658,9 @@
 	display: grid;
 	grid-auto-flow: column;
 	grid-auto-columns: 100%;
-	column-gap: 20px;
+	// column-gap: 20px;
+
+	// transform: translateX(0%);
 
 	@media (min-width: 768px) {
 		grid-auto-columns: 50%;
@@ -678,6 +680,10 @@
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
+
+	// &:nth-child(1) {
+		// display: none;
+	// }
 
 	.card_img {
 		width: 244px;
@@ -714,6 +720,7 @@
 
 .player_btns {
 	display: flex;
+	align-items: center;
 	margin-top: 40px;
 
 	@media (min-width:1240px) {
