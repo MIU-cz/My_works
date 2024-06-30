@@ -17,7 +17,7 @@
 
 ## INIZIO Internet Media (php + js)
 
-<img src="inzio-search-form/docs/Screenshot 2024-06-30 163538.png" alt="screen-shot" width="250">
+<img src="INZIO-search-form/docs/Screenshot 2024-06-30 163538.png" alt="screen-shot" width="250">
 
 > ### Links
 
