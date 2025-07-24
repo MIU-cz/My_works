@@ -2,6 +2,18 @@
 
 > => [ list of projects ]
 
+## rentaCars (Angular)
+
+<img src="cars-Angular/public/img/screen-cars.png" alt="screen-shot" width="250"> 
+
+> ### Links
+
+- GitHub: <https://github.com/MIU-cz/My_works/cars-Angular/dist/demo/browser/>
+- Deploy: <https://miu-cz.github.io/My_works/cars-Angular/dist/demo/browser/>
+
+===========================
+===========================
+
 ## Chess-club - 4 horses  (js + scss)
 
 <img src="Yandex/docs/main.png" alt="screen-shot" width="250">
