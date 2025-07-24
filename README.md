@@ -8,7 +8,7 @@
 
 > ### Links
 
-- GitHub: <https://github.com/MIU-cz/My_works/cars-Angular/dist/demo/browser/>
+- GitHub: <https://github.com/MIU-cz/My_works/tree/master/cars-Angular/>
 - Deploy: <https://miu-cz.github.io/My_works/cars-Angular/dist/demo/browser/>
 
 ===========================
