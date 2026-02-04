@@ -23,5 +23,10 @@
     "@angular/cli": "^21.1.0",
     "@angular/compiler-cli": "^20.3.16",
     "typescript": "^5.8.2"
+  },
+  "overrides": {
+    "vite": "^6.4.1",
+    "node-sass": "npm:sass@latest",
+    "@modelcontextprotocol/sdk": "^1.0.1"
   }
 }
