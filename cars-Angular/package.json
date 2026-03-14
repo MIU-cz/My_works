@@ -9,8 +9,8 @@
   "dependencies": {
     "@angular/animations": "^20.0.0",
     "@angular/common": "^20.0.0",
-    "@angular/compiler": "^20.0.0",
-    "@angular/core": "^20.0.0",
+    "@angular/compiler": "^20.3.18",
+    "@angular/core": "^20.3.18",
     "@angular/forms": "^20.0.0",
     "@angular/platform-browser": "^20.0.0",
     "@angular/router": "^20.0.0",
@@ -20,8 +20,13 @@
   },
   "devDependencies": {
     "@angular/build": "^20.0.0",
-    "@angular/cli": "^20.0.0",
-    "@angular/compiler-cli": "^20.0.0",
+    "@angular/cli": "^21.1.0",
+    "@angular/compiler-cli": "^20.3.18",
     "typescript": "^5.8.2"
+  },
+  "overrides": {
+    "vite": "^6.4.1",
+    "node-sass": "npm:sass@latest",
+    "@modelcontextprotocol/sdk": "^1.0.1"
   }
 }
