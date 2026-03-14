@@ -1,0 +1,10 @@
+* {
+    background-image: none !important;
+}
+
+img,
+svg,
+video,
+#header {
+    display: none !important;
+}

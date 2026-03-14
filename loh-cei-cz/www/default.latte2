@@ -1,0 +1,165 @@
+{block bodyClass}hp{/block}
+
+{block content}
+
+{* --- DYNAMICKÉ AKTUALITY (Z DATABÁZE) --- *}
+<section id="aktuality-figma" style="padding: 80px 0; background-color: #ffffff;">
+    <div class="container text-center">
+        <h2 style="font-weight: 200; font-size: 3rem; color: #333; margin-bottom: 60px; text-align: center;">aktuálně</h2>
+        
+        <div class="row align-items-center text-start">
+            
+            {* Textová část vlevo *}
+            <div class="col-md-6">
+                <div id="news-slider">
+                    {foreach $news as $item}
+                        <div class="news-item" style="display: {if $iterator->first}block{else}none{/if};" data-index="{$iterator->counter0}">
+                            <span style="color: #f8c400; font-weight: bold; font-size: 1.2rem; display: block; text-transform: uppercase;">
+                                {$item->date|date:'d/m/y'}
+                            </span>
+                            <div style="width: 60px; height: 3px; background-color: #f8c400; margin: 15px 0 25px 0;"></div>
+                            <h2 style="color: #003366; font-size: 3rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px;">
+                                {$item->title}
+                            </h2>
+                            <p style="color: #666; font-size: 1.1rem; line-height: 1.6; margin-bottom: 30px; max-width: 500px;">
+                                {$item->perex|noescape}
+                            </p>
+                        </div>
+                    {/foreach}
+                </div>
+
+                {* Navigace šipkami *}
+                <div style="display: flex; gap: 20px; align-items: center;">
+                    <div id="prev-news" style="cursor: pointer; font-size: 2.5rem; color: #003366; font-weight: bold; user-select: none;">&lsaquo;</div>
+                    <div id="next-news" style="cursor: pointer; font-size: 2.5rem; color: #003366; font-weight: bold; user-select: none;">&rsaquo;</div>
+                </div>
+            </div>
+
+            {* Kruhový obrázek vpravo *}
+            <div class="col-md-6 d-none d-md-flex justify-content-end">
+                <div style="width: 450px; height: 450px; border-radius: 50%; overflow: hidden; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    {foreach $news as $item}
+                        <img class="news-img" src="{$item->image|imagePath}" 
+                             style="width: 100%; height: 100%; object-fit: cover; display: {if $iterator->first}block{else}none{/if};" 
+                             data-index="{$iterator->counter0}">
+                    {/foreach}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{* --- SEKCE O FIRMĚ --- *}
+<section id="about">
+    <div class="row row-cols-1 row-cols-sm-2 g-0 content">
+        <div class="col">
+            <img src="{='ABOUT_COMPANY'|imagePath}" alt="CEI">
+        </div>
+        <div class="col">
+            <div class="text-block">
+                <h3>{='ABOUT_COMPANY'|text|noescape}</h3>
+                {='ABOUT_COMPANY_TEXT'|text|noescape}
+                <a class="btn btn-default" n:href="aboutUs">{='FIND_OUT_MORE'|text|noescape}</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats">
+        <h2 class="h1">{='HOMEPAGE_TITLE'|text|lower|noescape}</h2>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-0 mb-4 justify-content-center" style="display: flex; flex-wrap: wrap;">
+            <div class="col">
+                <a n:href="Homepage:services#service-37">
+                    <div class="icon"><img src="/img/icons/hospodarstvi.svg" height="51" alt=""></div>
+                    <strong>{='COMPREHENSIVE_WASTE_MANAGEMENT'|text|noescape}</strong>
+                </a>
+            </div>
+            <div class="col">
+                <a n:href="Homepage:services#service-38">
+                    <div class="icon"><img src="/img/icons/ochrana.svg" height="52" alt=""></div>
+                    <strong>{='CONSULTING_FOR_THE_PROTECTION_OF_THE_ENVIRONMENT'|text|noescape}</strong>
+                </a>
+            </div>
+            <div class="col">
+                <a n:href="Homepage:services#service-39">
+                    <div class="icon"><img src="/img/icons/odstraneni.svg" height="52" alt=""></div>
+                    <strong>{='REMOVAL_OF_HAZARDOUS_AND_OTHER_WASTE'|text|noescape}</strong>
+                </a>
+            </div>
+            <div class="col">
+                <a n:href="Homepage:services#service-40">
+                    <div class="icon"><img src="/img/icons/cisteni.svg" height="55" alt=""></div>
+                    <strong>{='CLEANING_OF_SEWERS_AND_SUMPS'|text|noescape}</strong>
+                </a>
+            </div>
+            <div class="col">
+                <a n:href="Homepage:services#service-41">
+                    <div class="icon"><img src="/img/icons/monitoring.svg" height="52" alt=""></div>
+                    <strong>{='PIPELINE_MONITORING'|text|noescape}</strong>
+                </a>
+            </div>
+            <div class="col">
+                <a n:href="Homepage:services#service-42">
+                    <div class="icon"><img src="/img/icons/doprava.svg" height="47" alt=""></div>
+                    <strong>{='WASTE_REMOVAL_AND_ADR_TRANSPORT'|text|noescape}</strong>
+                </a>
+            </div>
+            <div class="col">
+                <a n:href="Homepage:services#service-43">
+                    <div class="icon"><img src="/img/icons/kontejnery.svg" height="55" alt=""></div>
+                    <strong>{='IBC_CONTAINERS'|text|noescape}</strong>
+                </a>
+            </div>
+        </div>
+        <a class="btn btn-default" n:href="Homepage:services">{='I_WANT_TO_KNOW_MORE'|text|lower|noescape}</a>
+    </div>
+</section>
+
+<section id="">
+    <div class="row row-cols-1 row-cols-sm-2 g-0 content">
+        <div class="col order-sm-2">
+            <img src="{='HOMEPAGE_INTRODUCTION'|imagePath}" alt="CEI">
+        </div>
+        <div class="col order-sm-1 bg-gray">
+            <div class="text-block">
+                {='INTRODUCTION'|text|noescape}
+            </div>
+        </div>
+    </div>
+    <div class="stats">
+        <div class="container-fluid">
+            <h2 class="h1">{='WHAT_WE_OFFER'|text|lower|noescape}</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-0 mb-4 justify-content-center">
+                {='WHAT_WE_OFFER_HTML'|text|noescape}
+            </div>
+            <a class="btn btn-default" n:href="Homepage:services">{='I_WANT_TO_KNOW_MORE'|text|lower|noescape}</a>
+        </div>
+    </div>
+</section>
+
+{syntax off}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    let currentIdx = 0;
+    const items = document.querySelectorAll('.news-item');
+    const images = document.querySelectorAll('.news-img');
+    const total = items.length;
+
+    if (total === 0) return;
+
+    function show(index) {
+        items.forEach(el => el.style.display = 'none');
+        images.forEach(el => el.style.display = 'none');
+        
+        currentIdx = (index + total) % total;
+        
+        document.querySelector(`.news-item[data-index="${currentIdx}"]`).style.display = 'block';
+        document.querySelector(`.news-img[data-index="${currentIdx}"]`).style.display = 'block';
+    }
+
+    document.getElementById('next-news').onclick = () => show(currentIdx + 1);
+    document.getElementById('prev-news').onclick = () => show(currentIdx - 1);
+});
+</script>
+{/syntax}
+{/block}

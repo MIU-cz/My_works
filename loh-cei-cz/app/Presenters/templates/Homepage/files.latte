@@ -1,0 +1,36 @@
+{block bodyClass}sp{/block}
+
+{block content}
+<section id="services">
+    <h1>{='DOWNLOADS'|text|lower|noescape}</h1>
+
+    <article class="about text-block">
+        <div n:if="!empty($filesByCategories[0])" class="narrow">
+            <ul class="files-list">
+                <li n:foreach="$filesByCategories[0] as $file">
+                    {if $file->url !== null}
+                        {var $url = $file->url}
+                    {else}
+                        {capture $url}{link downloadFile $file->id}{/capture}
+                    {/if}
+                    <a href="{$url}" target="_blank">{$file->name|nbsp|noescape}</a>
+                </li>
+            </ul>
+        </div>
+        <div n:foreach="$fileCategories as $fileCategoryId => $fileCategoryName" class="narrow mt-4">
+            {continueIf !$fileCategoryId || !isset($filesByCategories[$fileCategoryId])}
+            <h2>{$fileCategoryName}</h2>
+
+            <ul class="files-list">
+                <li n:foreach="$filesByCategories[$fileCategoryId] as $file">
+                    {if $file->url !== null}
+                        {var $url = $file->url}
+                    {else}
+                        {capture $url}{link downloadFile $file->id}{/capture}
+                    {/if}
+                    <a href="{$url}" target="_blank">{$file->name|nbsp|noescape}</a>
+                </li>
+            </ul>
+        </div>
+    </article>
+</section>

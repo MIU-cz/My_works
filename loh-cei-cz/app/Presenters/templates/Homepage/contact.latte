@@ -1,0 +1,68 @@
+{block bodyClass}sp{/block}
+
+{block content}
+<section class="contact">
+    <h1>{='CONTACT'|text|lower|noescape}</h1>
+
+    <div class="row row-cols-1 row-cols-sm-2 g-0 content">
+        <div class="col">
+            <img src="{='CONTACT'|imagePath}" alt="CEI">
+        </div>
+        <div class="col">
+            <div class="text-block">
+                {*<p>
+                    <strong class="title">{='HQ'|text|noescape}</strong><br>
+                    <br>
+                    {$companyInfo->street|noescape}<br>
+                    {$companyInfo|postalCode} {$companyInfo->city|noescape}<br>
+                    {='CZECH_REPUBLIC'|text|noescape}
+                </p>
+                <p>
+                    <strong class="title">{='INVOICING'|text|noescape}</strong><br>
+                    <br>
+                    {='INVOICING_ADDRESS'|text|nl2br|noescape}
+                </p>*}
+
+                {='INVOICING_ADDRESS'|text|noescape}
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid pt-5">
+        {foreach $contactCategories as $contactCategoryId => $contactCategory}
+            <h2 id="{$contactCategory->url}" class="h1 mb-0">{$contactCategory->name}</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 employees pt-5 justify-content-center">
+                {foreach $contacts as $contact}
+                    {continueIf $contact->category_id != $contactCategoryId}
+                    <div class="col">
+                        <div class="holder">
+                            <strong>{$contact->function|nbsp|noescape}</strong>
+                            <p>
+                                {$contact->name|nbsp|noescape}<br>
+
+                                {if $contact->address}{$contact->address|nbsp|noescape}<br>{/if}
+                                {if $contact->postal_code || $contact->city}
+                                    {$contact->postal_code|nbsp|noescape} {$contact->city|nbsp|noescape}<br>
+                                {/if}
+                                {if $contact->country}{$contact->country|nbsp|noescape}<br>{/if}
+                                {if $contact->phone}
+                                    <a href="tel:{$contact->phone|replace:' ':''}">{$contact->phone}</a>
+                                {/if}
+                                {if $contact->phone_2}
+                                    , <a href="tel:{$contact->phone_2|replace:' ':''}">{$contact->phone_2}</a>
+                                {/if}
+                                {if $contact->email}
+                                    {if $contact->phone}<br>{/if}<a href="mailto:{$contact->email|protectEmail|noescape}">{$contact->email|protectEmail|noescape}</a>
+                                {/if}
+                            </p>
+                        </div>
+                    </div>
+                    {if $contactCategoryId == 11 && $iterator->counter == 2}
+                    </div>
+                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 employees justify-content-center">
+                    {/if}
+                {/foreach}
+            </div>
+        {/foreach}
+    </div>
+</section>

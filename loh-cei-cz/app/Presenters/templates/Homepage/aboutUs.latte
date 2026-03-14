@@ -1,0 +1,13 @@
+{block bodyClass}sp txt{/block}
+{*block headerImage}{='ABOUT_US_HEADER'|imagePath}{/block*}
+
+{block content}
+<article class="about">
+    <div class="container-fluid">
+        <div class="narrow">
+            <h1>{='ABOUT_US'|text|lower|noescape}</h1>
+
+            {='ABOUT_US_TEXT'|text|noescape}
+        </div>
+    </div>
+</article>

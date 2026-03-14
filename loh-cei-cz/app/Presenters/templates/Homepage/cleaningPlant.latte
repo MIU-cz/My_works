@@ -1,0 +1,20 @@
+{*block headerImage}{=$image|autoVersion}{/block*}
+{*block headerImageAlt}{$newsArticle->title}{/block*}
+
+{block content}
+<article class="about">
+    <div class="container">
+        <h1>{$title}</h1>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 g-0 content">
+        <div class="col">
+            <div class="text-block">
+                {$cleaningPlant->text|nbsp|noescape}
+            </div>
+        </div>
+        <div class="col">
+            <img src="{$mainWebsiteUrl}/images/branches/{$micrositeId}/{$cleaningPlant->id}/{$cleaningPlant->image_filename}" alt="{$cleaningPlant->name}">
+        </div>
+    </div>
+</article>

@@ -1,0 +1,23 @@
+{block bodyClass}sp{/block}
+
+{block content}
+<section id="services">
+    <div class="container-fluid">
+        <h1>{='EQUIPMENT'|text|lower|noescape}</h1>
+        <div class="narrow text-center">
+            {='EQUIPMENT_TEXT'|text|noescape}
+        </div>
+    </div>
+
+    <div n:foreach="$products as $item" class="row row-cols-1 row-cols-sm-2 g-0 content">
+        <div n:class="col, $iterator->isEven() ? order-sm-2">
+            <img src="{$mainWebsiteUrl}/images/services/{$micrositeId}/{$item->id}/{$item->image_filename}" alt="{$item->name}">
+        </div>
+        <div n:class="col, $iterator->isEven() ? order-sm-1">
+            <div class="text-block">
+                <h2 class="h3">{$item->name}</h2>
+                {$item->text|noescape}
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,12 @@
+{block content}
+<section class="news">
+    <div class="container-fluid">
+        <h1>{='CURRENTLY'|text|noescape}</h1>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4">
+            {foreach $newsArticles as $article}
+                {includeblock '../newsArticle.latte'}
+            {/foreach}
+        </div>
+    </div>
+</section>

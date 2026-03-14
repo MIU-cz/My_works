@@ -1,0 +1,100 @@
+{block bodyClass}hp{/block}
+
+{block content}
+
+{* --- 1. SEKCE AKTUALITY (DYNAMICKÉ PODLE FIGMY) --- *}
+<section id="aktuality-figma" style="padding: 80px 0; background-color: #ffffff;">
+    <div class="container text-center">
+        <h2 style="font-weight: 200; font-size: 3rem; color: #333; margin-bottom: 60px; text-align: center;">aktuálně</h2>
+        
+        <div class="row align-items-center text-start">
+            <div class="col-md-6">
+                <div id="news-slider">
+                    {foreach $news as $item}
+                        <div class="news-item" style="display: {if $iterator->first}block{else}none{/if};" data-index="{$iterator->counter0}">
+                            <span style="color: #f8c400; font-weight: bold; font-size: 1.2rem; display: block; text-transform: uppercase;">
+                                {$item->date|date:'d/m/y'}
+                            </span>
+                            <div style="width: 60px; height: 3px; background-color: #f8c400; margin: 15px 0 25px 0;"></div>
+                            <h2 style="color: #003366; font-size: 3rem; font-weight: 800; line-height: 1.1; margin-bottom: 20px;">
+                                {$item->title}
+                            </h2>
+                            <p style="color: #666; font-size: 1.1rem; line-height: 1.6; margin-bottom: 30px; max-width: 500px;">
+                                {$item->perex|noescape}
+                            </p>
+                        </div>
+                    {/foreach}
+                </div>
+
+                <div style="display: flex; gap: 20px; align-items: center;">
+                    <div id="prev-news" style="cursor: pointer; font-size: 2.5rem; color: #003366; font-weight: bold; user-select: none;">&lsaquo;</div>
+                    <div id="next-news" style="cursor: pointer; font-size: 2.5rem; color: #003366; font-weight: bold; user-select: none;">&rsaquo;</div>
+                </div>
+            </div>
+
+            <div class="col-md-6 d-none d-md-flex justify-content-end">
+                <div style="width: 450px; height: 450px; border-radius: 50%; overflow: hidden; border: 1px solid #eee; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    {foreach $news as $item}
+                        <img class="news-img" src="{$item->image|imagePath}" 
+                             style="width: 100%; height: 100%; object-fit: cover; display: {if $iterator->first}block{else}none{/if};" 
+                             data-index="{$iterator->counter0}">
+                    {/foreach}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{* --- 2. SEKCE O FIRMĚ A IKONKY --- *}
+<section id="about">
+    <div class="row row-cols-1 row-cols-sm-2 g-0 content">
+        <div class="col">
+            <img src="{='ABOUT_COMPANY'|imagePath}" alt="CEI">
+        </div>
+        <div class="col text-block-wrapper">
+            <div class="text-block" style="padding: 40px;">
+                <h3>{='ABOUT_COMPANY'|text|noescape}</h3>
+                {='ABOUT_COMPANY_TEXT'|text|noescape}
+                <a class="btn btn-default" n:href="aboutUs">{='FIND_OUT_MORE'|text|noescape}</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats" style="padding: 60px 0; background: #f8f8f8;">
+        <h2 class="h1" style="text-align: center; margin-bottom: 40px;">{='HOMEPAGE_TITLE'|text|lower|noescape}</h2>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 justify-content-center text-center">
+                <div class="col"><a n:href="Homepage:services#service-37"><img src="/img/icons/hospodarstvi.svg" height="50"><br><strong>{='COMPREHENSIVE_WASTE_MANAGEMENT'|text|noescape}</strong></a></div>
+                <div class="col"><a n:href="Homepage:services#service-38"><img src="/img/icons/ochrana.svg" height="50"><br><strong>{='CONSULTING_FOR_THE_PROTECTION_OF_THE_ENVIRONMENT'|text|noescape}</strong></a></div>
+                <div class="col"><a n:href="Homepage:services#service-39"><img src="/img/icons/odstraneni.svg" height="50"><br><strong>{='REMOVAL_OF_HAZARDOUS_AND_OTHER_WASTE'|text|noescape}</strong></a></div>
+                <div class="col"><a n:href="Homepage:services#service-40"><img src="/img/icons/cisteni.svg" height="50"><br><strong>{='CLEANING_OF_SEWERS_AND_SUMPS'|text|noescape}</strong></a></div>
+            </div>
+            <div class="text-center" style="margin-top: 40px;">
+                <a class="btn btn-default" n:href="Homepage:services">{='I_WANT_TO_KNOW_MORE'|text|lower|noescape}</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{syntax off}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    let currentIdx = 0;
+    const items = document.querySelectorAll('.news-item');
+    const images = document.querySelectorAll('.news-img');
+    const total = items.length;
+    if (total === 0) return;
+
+    function show(index) {
+        items.forEach(el => el.style.display = 'none');
+        images.forEach(el => el.style.display = 'none');
+        currentIdx = (index + total) % total;
+        items[currentIdx].style.display = 'block';
+        images[currentIdx].style.display = 'block';
+    }
+    document.getElementById('next-news').onclick = () => show(currentIdx + 1);
+    document.getElementById('prev-news').onclick = () => show(currentIdx - 1);
+});
+</script>
+{/syntax}
+{/block}

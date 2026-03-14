@@ -1,0 +1,35 @@
+{block bodyClass}sp{/block}
+
+{block content}
+<article class="about">
+    <div class="container-fluid">
+        <h1>{='CAREER'|text|lower|noescape}</h1>
+        <div class="narrow">
+            {='JOBS_TEXT'|text|noescape}
+        </div>
+
+        <br>
+        <br>
+
+        {if $jobs->count() > 0}
+            <h2 class="h1">{='ACTUAL_JOBS'|text|noescape}</h2>
+
+            <div class="narrow">
+                {='ACTUAL_JOBS_TEXT'|text|noescape}
+            </div>
+
+            <div class="row g-0 cei-tree mb-5">
+                {foreach $jobs as $job}
+                    <div class="col-sm-6 col-lg-4 item p-4">
+                        <div class="item-holder">
+                            <a class="caption" n:href="Homepage:job $job->url">
+                                <strong>{$job->title}</strong>
+                                <span class="title">{$job->address|noescape}</span>
+                            </a>
+                        </div>
+                    </div>
+                {/foreach}
+            </div>
+        {/if}
+    </div>
+</article>

@@ -1,0 +1,7 @@
+parameters:
+
+
+database:
+	dsn: 'mysql:host=mariadb10;dbname=ce-industries'
+	user: ce-industries
+	password: Gm24wqmxHKh

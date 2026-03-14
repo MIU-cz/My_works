@@ -1,0 +1,9 @@
+<div class="col">
+    <a class="thumb" n:href="newsArticle $article->id . '-' . $article->url">
+        <img src="{$mainWebsiteUrl}/images/news/{$micrositeId}/800x600/{$article->id}.{$article->image_extension}" alt="{$article->title}">
+    </a>
+    <a class="caption" n:href="newsArticle $article->id . '-' . $article->url">
+        <span class="date">{$article->date|date:'d/m/y'}</span>
+        <span class="title">{$article->title}</span>
+    </a>
+</div>

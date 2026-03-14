@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
+    {foreach $urls as $url}
+        <url>
+            <loc>{$baseUrl}{if $url}/{/if}{$url}</loc>
+        </url>
+    {/foreach}
+    {foreach $newsArticles as $newsArticle}
+        <url>
+            <loc>{$baseUrl}/{if $language == 'cs'}novinka{else}news-article{/if}/{$newsArticle->id}-{$newsArticle->url}</loc>
+        </url>
+    {/foreach}
+    {foreach $jobs as $job}
+        <url>
+            <loc>{$baseUrl}/{if $language == 'cs'}pracovni-pozice{else}job{/if}/{$job->url}</loc>
+        </url>
+    {/foreach}
+</urlset>

@@ -1,0 +1,87 @@
+/* 1. УПРАВЛЕНИЕ ВИДИМОСТЬЮ (ЖЕСТКОЕ) */
+section#aktuality-figma .news-slide,
+div.news-slide {
+    display: none !important;
+}
+
+section#aktuality-figma .news-slide.active,
+div.news-slide.active {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* 2. ОФОРМЛЕНИЕ СЕКЦИИ */
+#aktuality-figma {
+    padding: 60px 78px;
+    background-color: #ffffff;
+    position: relative;
+    z-index: 1000;
+}
+
+/* Светлый тонкий заголовок секции */
+#aktuality-figma .section-title {
+    font-weight: 300;
+    font-size: 60px ;
+    line-height: 72px;
+    color: #BFC1C2;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+}
+
+/* 3. КОНТЕНТ НОВОСТИ */
+.news-content-box .news-date {
+    font-size: 15px !important;
+    line-height: normal !important;
+    color: #F8C400 !important; /* Supernova */
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.news-content-box .news-divider {
+    width: 70px !important;      /* W из Layout в Figma */
+    height: 2px !important;
+    background-color: #F8C400 !important;
+    margin-bottom: 25px;
+}
+
+.news-content-box .news-title {
+    font-size: 18px !important;
+    line-height: 22.5px !important;
+    color: #002349 !important; /* HEX для Green Vogue */
+    font-weight: 800;           /* В макете он очень жирный */
+    margin-bottom: 20px;
+    display: block;
+}
+
+.news-content-box .news-text {
+    font-size: 15px !important;
+    line-height: 22.5px !important;
+    color: #4B535D !important; /* HEX для River Bed */
+    font-weight: 400;
+    margin-bottom: 0px;         /* Отступ снизу убираем, так как есть mt-auto у стрелок */
+    text-align: left;
+}
+
+/* 4. КНОПКИ УПРАВЛЕНИЯ (СТРЕЛКИ) */
+.news-controls {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.news-controls .prev-news,
+.news-controls .next-news {
+    cursor: pointer;
+    font-size: 2rem;
+    color: #002349;
+    user-select: none;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.news-controls .prev-news:hover,
+.news-controls .next-news:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}

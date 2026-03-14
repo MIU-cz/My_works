@@ -1,0 +1,107 @@
+{block bodyClass}sp{/block}
+
+{block content}
+<section id="services">
+    <div class="container-fluid">
+        <h1>{='EQUIPMENT'|text|lower|noescape}</h1>
+        <div class="narrow text-center">
+            <p>Disponujeme profesionální technikou, která nám umožňuje realizovat zakázky ve vysoké kvalitě a efektivitě.</p>
+        </div>
+    </div>
+
+    <div n:foreach="$products as $product" class="row row-cols-1 row-cols-sm-2 g-0 content">
+        <div n:class="col, $iterator->isEven() ? order-sm-2">
+            <img src="{$mainWebsiteUrl}/images/services/{$micrositeId}/{$product->id}/{$product->image_filename}" alt="{$product->name}">
+        </div>
+        <div n:class="col, $iterator->isEven() ? order-sm-1">
+            <div class="text-block">
+                <h2 class="h3">{$product->name}</h2>
+                {$product->text|noescape}
+            </div>
+        </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 g-0 content">
+        <div class="col">
+            <img src="https://www.ce.industries/images/services/16/37/90.jpg?v=1" alt="">
+        </div>
+        <div class="col">
+            <div class="text-block">
+                <h2 class="h3">MAN – recyklační kanalizační vozidlo KROLL</h2>
+
+                <p>Cisternové vozidlo se systémem úpravy vody „KROLL – RECYCLING-SYSTÉM WRS 3“ – recyklační zařízení pro úpravu nasáté odpadní vody, umožňuje využití kombinovaného vysokotlakého a sacího vozidla s recyklací na místě sání a proplachu kanalizace bez dovážky čisté vody.</p>
+                <p>Co vše zvládne?</p>
+                <ul>
+                    <li>Recyklovat znečištěnou vodu přímo na místě</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 g-0 content">
+        <div class="col order-sm-2">
+            <img src="https://www.ce.industries/images/services/16/37/90.jpg?v=1" alt="">
+        </div>
+        <div class="col order-sm-1">
+            <div class="text-block">
+                <h2 class="h3">MAN TGS – sací bagr</h2>
+
+                <p>Cisternový vůz s extrémně vysokým sacím výkonem. Je určen k odsávání mokrých materiálů a k odsávání a foukání suchých (sypkých) materiálů.</p>
+                <p>Co vše zvládne?</p>
+                <ul>
+                    <li>Odsávání mokrých materiálů: například čištění vyhnívacích nádrží, jímek, čištění retenčních nádrží, rybníků a lagun, jímek od betonového kalu, bioplynových stanic.</li>
+                    <li>Odsávání suchých materiálů: například popílku, sutin, nečistot z půdních prostor, z průmyslových technologií.</li>
+                    <li>Foukání materiálů: například štěrk, písek, kačírek, liapor, sůl až do zrnitosti 16/32.</li>
+                    <li>Systém Hi-Lift: například doprava stavebního materiálu na vyvýšená či nepřístupná místa, plnění sil.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 g-0 content">
+        <div class="col">
+            <img src="https://www.ce.industries/images/services/16/37/90.jpg?v=1" alt="">
+        </div>
+        <div class="col">
+            <div class="text-block">
+                <h2 class="h3">Mercedes Benz Actros – sací vůz s vlekem</h2>
+
+                <p>Je určen k odsávání a přepravě kalů, zaolejovaných vod, emulzí a dalších tekutých a kašovitých nebezpečných odpadů. Slouží také k čištění kanalizace do průměru DN300.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 g-0 content">
+        <div class="col order-sm-2">
+            <img src="https://www.ce.industries/images/services/16/37/90.jpg?v=1" alt="">
+        </div>
+        <div class="col order-sm-1">
+            <div class="text-block">
+                <h2 class="h3">Mercedes Benz Actros – sací vůz s vlekem</h2>
+
+                <p>Je určen k odsávání a přepravě kalů, zaolejovaných vod, emulzí a dalších tekutých a kašovitých nebezpečných odpadů. Slouží také k čištění kanalizace do průměru DN300.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 g-0 content">
+        <div class="col">
+            <img src="https://www.ce.industries/images/services/16/37/90.jpg?v=1" alt="">
+        </div>
+        <div class="col">
+            <div class="text-block">
+                <h2 class="h3">VOLVO – sací vůz</h2>
+
+                <p>Je určen k odsávání a přepravě kalů, zaolejovaných vod, emulzí a dalších tekutých a kašovitých nebezpečných odpadů. Slouží také k čištění kanalizace do průměru DN300.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 g-0 content">
+        <div class="col order-sm-2">
+            <img src="https://www.ce.industries/images/services/16/37/90.jpg?v=1" alt="">
+        </div>
+        <div class="col order-sm-1">
+            <div class="text-block">
+                <h2 class="h3">MAN TGA – sací a čistící vůz s recyklací</h2>
+
+                <p>Je určen k čištění především velkých průměrů kanalizace s odsáváním a recyklací vody. Slouží také pro přepravu ostatních odpadů s vykládkou za pomocí pístu.</p>
+            </div>
+        </div>
+    </div>
+</section>

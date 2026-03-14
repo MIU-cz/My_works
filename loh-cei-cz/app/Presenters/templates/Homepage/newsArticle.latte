@@ -1,0 +1,21 @@
+{*block headerImage}{=$image|autoVersion}{/block*}
+{*block headerImageAlt}{$newsArticle->title}{/block*}
+
+{block content}
+<article class="about">
+    <div class="container">
+        <h1>{$title}</h1>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 g-0 content">
+        <div class="col">
+            <div class="text-block">
+                <p class="mb-5"><strong>{='DATE'|text|noescape}:</strong> {$newsArticle->date|date:'d.m.Y'}</p>
+                {$newsArticle->text|nbsp|noescape}
+            </div>
+        </div>
+        <div class="col">
+            <img src="{$mainWebsiteUrl}/images/news/{$micrositeId}/{$newsArticle->id}.{$newsArticle->image_extension}" alt="{$newsArticle->title}">
+        </div>
+    </div>
+</article>

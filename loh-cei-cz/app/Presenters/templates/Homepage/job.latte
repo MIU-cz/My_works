@@ -1,0 +1,17 @@
+{block bodyClass}sp{/block}
+
+{block content}
+<article class="about">
+    <div class="container">
+        <h1>{$job->title}</h1>
+        
+        {$job->text|nbsp|noescape}
+
+        <p class="blue mb-5">
+            {if $job->jobs_link}
+                <strong>{='MORE'|text|noescape|capitalize}:</strong>
+                <a href="{$job->jobs_link}" target="_blank">{$job->jobs_link}</a>
+            {/if}
+        </p>
+    </div>
+</article>

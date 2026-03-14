@@ -1,0 +1,23 @@
+{block bodyClass}sp{/block}
+
+{block content}
+<section>
+    <h1>{='services'|text|lower|noescape}</h1>
+
+    <div n:foreach="$services as $service" id="service-{$service->id}" class="row row-cols-1 row-cols-sm-2 g-0 content">
+        <div n:class="col, $iterator->isEven() ? order-sm-2">
+            <img src="{$mainWebsiteUrl}/images/services/{$micrositeId}/{$service->id}/{$service->image_filename}" alt="{$service->name}">
+        </div>
+        <div n:class="col, $iterator->isEven() ? order-sm-1">
+            <div class="text-block">
+                <h2 class="h3">{$service->name}</h2>
+                {$service->text|noescape}
+
+                <div class="btn-group">
+                    <a href="#kontakt" class="request-a-service btn btn-default">{='REQUEST_A_SERVICE'|text|noescape}</a>
+                    <a n:if="$service->catalog_2_url" href="{$service->catalog_2_url}" target="_blank" class="btn btn-default">{='PRICE_LIST'|text|noescape}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
